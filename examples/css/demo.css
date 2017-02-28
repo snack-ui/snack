@@ -1,0 +1,16 @@
+﻿header{
+	background-color: #00ADFF;
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar>li {
+    float: left;
+}
+.sec-orange{
+	background-color: #f60;
+	color:#fff;
+}
