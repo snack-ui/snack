@@ -1,16 +1,10 @@
+// --------------------------
+// base
+// --------------------------
 html{
 
 }
-.pull-right{
-	float: right;
-}
-.pull-left{
-	float: left;
-}
-.clearfix::after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden
+.container {
+	width: 1200px;
+	margin: 0 auto;
 }
