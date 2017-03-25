@@ -1,53 +1,110 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Snack</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="../dist/snack.css">
-        <link rel="stylesheet" href="css/demo.css">
-        <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Snack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../dist/snack.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="wrapper">
-            <header class="container">
-                <div class="navbar">
-                    <ul class="nav clearfix">
-                        <li>a</li>
-                        <li>b</li>
-                        <li>c</li>
-                        <li>d</li>
-                        <li>e</li>
-                    </ul>
+    <div class="wrapper">
+        <header class="container">
+            <div class="navbar">
+                <ul class="nav clearfix">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                    <li>d</li>
+                    <li>e</li>
+                </ul>
+            </div>
+        </header>
+        <main class="container">
+            <div class="card">
+                <h1>Heading</h1>
+                <div class="row clearfix">
+                    <button class="btn">按钮</button>
+                    <a class="btn" href="javascript:;">按钮</a>
+                    <input type="button" class="btn" value="按钮" />
                 </div>
-            </header>
-            <main class="container">
-                <section class="card">
-                    <h1>OUR SERVICES</h1>
-                    <div class="row clearfix">
-                    	<button class="btn">按钮</button>
-                    	<a class="btn" href="javascript:;">按钮</a>
-                    	<input type="button" class="btn" value="按钮" />
+            </div>
+            <div class="card inverse">
+                Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+            </div>
+            <div class="panel">
+                <div class="panel-heading">heading</div>
+                <div class="panel-body">Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+            </div>
+            <div class="card">
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit
+                        <ul>
+                            <li>Phasellus iaculis neque</li>
+                            <li>Purus sodales ultricies</li>
+                            <li>Vestibulum laoreet porttitor sem</li>
+                            <li>Ac tristique libero volutpat at</li>
+                        </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ul>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li>
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Nulla volutpat aliquam velit</li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ol>
+            </div>
+            <div class="card">
+                <form action="">
+                    <div class="">
+                        <input type="text" placeholder="input" />
                     </div>
-                </section>
-
-            </main>
-            <footer class="footer">
-                <div class="container">Designed by nzbin. Licensed under the MIT License.</div>
-            </footer>
-        </div>
-
-        <!-- <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+                    <div class="">
+                        <select name="" id="">
+                            <option value="">option1</option>
+                            <option value="">option2</option>
+                            <option value="">option3</option>
+                            <option value="">option4</option>
+                            <option value="">option5</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <textarea name="" id="" cols="30" rows="3" placeholder="textarea"></textarea>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">Designed by nzbin. Licensed under the MIT License.</div>
+        </footer>
+    </div>
+    <!-- <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
         <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
         </script>
         <script src="js/main.js"></script> -->
-    </body>
+</body>
+
 </html>

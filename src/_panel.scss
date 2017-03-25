@@ -1,14 +1,15 @@
 // --------------------------
 // panel
 // --------------------------
-
-.panel{
-	margin-bottom:15px;
-}
-.panel-body{
-	padding:15px;
-}
-.panel-heading{
-	padding:15px;
-	background-color:#eee;
+.panel {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    >.panel-heading {
+        padding: 15px;
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #ddd;
+    }
+    >.panel-body {
+        padding: 15px;
+    }
 }
