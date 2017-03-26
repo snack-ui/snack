@@ -3,6 +3,9 @@
   --------------------------*/
 
 $grid-columns: 12;
+// initialize
+$i: 1;
+$list: ".col-#{$i}";
 // looping
 @for $i from 1 through $grid-columns {
     .col-#{$i} {
@@ -10,6 +13,22 @@ $grid-columns: 12;
     }
 }
 
-[class^='col-'] {
+// equal looping
+@for $i from 1 through $grid-columns {
+    .cols-#{$i}>.col {
+        width: percentage($i / $grid-columns);
+    }
+}
+
+// get list
+@for $i from (1+1) through $grid-columns {
+    $list: "#{$list}, .col-#{$i}";
+}
+
+#{$list} {
     float: left;
+}
+
+.row {
+    @include clearfix;
 }
