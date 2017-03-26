@@ -1,11 +1,7 @@
-/*--------------------------
-  grid
-  --------------------------*/
-
+// --------------------------
+//   grid
+// --------------------------
 $grid-columns: 12;
-// initialize
-$i: 1;
-$list: ".col-#{$i}";
 // looping
 @for $i from 1 through $grid-columns {
     .col-#{$i} {
@@ -16,19 +12,25 @@ $list: ".col-#{$i}";
 // equal looping
 @for $i from 1 through $grid-columns {
     .cols-#{$i}>.col {
-        width: percentage($i / $grid-columns);
+        width: percentage(1 / $i);
     }
 }
 
+// initialize
+$i: 1;
+$list: ".col-#{$i}";
 // get list
 @for $i from (1+1) through $grid-columns {
     $list: "#{$list}, .col-#{$i}";
 }
 
-#{$list} {
+#{$list},
+.col {
+    padding: 0 15px;
     float: left;
 }
 
 .row {
+    margin: 0 -15px;
     @include clearfix;
 }

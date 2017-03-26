@@ -1,8 +1,5 @@
-header {
-    padding-top: 20px;
-}
-
 .navbar {
+    margin: 20px 0;
     border: 2px solid #ddd;
     border-radius: 5px;
     background-color: #f5f5f5;
@@ -24,15 +21,9 @@ header {
     color: #fff;
 }
 
-.card {
-    margin: 20px 0;
-    padding: 15px;
-    border: 1px solid #eee;
-    border-radius: 5px;
-    box-shadow: 0 2px 6px 0 rgba(34, 36, 38, .12)
-}
-.card.inverse{
-	background-color:#1B1C1D;
-	color:#fff;
-	box-shadow: 0 2px 6px 0 rgba(34, 36, 38, .12)
+.grid [class^="col"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
 }

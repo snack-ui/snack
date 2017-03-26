@@ -2,14 +2,28 @@
 // panel
 // --------------------------
 .panel {
-    margin-bottom: 15px;
+    margin: 15px 0;
+    padding: 15px;
     border: 1px solid #ddd;
+    border-radius: 5px;
     >.panel-heading {
         padding: 15px;
+        margin: -15px -15px 15px;
         background-color: #f5f5f5;
         border-bottom: 1px solid #ddd;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
     }
-    >.panel-body {
+    >.panel-body {}
+    >.panel-footer {
         padding: 15px;
+    }
+    &.raised {
+        border: 1px solid #eee;
+        box-shadow: 0 2px 6px 0 rgba(34, 36, 38, .12)
+    }
+    &.inverse {
+        background-color: #1B1C1D;
+        color: #fff;
     }
 }
