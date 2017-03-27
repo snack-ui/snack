@@ -24,7 +24,7 @@ $grid-columns-10: 10;
     }
 }
 
-// initialize
+// float
 $i: 1;
 $list: ".col-#{$i}";
 // get list
@@ -33,12 +33,14 @@ $list: ".col-#{$i}";
 }
 
 #{$list} {
-    padding: 0 15px;
     float: left;
 }
 
 .row {
     margin: 0 -15px;
+    #{$list} {
+        padding: 0 15px;
+    }
     &.padded {
         padding: 15px 0;
     }

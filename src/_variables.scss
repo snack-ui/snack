@@ -2,12 +2,12 @@
 // variables
 // --------------------------
 
-$grey:;
+$grey:#ddd;
 
 $color-primary:#ffcd20;
 
 $color-inverse:#1B1C1D;
-
+// type
 $line-height-base:;
 
 $font-size-base:14px;
@@ -19,5 +19,7 @@ $gutter:2em;
 
 
 // panel
-$panel-border-color:;
+$panel-border-color-default:$grey;
+$panel-bg-color-primary:$color-primary;
+$panel-border-color-primary:darken($color-primary,10%);
 $panel-padding:1em;

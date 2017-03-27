@@ -25,11 +25,16 @@
     }
     &.raised {
         border: 1px solid #eee;
-        box-shadow: 0 2px 6px 0 rgba(34, 36, 38, .12)
+        box-shadow: 0 2px 6px 0 rgba(34, 36, 38, .12);
     }
     &.inverse {
         background-color: #1B1C1D;
         color: #fff;
+        border: 1px solid #000;
+    }
+    &.primary{
+    	background-color:$panel-bg-color-primary;
+		border: 1px solid $panel-border-color-primary;
     }
     // &:first-child{
     // 	margin-top: 0;
@@ -40,5 +45,16 @@
 }
 
 .panel-group{
-
+	margin: 15px 0;
+	border:1px solid #ddd;
+	border-radius: 5px;
+	>.panel{
+		margin:0;
+		border-radius:0;
+		border:none;
+		border-top:1px solid #ddd;
+		&:first-child{
+			border:none;
+		}
+	}
 }
