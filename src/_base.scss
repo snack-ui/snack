@@ -11,8 +11,9 @@ html {
 }
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: $font-size-base;
 	color: $text-color;
+	line-height:$line-height-base;
 }
 .container {
 	width: 1200px;
