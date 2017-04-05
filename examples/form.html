@@ -2,49 +2,98 @@
 <html class="no-js" lang="">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Snack-Form</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="../dist/snack.css">
-	<link rel="stylesheet" href="css/demo.css">
-	<!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
-	<script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Snack-Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../dist/snack.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 </head>
 
 <body>
-	<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
-	<div class="wrapper">
-		<header class="container">
-			<div class="navbar">
-				<ul class="nav clearfix">
-					<li>nav</li>
-				</ul>
-			</div>
-		</header>
-		<main class="container">
-			<form action="">
-				<div class="">
-					<label for="">姓名</label>
-					<input class="form-field" type="text"/>
-				</div>
-				<div class="">
-					<label for="">手机号</label>
-					<input class="form-field" type="text"/>
-				</div>
-				<button type="submit" class="btn btn-default">提交</button>
-			</form>
-		</main>
-		<footer class="footer">
-			<div class="container">Designed by nzbin. Licensed under the MIT License.</div>
-		</footer>
-	</div>
-	<!-- <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <div class="wrapper">
+        <header class="container">
+            <div class="navbar">
+                <ul class="nav clearfix">
+                    <li>nav</li>
+                </ul>
+            </div>
+        </header>
+        <main class="container">
+            <h2>普同表单</h2>
+            <hr>
+            <form action="">
+                <div class="form-group">
+                    <label for="">姓名</label>
+                    <input class="form-field" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="">手机号</label>
+                    <input class="form-field" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="">性别</label>
+                    <select class="form-field">
+                        <option value="0">男</option>
+                        <option value="1">女</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="">文件</label>
+                    <input class="" type="file" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">提交</button>
+                </div>
+            </form>
+            <h2>行内表单</h2>
+            <hr>
+            <form action="" class="form-inline">
+                <div class="form-group">
+                    <label for="">姓名</label>
+                    <input class="form-field" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="">手机号</label>
+                    <input class="form-field" type="text" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">提交</button>
+                </div>
+            </form>
+            <h2>单行表单</h2>
+            <hr>
+            <form action="" class="form-row">
+                <div class="form-group">
+                    <label for="" class="col-1">姓名</label>
+                    <div class="col-10">
+                        <input class="form-field" type="text" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="" class="col-1">手机号</label>
+                    <div class="col-10">
+                        <input class="form-field" type="text" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">提交</button>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="container">Designed by nzbin. Licensed under the MIT License.</div>
+        </footer>
+    </div>
+    <!-- <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 		<script>
 		window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
 		</script>
