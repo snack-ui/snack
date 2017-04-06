@@ -36,13 +36,6 @@ input[type="file"] {
     }
 }
 
-.form-row {
-    .form-group {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-}
-
 .form-group {
     margin-bottom: 15px;
     @include clearfix;
@@ -63,5 +56,12 @@ label {
         display: inline-block;
         width: auto;
         vertical-align: middle;
+    }
+}
+
+.form-row {
+    .form-group {
+        margin-right: -15px;
+        margin-left: -15px;
     }
 }
