@@ -1,3 +1,44 @@
 // --------------------------
 // button
 // --------------------------
+
+.btn{
+	display:inline-block;
+	padding:4px 12px;
+	text-align:center;
+	vertical-align:middle;
+	line-height:$line-height-base;
+	font-size:$font-size-base;
+	background-color:$btn-color-default;
+	border:1px solid darken($btn-color-default,10%);
+	border-radius:15px;
+	cursor:pointer;
+	&:hover{
+		box-shadow:0 0 3px 2px rgba(0,0,0,0.1);
+	}
+	&:focus{
+
+	}
+	&:active{
+
+	}
+	&.btn-block{
+		display: block;
+		width:100%;
+	}
+}
+.btn-inverse{
+	color:#fff;
+	background-color:$color-inverse;
+	border:1px solid darken($color-inverse,10%);
+	&:hover{
+		box-shadow:0 0 3px 2px rgba(0,0,0,0.25);
+	}
+}
+.btn-primary{
+	background-color:$color-primary;
+	border:1px solid darken($color-primary,10%);
+	&:hover{
+		box-shadow:0 0 3px 2px lighten($color-primary,20%);
+	}
+}

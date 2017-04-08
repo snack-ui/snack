@@ -8,7 +8,7 @@ $color-primary:#ffcd20;
 
 $color-inverse:#1B1C1D;
 // type
-$line-height-base:1.428;
+$line-height-base:1.42857143;
 
 $font-size-base:14px;
 
@@ -23,3 +23,8 @@ $panel-border-color-default:$grey;
 $panel-bg-color-primary:$color-primary;
 $panel-border-color-primary:darken($color-primary,10%);
 $panel-padding:1em;
+
+// button
+$btn-color-default:#eee;
+$btn-color-primary:$color-primary;
+$btn-color-inverse:$color-inverse;
