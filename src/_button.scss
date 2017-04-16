@@ -9,36 +9,70 @@
 	vertical-align:middle;
 	line-height:$line-height-base;
 	font-size:$font-size-base;
-	background-color:$btn-color-default;
+	color:#333;
+	background-color:#fff;
 	border:1px solid darken($btn-color-default,10%);
-	border-radius:15px;
+	border-radius:3px;
+	box-shadow:0 1px 1px 0 rgba(0,0,0,0.1);
 	cursor:pointer;
-	&:hover{
-		box-shadow:0 0 3px 2px rgba(0,0,0,0.1);
-	}
-	&:focus{
-
-	}
-	&:active{
-
-	}
+	outline:none;
 	&.btn-block{
 		display: block;
 		width:100%;
 	}
 }
+.btn-default{
+	background-color:#f3f3f3;
+	&:hover{
+		background-color:darken(#f3f3f3,5%);
+	}
+	&:focus{
+		background-color:darken(#f3f3f3,5%);
+	}
+	&:active{
+		background-color:darken(#f3f3f3,5%);
+	}
+}
 .btn-inverse{
 	color:#fff;
 	background-color:$color-inverse;
-	border:1px solid darken($color-inverse,10%);
+	border:1px solid darken($color-inverse,15%);
 	&:hover{
-		box-shadow:0 0 3px 2px rgba(0,0,0,0.25);
+		background-color:lighten($color-inverse,13%);
+	}
+	&:focus{
+		background-color:lighten($color-inverse,13%);
+	}
+	&:active{
+		background-color:lighten($color-inverse,13%);
 	}
 }
 .btn-primary{
 	background-color:$color-primary;
 	border:1px solid darken($color-primary,10%);
 	&:hover{
-		box-shadow:0 0 3px 2px lighten($color-primary,20%);
+		background-color:darken($color-primary,7%);
+	}
+	&:focus{
+		background-color:darken($color-primary,7%);
+	}
+	&:active{
+		background-color:darken($color-primary,7%);
+	}
+}
+.btn-group{
+	display:table;
+	>.btn{
+		display: table-cell;
+		border-radius:0;
+		margin-right: -1px;
+		&:first-child{
+			border-top-left-radius:3px;
+			border-bottom-left-radius:3px;
+		}
+		&:last-child{
+			border-top-right-radius:3px;
+			border-bottom-right-radius:3px;
+		}
 	}
 }

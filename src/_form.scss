@@ -29,6 +29,7 @@ input[type="file"] {
     border-radius: 3px;
     font-size: 14px;
     line-height: 1.428;
+    color:#333;
     &:focus {
         border-color: #66afe9;
         outline: 0;
@@ -64,4 +65,7 @@ label {
         margin-right: -15px;
         margin-left: -15px;
     }
+}
+.checkbox label{
+	display:block;
 }
