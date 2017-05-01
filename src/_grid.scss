@@ -37,12 +37,15 @@ $list: ".col-#{$i}";
 }
 
 .row {
-    margin: 0 -15px;
+    margin-left: -15px;
+    margin-right: -15px;
     #{$list} {
-        padding: 0 15px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     &.padded {
-        padding: 15px 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     @include clearfix;
 }

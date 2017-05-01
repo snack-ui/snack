@@ -12,3 +12,11 @@
 .clearfix {
     @include clearfix;
 }
+
+.center-inline {
+    text-align: center;
+    >div,
+    p {
+        text-align: center;
+    }
+}

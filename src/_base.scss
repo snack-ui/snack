@@ -1,28 +1,28 @@
 // --------------------------
 // base
 // --------------------------
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
 
-*, *:before, *:after {
-	box-sizing: inherit;
-}
 html {
-	box-sizing: border-box;
-	font-size: 12px;
+    box-sizing: border-box;
+    font-size: 12px;
 }
+
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: $font-size-base;
-	color: $text-color;
-	line-height:$line-height-base;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: $font-size-base;
+    color: $text-color;
+    line-height: $line-height-base;
 }
-a{
-	text-decoration:none;
+
+a {
+    text-decoration: none;
 }
-h1, h2, h3, h4, h5, h6 {
-	margin: 0;
-	padding: 0;
-}
-.container {
-	width: 1200px;
-	margin: 0 auto;
+
+.page-header {
+    font-size: 36px;
 }
