@@ -21,6 +21,12 @@ input[type="file"] {
     display: block;
 }
 
+label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
 .form-field {
     display: block;
     width: 100%;
@@ -29,7 +35,7 @@ input[type="file"] {
     border-radius: 3px;
     font-size: 14px;
     line-height: 1.428;
-    color:#333;
+    color: #333;
     &:focus {
         border-color: #66afe9;
         outline: 0;
@@ -37,20 +43,17 @@ input[type="file"] {
     }
 }
 
-.form-group {
+.form-label {}
+
+// label+input
+.form-item {
     margin-bottom: 15px;
     @include clearfix;
 }
 
-label {
-    display: inline-block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
 .form-inline {
     input[type="file"],
-    .form-group {
+    .form-item {
         display: inline-block;
     }
     .form-field {
@@ -61,11 +64,12 @@ label {
 }
 
 .form-row {
-    .form-group {
+    .form-item {
         margin-right: -15px;
         margin-left: -15px;
     }
 }
-.checkbox label{
-	display:block;
+
+.checkbox label {
+    display: block;
 }

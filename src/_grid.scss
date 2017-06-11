@@ -1,5 +1,5 @@
 // --------------------------
-//   grid
+// grid
 // --------------------------
 $grid-columns: 12;
 $grid-columns-10: 10;
@@ -49,3 +49,5 @@ $list: ".col-#{$i}";
     }
     @include clearfix;
 }
+
+/* Flex Grid */

@@ -24,7 +24,7 @@ table {
                 text-align: left;
             }
             &:last-child {
-                border:none;
+                border: none;
             }
         }
     }
@@ -32,6 +32,7 @@ table {
         background-color: #f5f5f5;
         border-bottom: 1px solid #ddd;
     }
+    // 边框
     &.bordered {
         border: 1px solid #ddd;
         >thead,
@@ -45,53 +46,56 @@ table {
             }
         }
     }
-    &.striped {}
-    &.table-hover {
+    // 隔行分色
+    &.striped {
+        > tbody > tr:nth-of-type(2n+1) {
+            background-color: #f9f9f9;
+        }
+    }
+    &.hover {
         > tbody > tr:hover {
             background-color: #f5f5f5;
         }
     }
-}
-
-// theme color
-.table.primary {
-    background-color: $color-primary;
-    border: 1px solid darken($color-primary, 10%);
-    >thead,
-    >tbody,
-    >tfoot {
-        >tr {
-            border-bottom: 1px solid darken($color-primary, 10%);
+    // 主题
+    &.primary {
+        background-color: $color-primary;
+        border: 1px solid darken($color-primary, 10%);
+        >thead,
+        >tbody,
+        >tfoot {
+            >tr {
+                border-bottom: 1px solid darken($color-primary, 10%);
+            }
+        }
+        >thead {
+            background-color: rgba(0, 0, 0, .1);
+        }
+        &.hover {
+            > tbody > tr:hover {
+                background-color: darken($color-primary, 5%);
+            }
         }
     }
-    >thead {
-        background-color: rgba(0, 0, 0, .1);
-    }
-    &.hover {
-        > tbody > tr:hover {
-            background-color: darken($color-primary, 5%);
+    // 反相
+    &.inverse {
+        background-color: lighten($color-inverse, 10%);
+        border: 1px solid lighten($color-inverse, 15%);
+        color: #fff;
+        >thead,
+        >tbody,
+        >tfoot {
+            >tr {
+                border-bottom: 1px solid lighten($color-inverse, 15%);
+            }
         }
-    }
-}
-
-// black color
-.table.inverse {
-    background-color: lighten($color-inverse, 10%);
-    border: 1px solid lighten($color-inverse, 15%);
-    color: #fff;
-    >thead,
-    >tbody,
-    >tfoot {
-        >tr {
-            border-bottom: 1px solid lighten($color-inverse, 15%);
+        >thead {
+            background-color: rgba(0, 0, 0, .1);
         }
-    }
-    >thead {
-        background-color: rgba(0, 0, 0, .1);
-    }
-    &.hover {
-        > tbody > tr:hover {
-            background-color: $color-inverse;
+        &.hover {
+            > tbody > tr:hover {
+                background-color: $color-inverse;
+            }
         }
     }
 }

@@ -37,7 +37,7 @@
 		"start": "run-p build watch",
 		"build": "run-s clean sass autoprefixer",
 		"clean": "rimraf dist",
-		"sass": "node-sass -w --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css",
+		"sass": "node-sass --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
 		"watch": "onchange src -- run-p build",
 		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check ."
