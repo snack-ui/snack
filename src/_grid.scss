@@ -10,6 +10,13 @@ $grid-columns-10: 10;
     }
 }
 
+// offset
+@for $i from 1 through $grid-columns {
+    .col-offset-#{$i} {
+        margin-left: percentage($i / $grid-columns);
+    }
+}
+
 // looping 10-grids
 @for $i from 1 through $grid-columns-10 {
     .cols-10>.col-#{$i} {
@@ -24,30 +31,30 @@ $grid-columns-10: 10;
     }
 }
 
-// float
 $i: 1;
 $list: ".col-#{$i}";
-// get list
+// get list col-*
 @for $i from (1+1) through $grid-columns {
     $list: "#{$list}, .col-#{$i}";
 }
 
 #{$list} {
     float: left;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .row {
     margin-left: -15px;
     margin-right: -15px;
-    #{$list} {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    &.padded {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
     @include clearfix;
 }
 
-/* Flex Grid */
+.no-gutter {
+    margin: 0;
+    #{$list} {
+        padding: 0;
+    }
+}
+
+// Flex Grid

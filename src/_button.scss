@@ -8,58 +8,105 @@
     vertical-align: middle;
     line-height: $line-height-base;
     font-size: $font-size-base;
-    color: #333;
-    background-color: #fff;
-    border: 1px solid darken($btn-color-default, 10%);
+    border: 1px solid transparent;
     border-radius: 3px;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+    // box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
     outline: none;
-    // 设置按钮为块级元素
+    // set button block
     &.fluid {
         display: block;
         width: 100%;
     }
-    // 默认
     &.default {
-        background-color: #f3f3f3;
+        color: #fff;
+        background-color: $color-default;
         &:hover {
-            background-color: darken(#f3f3f3, 5%);
+            background-color: darken($color-default, 5%);
         }
         &:focus {
-            background-color: darken(#f3f3f3, 5%);
+            background-color: darken($color-default, 5%);
         }
         &:active {
-            background-color: darken(#f3f3f3, 5%);
+            background-color: darken($color-default, 5%);
         }
     }
-    // 反相
+    &.primary {
+        color: #fff;
+        background-color: $color-primary;
+        &:hover {
+            background-color: darken($color-primary, 5%);
+        }
+        &:focus {
+            background-color: darken($color-primary, 5%);
+        }
+        &:active {
+            background-color: darken($color-primary, 5%);
+        }
+    }
+    &.info {
+        color: #fff;
+        background-color: $color-info;
+        &:hover {
+            background-color: darken($color-info, 5%);
+        }
+        &:focus {
+            background-color: darken($color-info, 5%);
+        }
+        &:active {
+            background-color: darken($color-info, 5%);
+        }
+    }
+    &.success {
+        color: #fff;
+        background-color: $color-success;
+        &:hover {
+            background-color: darken($color-success, 5%);
+        }
+        &:focus {
+            background-color: darken($color-success, 5%);
+        }
+        &:active {
+            background-color: darken($color-success, 5%);
+        }
+    }
+    &.danger {
+        color: #fff;
+        background-color: $color-danger;
+        &:hover {
+            background-color: darken($color-danger, 5%);
+        }
+        &:focus {
+            background-color: darken($color-danger, 5%);
+        }
+        &:active {
+            background-color: darken($color-danger, 5%);
+        }
+    }
+    &.warning {
+        color: #fff;
+        background-color: $color-warning;
+        &:hover {
+            background-color: darken($color-warning, 5%);
+        }
+        &:focus {
+            background-color: darken($color-warning, 5%);
+        }
+        &:active {
+            background-color: darken($color-warning, 5%);
+        }
+    }
     &.inverse {
         color: #fff;
         background-color: $color-inverse;
-        border: 1px solid darken($color-inverse, 15%);
         &:hover {
-            background-color: lighten($color-inverse, 13%);
+            background-color: lighten($color-inverse, 10%);
         }
         &:focus {
-            background-color: lighten($color-inverse, 13%);
+            background-color: lighten($color-inverse, 10%);
         }
         &:active {
-            background-color: lighten($color-inverse, 13%);
-        }
-    }
-    // 主题
-    &.primary {
-        background-color: $color-primary;
-        border: 1px solid darken($color-primary, 10%);
-        &:hover {
-            background-color: darken($color-primary, 7%);
-        }
-        &:focus {
-            background-color: darken($color-primary, 7%);
-        }
-        &:active {
-            background-color: darken($color-primary, 7%);
+            background-color: lighten($color-inverse, 10%);
         }
     }
 }

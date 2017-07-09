@@ -1,33 +1,27 @@
 // --------------------------
 // variables
 // --------------------------
-
 $grey:#ddd;
-
-$color-primary:#ffcd20;
-
-$color-inverse:#1B1C1D;
-
-// type
+$color-default:#b6c2c9;
+$color-primary:#348fe2;
+$color-info:#49b6d6;
+$color-success:#00acac;
+$color-danger:#ff5b57;
+$color-warning:#f59c1a;
+$color-inverse:#2d353c;
+// typography
 $line-height-base:1.42857143;
-
 $font-size-base:14px;
-
 $text-color:#333;
-
 // grid
 $gutter:2em;
-
-
 // panel
 $panel-border-color-default:$grey;
 $panel-bg-color-primary:$color-primary;
-$panel-border-color-primary:darken($color-primary,10%);
+$panel-border-color-primary:darken($color-primary, 10%);
 $panel-padding:1em;
-
 // button
 $btn-color-default:#eee;
 $btn-color-primary:$color-primary;
 $btn-color-inverse:$color-inverse;
-
 // table

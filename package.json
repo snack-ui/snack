@@ -1,7 +1,7 @@
 {
 	"name": "snack",
 	"version": "0.1.0",
-	"description": "A CSS framework for mobile-first.",
+	"description": "A CSS framework for web.",
 	"homepage": "https://snack.github.io",
 	"repository": "nzbin/snack",
 	"license": "MIT",
@@ -12,8 +12,7 @@
 		"css3",
 		"sass",
 		"front-end",
-		"framework",
-		"mobile-first"
+		"framework"
 	],
 	"dependencies": {
 		"normalize.css": "~5.0.0"
