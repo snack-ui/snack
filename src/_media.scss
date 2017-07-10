@@ -1,0 +1,64 @@
+// --------------------------------------------------
+// Media
+// --------------------------------------------------
+.media {
+    display: table;
+    color: #333;
+    .align-center {
+        text-align: center;
+    }
+    .align-right {
+        text-align: right;
+    }
+    .align-middle {
+        vertical-align: middle;
+    }
+    .align-bottom {
+        vertical-align: bottom;
+    }
+}
+
+.media-center,
+.media-left,
+.media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.media-left,
+.media-right {
+    .img-wrap {
+        width: 5rem;
+    }
+    img {
+        display: block;
+        max-width: 5rem;
+        max-height: 5rem;
+    }
+}
+
+.media-left {
+    padding-right: 10px;
+}
+
+.media-right {
+    padding-left: 10px;
+}
+
+.media-center {
+    width: 10000px;
+    text-align: left;
+    p {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+}
+
+.media-heading {
+    font-size: 15px;
+}
+
+.media-content {
+    font-size: 13px;
+    color: #999;
+}

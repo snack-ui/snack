@@ -96,17 +96,17 @@
             background-color: darken($color-warning, 5%);
         }
     }
-    &.inverse {
+    &.dark {
         color: #fff;
-        background-color: $color-inverse;
+        background-color: $color-dark;
         &:hover {
-            background-color: lighten($color-inverse, 10%);
+            background-color: lighten($color-dark, 10%);
         }
         &:focus {
-            background-color: lighten($color-inverse, 10%);
+            background-color: lighten($color-dark, 10%);
         }
         &:active {
-            background-color: lighten($color-inverse, 10%);
+            background-color: lighten($color-dark, 10%);
         }
     }
 }

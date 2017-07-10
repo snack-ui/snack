@@ -78,15 +78,15 @@ table {
         }
     }
 
-    &.inverse {
-        background-color: lighten($color-inverse, 10%);
-        border: 1px solid lighten($color-inverse, 15%);
+    &.dark {
+        background-color: lighten($color-dark, 10%);
+        border: 1px solid lighten($color-dark, 15%);
         color: #fff;
         >thead,
         >tbody,
         >tfoot {
             >tr {
-                border-bottom: 1px solid lighten($color-inverse, 15%);
+                border-bottom: 1px solid lighten($color-dark, 15%);
             }
         }
         >thead {
@@ -94,7 +94,7 @@ table {
         }
         &.hover {
             > tbody > tr:hover {
-                background-color: $color-inverse;
+                background-color: $color-dark;
             }
         }
     }

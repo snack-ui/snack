@@ -43,7 +43,13 @@ label {
     }
 }
 
-.form-label {}
+.form-label {
+    margin-bottom: 0;
+    padding-top: 3px;
+    &.align-right {
+        text-align: right;
+    }
+}
 
 // label+input
 .form-item {
@@ -63,13 +69,35 @@ label {
     }
 }
 
+// horizontal
 .form-row {
     .form-item {
         margin-right: -15px;
         margin-left: -15px;
     }
 }
-
-.checkbox label {
+// checkbox & radio
+.checkbox,
+.radio {
     display: block;
+    padding-top: 3px;
+    label {
+        font-weight: normal;
+    }
+}
+
+.checkbox-inline,
+.radio-inline {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    margin: 4px 0 0;
+    line-height: normal;
 }
