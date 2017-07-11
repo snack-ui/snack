@@ -4,6 +4,7 @@
 .media {
     display: table;
     color: #333;
+    margin-bottom: 15px;
     .align-center {
         text-align: center;
     }
@@ -25,18 +26,6 @@
     vertical-align: top;
 }
 
-.media-left,
-.media-right {
-    .img-wrap {
-        width: 5rem;
-    }
-    img {
-        display: block;
-        max-width: 5rem;
-        max-height: 5rem;
-    }
-}
-
 .media-left {
     padding-right: 10px;
 }
@@ -48,17 +37,18 @@
 .media-center {
     width: 10000px;
     text-align: left;
+    @at-root {
+        .media-heading {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .media-content {
+            font-size: 13px;
+            color: #999;
+        }
+    }
     p {
         margin: 0;
         margin-bottom: 5px;
     }
-}
-
-.media-heading {
-    font-size: 15px;
-}
-
-.media-content {
-    font-size: 13px;
-    color: #999;
 }

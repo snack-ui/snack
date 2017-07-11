@@ -109,6 +109,143 @@
             background-color: lighten($color-dark, 10%);
         }
     }
+    &.link {
+        color: $color-primary;
+        background-color: transparent;
+        border-color: transparent;
+        &:hover {
+            color: darken($color-primary, 10%);
+            text-decoration: underline;
+            background-color: transparent;
+        }
+        &:focus {
+            color: darken($color-primary, 10%);
+            text-decoration: underline;
+            background-color: transparent;
+        }
+        &:active {
+            color: darken($color-primary, 10%);
+            text-decoration: underline;
+            background-color: transparent;
+        }
+    }
+}
+
+// outline button
+.btn.outline {
+    background-color: transparent;
+    &.default {
+        color: $color-default;
+        border-color: $color-default;
+        &:hover {
+            color: #fff;
+            background-color: $color-default;
+        }
+        &:focus {
+            color: #fff;
+            background-color: $color-default;
+        }
+        &:active {
+            color: #fff;
+            background-color: $color-default;
+        }
+    }
+    &.primary {
+        color: $color-primary;
+        border-color: $color-primary;
+        &:hover {
+            color: #fff;
+            background-color: $color-primary;
+        }
+        &:focus {
+            color: #fff;
+            background-color: $color-primary;
+        }
+        &:active {
+            color: #fff;
+            background-color: $color-primary;
+        }
+    }
+    &.info {
+        color: $color-info;
+        border-color: $color-info;
+        &:hover {
+            color: #fff;
+            background-color: $color-info;
+        }
+        &:focus {
+            color: #fff;
+            background-color: $color-info;
+        }
+        &:active {
+            color: #fff;
+            background-color: $color-info;
+        }
+    }
+    &.success {
+        color: $color-success;
+        border-color: $color-success;
+        &:hover {
+            color: #fff;
+            background-color: $color-success;
+        }
+        &:focus {
+            color: #fff;
+            background-color: $color-success;
+        }
+        &:active {
+            color: #fff;
+            background-color: $color-success;
+        }
+    }
+    &.danger {
+        color: $color-danger;
+        border-color: $color-danger;
+        &:hover {
+            color: #fff;
+            background-color: $color-danger;
+        }
+        &:focus {
+            color: #fff;
+            background-color: $color-danger;
+        }
+        &:active {
+            color: #fff;
+            background-color: $color-danger;
+        }
+    }
+    &.warning {
+        color: $color-warning;
+        border-color: $color-warning;
+        &:hover {
+            color: #fff;
+            background-color: $color-warning;
+        }
+        &:focus {
+            color: #fff;
+            background-color: $color-warning;
+        }
+        &:active {
+            color: #fff;
+            background-color: $color-warning;
+        }
+    }
+    &.dark {
+        color: $color-dark;
+        border-color: $color-dark;
+        &:hover {
+            color: #fff;
+            background-color: $color-dark;
+        }
+        &:focus {
+            color: #fff;
+            background-color: $color-dark;
+        }
+        &:active {
+            color: #fff;
+            background-color: $color-dark;
+        }
+    }
 }
 
 .btn-group {
