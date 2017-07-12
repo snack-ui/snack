@@ -32,7 +32,6 @@ table {
         background-color: #f5f5f5;
         border-bottom: 1px solid #ddd;
     }
-
     &.bordered {
         border: 1px solid #ddd;
         >thead,
@@ -46,10 +45,9 @@ table {
             }
         }
     }
-
     &.striped {
         > tbody > tr:nth-of-type(2n+1) {
-            background-color: #f9f9f9;
+            background-color: $table-striped-bg-color;
         }
     }
     &.hover {
@@ -57,7 +55,6 @@ table {
             background-color: #f5f5f5;
         }
     }
-
     &.primary {
         background-color: $color-primary;
         border: 1px solid darken($color-primary, 10%);
@@ -77,7 +74,6 @@ table {
             }
         }
     }
-
     &.dark {
         background-color: lighten($color-dark, 10%);
         border: 1px solid lighten($color-dark, 15%);
@@ -98,4 +94,9 @@ table {
             }
         }
     }
+}
+
+.table-overflow {
+    min-height: .01%;
+    overflow-x: auto;
 }

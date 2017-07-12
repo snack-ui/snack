@@ -1,0 +1,91 @@
+// --------------------------
+// Boxes
+// --------------------------
+// basic box
+.box {
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+// boxes/box group
+.boxes {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    >.box {
+        border-width: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        &.heading {
+            background-color: #f5f5f5;
+            border-top-left-radius: 3px !important;
+            border-top-right-radius: 3px !important;
+        }
+        &.body {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &.footer {
+            background-color: #f5f5f5;
+            border-bottom-left-radius: 3px !important;
+            border-bottom-right-radius: 3px !important;
+        }
+    }
+    .box + .box {
+        border-top-width: 1px;
+    }
+    &.raised {
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px 1px rgba(34, 36, 38, .12);
+    }
+    &.default {
+        border-color: #ddd;
+    }
+    &.primary {
+        border-color: $color-primary;
+    }
+    &.info {
+        border-color: $color-info;
+    }
+    &.success {
+        border-color: $color-success;
+    }
+    &.danger {
+        border-color: $color-danger;
+    }
+    &.warning {
+        border-color: $color-warning;
+    }
+    // eliminate nested boxes margin-bottom
+    .boxes {
+        margin-bottom: 0;
+    }
+}
+
+// boxes with no border
+.boxes.transparent {
+    border-width: 0;
+    >.box {
+        border-width: 1px;
+        border-radius: 4px;
+        // custom style
+        &.heading {
+            background-color: transparent;
+            margin-bottom: 0;
+            border-width: 0;
+            border-radius: 0;
+        }
+        &.body {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-bottom: 0;
+        }
+        &.footer {
+            background-color: transparent;
+            border-width: 0;
+            border-radius: 0;
+        }
+    }
+}

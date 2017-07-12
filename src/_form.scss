@@ -21,6 +21,10 @@ input[type="file"] {
     display: block;
 }
 
+textarea {
+    resize: vertical;
+}
+
 label {
     display: inline-block;
     font-weight: bold;
