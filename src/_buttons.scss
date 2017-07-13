@@ -1,15 +1,15 @@
 // --------------------------
-// button
+// Buttons
 // --------------------------
 .btn {
     display: inline-block;
     padding: 4px 12px;
     text-align: center;
     vertical-align: middle;
-    line-height: $line-height-base;
-    font-size: $font-size-base;
+    line-height: $btn-line-height;
+    font-size: $btn-font-size;
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: $btn-border-radius;
     // box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
     cursor: pointer;
     outline: none;

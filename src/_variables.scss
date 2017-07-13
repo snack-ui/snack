@@ -1,28 +1,51 @@
 // --------------------------
 // variables
 // --------------------------
-$grey:#ddd;
-$color-default:#b6c2c9;
-$color-primary:#348fe2;
-$color-info:#49b6d6;
-$color-success:#84b547;
-$color-danger:#ff5b57;
-$color-warning:#f59c1a;
-$color-dark:#2d353c;
+
+$grey:                     #ddd;
+$color-default:            #b6c2c9;
+$color-primary:            #348fe2;
+$color-info:               #49b6d6;
+$color-success:            #84b547;
+$color-danger:             #ff5b57;
+$color-warning:            #f59c1a;
+$color-dark:               #2d353c;
+
 // typography
-$line-height-base:1.42857143;
-$font-size-base:14px;
-$text-color:#333;
+$line-height-base:         1.42857143;
+$font-size-base:           14px;
+$text-color:               #333;
+
 // grid
-$gutter:2em;
-// panel
-$panel-border-color-default:$grey;
-$panel-bg-color-primary:$color-primary;
-$panel-border-color-primary:darken($color-primary, 10%);
-$panel-padding:1em;
+$grid-columns:             12;//grid-12
+$grid-columns-10:          10;//grid-10
+$grid-gutter:              30px;
+
 // button
-$btn-color-default:#eee;
-$btn-color-primary:$color-primary;
-$btn-color-inverse:$color-dark;
+$btn-border-radius:        3px;
+$btn-font-size:            $font-size-base;
+$btn-line-height:          $line-height-base;
+
 // table
-$table-striped-bg-color:#f0f3f5;
+$table-border-color:       #ddd;
+$table-head-bg-color:      #f5f5f5;
+$table-striped-bg-color:   #f0f3f5;
+$table-hover-bg-color:     #f5f5f5;
+
+// form
+$input-border-color:       #ddd;
+$input-border-color-focus: $color-primary;
+$input-border-radius:      3px;
+$input-text-color:         #333;
+$input-font-size:          $font-size-base;
+$input-line-height:        $line-height-base;
+
+// boxes
+$box-border-color:         #ddd;
+$box-heading-bg-color:     #f5f5f5;
+$box-footer-bg-color:      #f5f5f5;
+$box-border-radius:        4px;
+$boxes-border-radius:      5px;
+$boxes-border-width:       2px;
+$boxes-box-border-radius:  $boxes-border-radius - $boxes-border-width;
+

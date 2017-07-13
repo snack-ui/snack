@@ -1,0 +1,864 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Snack</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="../dist/snack.css">
+    <link rel="stylesheet" href="css/doc.css">
+    <!-- hightlight.css -->
+    <link href="http://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
+    <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+</head>
+
+<body class="doc">
+    <!--[if lt IE 8]>
+                        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
+    <header class="header">
+        <div class="show">
+            <h1>Snack</h1></div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="content col-9">
+                <section>
+                    <h3 id="introduction">Introduction</h3>
+                    <p> Stylus is great, but… where’s my Compass/Bourbon? Here comes kouto swiss, the missing CSS toolbox for Stylus! kouto swiss gives you a lot of mixins, functions and utilities to code faster, and include the power of caniuse website to make your stylesheets fits your compatibility needs.</p>
+                    <p>browser support</p>
+                    <ul>
+                        <li>Chrome <span class="label label-success">Last 4</span></li>
+                        <li>Microsoft Edge <span class="label label-success">Last 4</span></li>
+                        <li>Firefox <span class="label label-success">Last 4</span></li>
+                        <li>Safari <span class="label label-success">Last 4</span></li>
+                        <li>Opera <span class="label label-success">Last 4</span></li>
+                        <li>Internet Explorer 8+</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 id="grid">Grid</h2>
+                    <div class="example">
+                        <p>basic</p>
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/12</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="grid-box">2/12</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="grid-box">2/12</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="grid-box">2/12</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="grid-box">2/12</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="grid-box">2/12</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="grid-box">2/12</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="grid-box">3/12</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="grid-box">3/12</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="grid-box">3/12</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="grid-box">3/12</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="grid-box">4/12</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="grid-box">4/12</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="grid-box">4/12</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="grid-box">6/12</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="grid-box">6/12</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="grid-box">12/12</div>
+                            </div>
+                        </div>
+                        <p>offset</p>
+                        <div class="row">
+                            <div class="col-4 col-offset-4">
+                                <div class="grid-box">4/12</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="grid-box">4/12</div>
+                            </div>
+                        </div>
+                        <p>collapse</p>
+                        <div class="row no-gutter">
+                            <div class="col-4">
+                                <div class="grid-box">4/12</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="grid-box">4/12</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="grid-box">4/12</div>
+                            </div>
+                        </div>
+                        <p>equal</p>
+                        <div class="row cols-5">
+                            <div class="col-1">
+                                <div class="grid-box">1/5</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/5</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/5</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/5</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/5</div>
+                            </div>
+                        </div>
+                        <div class="row cols-7">
+                            <div class="col-1">
+                                <div class="grid-box">1/7</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/7</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/7</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/7</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/7</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/7</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="grid-box">1/7</div>
+                            </div>
+                        </div>
+                        <p>nested</p>
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="grid-box">1/2*9/12</div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="grid-box">1/2*9/12</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="grid-box">3/12</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="media">Media</h2>
+                    <div class="example">
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                </a>
+                            </div>
+                            <div class="media-center">
+                                <h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                </a>
+                            </div>
+                            <div class="media-center">
+                                <h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            </div>
+                            <div class="media-right">
+                                <a href="#">
+                                    <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="colors">Colors</h2>
+                    <div class="example">
+                        <div class="row no-gutter">
+                            <div class="col-2">
+                                <div class="palette bg-primary">
+                                    <div class="palette-info">primary</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="palette bg-info">
+                                    <div class="palette-info">info</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="palette bg-success">
+                                    <div class="palette-info">success</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="palette bg-danger">
+                                    <div class="palette-info">danger</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="palette bg-warning">
+                                    <div class="palette-info">warning</div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="palette bg-dark">
+                                    <div class="palette-info">dark</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="typography">Typography</h2>
+                    <div class="example">
+                        <h1>h1 heading <small>subtitle</small></h1>
+                        <h2>h2 heading <small>subtitle</small></h2>
+                        <h3>h3 heading <small>subtitle</small></h3>
+                        <h4>h4 heading <small>subtitle</small></h4>
+                        <h5>h5 heading <small>subtitle</small></h5>
+                        <h6>h6 heading <small>subtitle</small></h6>
+                    </div>
+                    <div class="example">
+                        <p class="text-muted">This is an example of Muted Text.</p>
+                        <p>This is an example of Normal Text.</p>
+                        <p class="text-primary">This is an example of Primary Text.</p>
+                        <p class="text-success">This is an example of Success Text.</p>
+                        <p class="text-info">This is an example of Info Text.</p>
+                        <p class="text-warning">This is an example of Warning Text.</p>
+                        <p class="text-danger">This is an example of Danger Text.</p>
+                    </div>
+                    <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    </blockquote>
+                </section>
+                <section>
+                    <h2 id="buttons">Buttons</h2>
+                    <div class="example">
+                        <p>
+                            <button class="btn default">default</button>
+                            <button class="btn primary">primary</button>
+                            <button class="btn info">info</button>
+                            <button class="btn success">success</button>
+                            <button class="btn danger">danger</button>
+                            <button class="btn warning">warning</button>
+                            <button class="btn dark">dark</button>
+                            <button class="btn link">link</button>
+                        </p>
+                        <p>
+                            <button class="btn outline default">default</button>
+                            <button class="btn outline primary">primary</button>
+                            <button class="btn outline info">info</button>
+                            <button class="btn outline success">success</button>
+                            <button class="btn outline danger">danger</button>
+                            <button class="btn outline warning">warning</button>
+                            <button class="btn outline dark">dark</button>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="forms">Forms</h2>
+                    <p>Basic Elements</p>
+                    <form action="" class="row">
+                        <div class="form-item">
+                            <label for="" class="col-2">Normal Input</label>
+                            <div class="col-10">
+                                <input class="form-field" type="text" />
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="col-2">Help Text</label>
+                            <div class="col-10">
+                                <input class="form-field" type="text" />
+                                <span>A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="col-2">Placeholder</label>
+                            <div class="col-10">
+                                <input class="form-field" type="text" placeholder="placeholder" />
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="col-2">Disabled Input</label>
+                            <div class="col-10">
+                                <input class="form-field" type="text" disabled="disabled" />
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="col-2">Textarea</label>
+                            <div class="col-10">
+                                <textarea class="form-field" name="" id="" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <p>Checkbox & Radio</p>
+                    <form action="" class="row">
+                        <div class="form-item">
+                            <label for="" class="col-2">Checkboxes & Radios</label>
+                            <div class="col-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value=""> Option one is this and that—be sure to include why it's great
+                                    </label>
+                                </div>
+                                <div class="checkbox disabled">
+                                    <label>
+                                        <input type="checkbox" value="" disabled=""> Option two is disabled
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" checked=""> Option one is this and that—be sure to include why it's great
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios"> Option two can be something else and selecting it will deselect option one
+                                    </label>
+                                </div>
+                                <div class="radio disabled">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" disabled=""> Option three is disabled
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="col-2">Inline Checkboxes</label>
+                            <div class="col-10">
+                                <div>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option1"> One
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="option2"> Two
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" id="inlineCheckbox3" value="option3"> Three
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" value="option1"> One
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" value="option2"> Two
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" value="option3"> Three
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="col-2">Select</label>
+                            <div class="col-10">
+                                <select class="form-field">
+                                    <option>One</option>
+                                    <option>Two</option>
+                                    <option>Three</option>
+                                    <option>Four</option>
+                                    <option>Five</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label for="" class="col-2">Multiple Select</label>
+                            <div class="col-10">
+                                <select class="form-field" multiple="multiple">
+                                    <option>One</option>
+                                    <option>Two</option>
+                                    <option>Three</option>
+                                    <option>Four</option>
+                                    <option>Five</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section>
+                    <h2 id="tables">Tables</h2>
+                    <p>Basic</p>
+                    <div class="table-overflow">
+                        <table class="table hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Registration Date</th>
+                                    <th>E-mail address</th>
+                                    <th>Premium Plan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Lilki</td>
+                                    <td>September 14, 2013</td>
+                                    <td>jhlilk22@yahoo.com</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Jamie Harington</td>
+                                    <td>January 11, 2014</td>
+                                    <td>jamieharingonton@yahoo.com</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Jill Lewis</td>
+                                    <td>May 11, 2014</td>
+                                    <td>jilsewris22@yahoo.com</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Bordered</p>
+                    <div class="table-overflow">
+                        <table class="table bordered">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2">Name</th>
+                                    <th rowspan="2">Type</th>
+                                    <th rowspan="2">Files</th>
+                                    <th colspan="3">Languages</th>
+                                </tr>
+                                <tr>
+                                    <th>Ruby</th>
+                                    <th>JavaScript</th>
+                                    <th>Python</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Alpha Team</td>
+                                    <td>Project 1</td>
+                                    <td class="right aligned">2</td>
+                                    <td class="center aligned">
+                                        <i class="large green checkmark icon"></i>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">Beta Team</td>
+                                    <td>Project 1</td>
+                                    <td class="right aligned">52</td>
+                                    <td class="center aligned">
+                                        <i class="large green checkmark icon"></i>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Project 2</td>
+                                    <td class="right aligned">12</td>
+                                    <td></td>
+                                    <td class="center aligned">
+                                        <i class="large green checkmark icon"></i>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Project 3</td>
+                                    <td class="right aligned">21</td>
+                                    <td class="center aligned">
+                                        <i class="large green checkmark icon"></i>
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>Striped</p>
+                    <div class="table-overflow">
+                        <table class="table bordered striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Registration Date</th>
+                                    <th>E-mail address</th>
+                                    <th>Premium Plan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Lilki</td>
+                                    <td>September 14, 2013</td>
+                                    <td>jhlilk22@yahoo.com</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Jamie Harington</td>
+                                    <td>January 11, 2014</td>
+                                    <td>jamieharingonton@yahoo.com</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Jill Lewis</td>
+                                    <td>May 11, 2014</td>
+                                    <td>jilsewris22@yahoo.com</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>John Lilki</td>
+                                    <td>September 14, 2013</td>
+                                    <td>jhlilk22@yahoo.com</td>
+                                    <td>No</td>
+                                </tr>
+                                <tr>
+                                    <td>Jamie Harington</td>
+                                    <td>January 11, 2014</td>
+                                    <td>jamieharingonton@yahoo.com</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Jill Lewis</td>
+                                    <td>May 11, 2014</td>
+                                    <td>jilsewris22@yahoo.com</td>
+                                    <td>Yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="boxes">Boxes</h2>
+                    <div class="example">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="boxes default">
+                                    <div class="box">box</div>
+                                    <div class="box">box</div>
+                                    <div class="box">box</div>
+                                </div>
+                                <div class="boxes primary">
+                                    <div class="box heading">box heading</div>
+                                    <div class="box body">box body</div>
+                                    <div class="box footer">box footer</div>
+                                </div>
+                                <div class="boxes info">
+                                    <div class="box heading">box heading</div>
+                                    <div class="box body">box body</div>
+                                    <div class="box footer">box footer</div>
+                                </div>
+                                <div class="boxes success">
+                                    <div class="box heading">box heading</div>
+                                    <div class="box body">box body</div>
+                                    <div class="box footer">box footer</div>
+                                </div>
+                                <div class="boxes danger">
+                                    <div class="box heading">box heading</div>
+                                    <div class="box body">box body</div>
+                                    <div class="box footer">box footer</div>
+                                </div>
+                                <div class="boxes warning">
+                                    <div class="box heading">box heading</div>
+                                    <div class="box body">box body</div>
+                                    <div class="box footer">box footer</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="boxes transparent">
+                                    <div class="box heading">box heading</div>
+                                    <div class="box body">box body</div>
+                                </div>
+                                <div class="boxes raised">
+                                    <div class="box">box heading</div>
+                                    <div class="box body">box body</div>
+                                    <div class="box">box footer</div>
+                                </div>
+                                <div class="boxes">
+                                    <div class="box">
+                                        <div class="boxes">
+                                            <div class="box">box nested</div>
+                                        </div>
+                                    </div>
+                                    <div class="box body">box body</div>
+                                    <div class="box">box footer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 id="helpers">Helpers</h2>
+                    <div class="table-overflow">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="small text-muted text-uppercase"><strong>name</strong>
+                                    </th>
+                                    <th class="small text-muted text-uppercase"><strong>where i can use</strong>
+                                    </th>
+                                    <th class="small text-muted text-uppercase"><strong>description</strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-gray-lighter</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-gray-light</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-gray</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-gray-darker</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-gray-dark</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-muted</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-primary</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-info</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-success</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-warning</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="v-a-m">
+                                        <i class="fa fa-circle fa-lg text-primary"></i>
+                                        <kbd>.text-danger</kbd>
+                                    </td>
+                                    <td class="v-a-m">
+                                        <i>Typography</i>
+                                    </td>
+                                    <td class="v-a-m">
+                                        Changes the color of in the text
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            <div class="sidebar col-3">
+                <ul>
+                    <li>
+                        <a href="#introduction">Introduction</a>
+                    </li>
+                    <li>
+                        <a href="#grid">Grid</a>
+                    </li>
+                    <li>
+                        <a href="#media">Media</a>
+                    </li>
+                    <li>
+                        <a href="#colors">Colors</a>
+                    </li>
+                    <li>
+                        <a href="#typography">Typography</a>
+                    </li>
+                    <li>
+                        <a href="#buttons">Buttons</a>
+                    </li>
+                    <li>
+                        <a href="#forms">Forms</a>
+                    </li>
+                    <li>
+                        <a href="#tables">Tables</a>
+                    </li>
+                    <li>
+                        <a href="#boxes">Boxes</a>
+                    </li>
+                    <li>
+                        <a href="#helpers">Helpers</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">Designed by nzbin. Licensed under the MIT License.</div>
+    </footer>
+    <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')
+    </script>
+    <script src="http://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+    hljs.initHighlightingOnLoad();
+    </script>
+</body>
+
+</html>

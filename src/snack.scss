@@ -1,5 +1,5 @@
 /*
- * snack.css v0.1.0
+ * snack.css v0.9.0
  * Released under the MIT license
  * Copyright 2017 by nzbin
  */
@@ -8,12 +8,12 @@
  @import "mixins";
 
  @import "base";
- @import "type";
+ @import "typography";
  @import "colors";
- @import "button";
+ @import "buttons";
  @import "grid";
  @import "media";
- @import "form";
- @import "table";
+ @import "forms";
+ @import "tables";
  @import "boxes";
- @import "utilities";
+ @import "helpers";

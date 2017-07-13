@@ -1,8 +1,7 @@
 // --------------------------
-// grid
+// Grid
 // --------------------------
-$grid-columns: 12;
-$grid-columns-10: 10;
+
 $i: 1;
 $list: ".col-#{$i}";
 // get list col-*
@@ -43,13 +42,13 @@ $list: ".col-#{$i}";
 #{$list} {
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: $grid-gutter / 2;
+    padding-right: $grid-gutter / 2;
 }
 
 .row {
-    margin-left: -15px;
-    margin-right: -15px;
+    margin-left: $grid-gutter / -2;
+    margin-right: $grid-gutter / -2;
     @include clearfix;
 }
 

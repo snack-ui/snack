@@ -1,5 +1,5 @@
 // --------------------------
-// utilites
+// Helpers
 // --------------------------
 .pull-right {
     float: right;
@@ -19,4 +19,8 @@
     p {
         text-align: center;
     }
+}
+
+.text-ellipsis{
+	@include text-overflow
 }

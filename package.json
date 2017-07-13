@@ -1,7 +1,7 @@
 {
 	"name": "snack",
 	"version": "0.1.0",
-	"description": "A CSS framework for web.",
+	"description": "A CSS framework for mobile-first.",
 	"homepage": "https://snack.github.io",
 	"repository": "nzbin/snack",
 	"license": "MIT",
@@ -26,8 +26,7 @@
 		"npm-run-all": "^2.3.0",
 		"postcss-cli": "^2.6.0",
 		"rimraf": "^2.5.4",
-		"onchange": "^2.5.0",
-		"sass-lint": "^1.10.2"
+		"onchange": "^2.5.0"
 	},
 	"engines": {
 		"node": ">=4"
@@ -37,8 +36,8 @@
 		"build": "run-s clean sass autoprefixer",
 		"clean": "rimraf dist",
 		"sass": "node-sass --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css",
+		"sass-doc": "node-sass --output-style expanded examples/sass/doc.scss examples/css/doc.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
-		"watch": "onchange src -- run-p build",
-		"lint": "sass-lint -c .sasslintrc src --verbose --no-exit && eslint test -c styled && editorconfig-tools check ."
+		"watch": "onchange src -- run-p build"
 	}
 }

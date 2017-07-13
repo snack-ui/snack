@@ -1,0 +1,63 @@
+// --------------------------
+// Tables
+// --------------------------
+table {
+    background: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 15px;
+    >thead,
+    >tbody,
+    >tfoot {
+        >tr {
+            border-bottom: 1px solid $table-border-color;
+            >th,
+            >td {
+                padding: 8px;
+                line-height: 1.428;
+                vertical-align: middle;
+                text-align: left;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+    >thead {
+        background-color: $table-head-bg-color;
+        border-bottom: 1px solid $table-border-color;
+    }
+    &.bordered {
+        border: 1px solid $table-border-color;
+        >thead,
+        >tbody,
+        >tfoot {
+            >tr {
+                >th,
+                >td {
+                    border: 1px solid $table-border-color;
+                }
+            }
+        }
+    }
+    &.striped {
+        > tbody > tr:nth-of-type(2n+2) {
+            background-color: $table-striped-bg-color;
+        }
+    }
+    &.hover {
+        > tbody > tr:hover {
+            background-color: $table-hover-bg-color;
+        }
+    }
+}
+
+.table-overflow {
+    min-height: .01%;
+    overflow-x: auto;
+}
