@@ -627,22 +627,6 @@ hr {
   margin-bottom: 15px;
 }
 
-.media .align-center {
-  text-align: center;
-}
-
-.media .align-right {
-  text-align: right;
-}
-
-.media .align-middle {
-  vertical-align: middle;
-}
-
-.media .align-bottom {
-  vertical-align: bottom;
-}
-
 .media-center,
 .media-left,
 .media-right {
@@ -711,10 +695,6 @@ label {
 .form-label {
   margin-bottom: 0;
   padding-top: 3px;
-}
-
-.form-label.align-right {
-  text-align: right;
 }
 
 .form-item {
@@ -828,7 +808,7 @@ table {
 }
 
 .table.striped > tbody > tr:nth-of-type(2n+2) {
-  background-color: #f0f3f5;
+  background-color: #f5f5f5;
 }
 
 .table.hover > tbody > tr:hover {
@@ -966,6 +946,28 @@ table {
 .center-inline > div,
 .center-inline p {
   text-align: center;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.align-bottom {
+  vertical-align: bottom;
 }
 
 .text-ellipsis {

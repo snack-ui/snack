@@ -82,16 +82,9 @@ body {
   padding: 1px 0;
 }
 
-.content > section > section {
-  margin-bottom: 32px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ff5b57;
-}
-
 .content section > h2,
 .content section > h3 {
   font-weight: bold;
-  color: #ff5b57;
 }
 
 .grid-box {
