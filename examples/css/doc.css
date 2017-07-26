@@ -63,20 +63,6 @@ body {
   color: #555;
 }
 
-.sidebar ul > li > ul {
-  padding-left: 10px;
-}
-
-.sidebar ul > li > ul li {
-  margin-bottom: 5px;
-}
-
-.sidebar ul > li > ul li a {
-  margin-bottom: 0;
-  font-weight: normal;
-  font-size: 12px;
-}
-
 .content > section {
   margin-bottom: 72px;
   padding: 1px 0;
@@ -90,8 +76,13 @@ body {
 .grid-box {
   margin-bottom: 10px;
   text-align: center;
-  background-color: #ddd;
+  background-color: #ffeeed;
   line-height: 2;
+  border: 1px solid #ffb7b5;
+}
+
+.grid-box:hover {
+  background-color: #fbe2e1;
 }
 
 .palette {
