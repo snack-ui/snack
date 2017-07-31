@@ -2,7 +2,11 @@
 // variables
 // --------------------------
 
-$grey:                     #ddd;
+$grey-darker:              #222;
+$grey-dark:                #333;
+$grey:                     #555;
+$grey-light:               #777;
+$grey-lighter:             #eee;
 $color-default:            #b6c2c9;
 $color-primary:            #348fe2;
 $color-info:               #49b6d6;
@@ -10,6 +14,7 @@ $color-success:            #84b547;
 $color-danger:             #ff5b57;
 $color-warning:            #f59c1a;
 $color-dark:               #2d353c;
+$color-white:              #fff;
 
 // typography
 $line-height-base:         1.42857143;
@@ -33,6 +38,7 @@ $table-striped-bg-color:   #f5f5f5;
 $table-hover-bg-color:     #f5f5f5;
 
 // form
+$input-bg-color:           #fff;
 $input-border-color:       #ddd;
 $input-border-color-focus: $color-primary;
 $input-border-radius:      3px;
@@ -41,6 +47,7 @@ $input-font-size:          $font-size-base;
 $input-line-height:        $line-height-base;
 
 // boxes
+$box-bg-color:             #fff;
 $box-border-color:         #ddd;
 $box-heading-bg-color:     #f5f5f5;
 $box-footer-bg-color:      #f5f5f5;
@@ -48,4 +55,4 @@ $box-border-radius:        4px;
 $boxes-border-radius:      5px;
 $boxes-border-width:       2px;
 $boxes-box-border-radius:  $boxes-border-radius - $boxes-border-width;
-
+$boxes-rasied-shadow:      rgba(34, 36, 38, .12);

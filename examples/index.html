@@ -1,22 +1,23 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="theme-dark" lang="">
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>Snack</title>
 	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/snack.css">
+	<link rel="stylesheet" href="css/snack-themes.css">
 	<link rel="stylesheet" href="css/doc.css">
 	<!-- hightlight.css -->
 	<link href="http://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css" rel="stylesheet">
 	<script src="http://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 </head>
 
-<body class="doc">
+<body class="">
 	<!--[if lt IE 8]>
 						<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 				<![endif]-->
@@ -31,14 +32,28 @@
 					<h2 id="introduction">Introduction</h2>
 					<p>Snack is a mini CSS framework for web. But the purpose of this framework is not mini size. For more reason,I hope the framework can simplified the class name which we used and provide a more generally components.</p>
 					<p>Browser Support</p>
-					<ul>
-						<li>Chrome <span class="label label-success">Last 4</span></li>
-						<li>Microsoft Edge <span class="label label-success">Last 4</span></li>
-						<li>Firefox <span class="label label-success">Last 4</span></li>
-						<li>Safari <span class="label label-success">Last 4</span></li>
-						<li>Opera <span class="label label-success">Last 4</span></li>
-						<li>Internet Explorer 8+</li>
-					</ul>
+					<table class="table bordered">
+						<thead>
+							<tr>
+								<th>IE</th>
+								<th>Edge</th>
+								<th>Firefox</th>
+								<th>Chrome</th>
+								<th>Safari</th>
+								<th>Opera</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>8.0</td>
+								<td>12.0</td>
+								<td>29.0</td>
+								<td>10.0</td>
+								<td>5.1</td>
+								<td>9.5</td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
 				<section>
 					<h2 id="grid">Grid</h2>
@@ -229,8 +244,20 @@
 									<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
 								</a>
 							</div>
-							<div class="media-center">
-								<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							</div>
+						</div>
+						<div class="media">
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+							</div>
+							<div class="media-right">
+								<a href="#">
+									<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+								</a>
 							</div>
 						</div>
 						<div class="media">
@@ -239,13 +266,20 @@
 									<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
 								</a>
 							</div>
-							<div class="media-center">
-								<h4 class="media-heading">Media heading</h4> Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-							</div>
-							<div class="media-right">
-								<a href="#">
+							<div class="media-body">
+								<h4 class="media-heading">Media heading</h4>
+								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+								<div class="media">
+									<div class="media-left">
+										<a href="#">
 									<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
 								</a>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Media heading</h4>
+										<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -291,23 +325,12 @@
 					<h2 id="typography">Typography</h2>
 					<p>Headings</p>
 					<div class="example">
-						<h1>h1 heading <small>subtitle</small></h1>
-						<h2>h2 heading <small>subtitle</small></h2>
-						<h3>h3 heading <small>subtitle</small></h3>
-						<h4>h4 heading <small>subtitle</small></h4>
-						<h5>h5 heading <small>subtitle</small></h5>
-						<h6>h6 heading <small>subtitle</small></h6>
-					</div>
-					<h4>Contextual colors</h4>
-					<p>Convey meaning through color with a handful of emphasis utility classes. These may also be applied to links and will darken on hover just like our default link styles.</p>
-					<div class="example">
-						<p class="text-muted">This is an example of Muted Text.</p>
-						<p>This is an example of Normal Text.</p>
-						<p class="text-primary">This is an example of Primary Text.</p>
-						<p class="text-success">This is an example of Success Text.</p>
-						<p class="text-info">This is an example of Info Text.</p>
-						<p class="text-warning">This is an example of Warning Text.</p>
-						<p class="text-danger">This is an example of Danger Text.</p>
+						<h1>h1 Example Heading <small>subtitle</small></h1>
+						<h2>h2 Example Heading <small>subtitle</small></h2>
+						<h3>h3 Example Heading <small>subtitle</small></h3>
+						<h4>h4 Example Heading <small>subtitle</small></h4>
+						<h5>h5 Example Heading <small>subtitle</small></h5>
+						<h6>h6 Example Heading <small>subtitle</small></h6>
 					</div>
 				</section>
 				<section>
@@ -667,15 +690,6 @@
 						</div>
 						<div class="row">
 							<div class="col-6">
-								<p>Transparent Boxes</p>
-								<div class="boxes transparent">
-									<div class="box heading">box heading</div>
-									<div class="box body">box body</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-6">
 								<p>Raised Boxes</p>
 								<div class="boxes raised">
 									<div class="box">box heading</div>
@@ -698,6 +712,15 @@
 								</div>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-6">
+								<p>Secondary Boxes / Custom Style</p>
+								<div class="boxes secondary">
+									<div class="box heading">box heading</div>
+									<div class="box body">box body</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</section>
 				<section>
@@ -706,146 +729,60 @@
 						<table class="table">
 							<thead>
 								<tr>
-									<th class="small text-uppercase"><strong>name</strong>
-									</th>
-									<th class="small text-uppercase"><strong>where i can use</strong>
-									</th>
-									<th class="small text-uppercase"><strong>description</strong>
-									</th>
+									<th class="small text-uppercase"><strong>name</strong></th>
+									<th class="small text-uppercase"><strong>where i can use</strong></th>
+									<th class="small text-uppercase"><strong>description</strong></th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
-										<kbd>.text-gray-lighter</kbd>
-									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
-										<kbd>.text-gray-light</kbd>
-									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
-										<kbd>.text-gray</kbd>
-									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
-										<kbd>.text-gray-darker</kbd>
-									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
-										<kbd>.text-gray-dark</kbd>
-									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
 										<kbd>.text-muted</kbd>
 									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
+									<td><i>Typography</i></td>
+									<td>Changes the color of in the text</td>
 								</tr>
 								<tr>
 									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
 										<kbd>.text-primary</kbd>
 									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
+									<td><i>Typography</i></td>
+									<td>Changes the color of in the text</td>
 								</tr>
 								<tr>
 									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
 										<kbd>.text-info</kbd>
 									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
+									<td><i>Typography</i></td>
+									<td>Changes the color of in the text</td>
 								</tr>
 								<tr>
 									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
 										<kbd>.text-success</kbd>
 									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
+									<td><i>Typography</i></td>
+									<td>Changes the color of in the text</td>
 								</tr>
 								<tr>
 									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
 										<kbd>.text-warning</kbd>
 									</td>
-									<td>
-										<i>Typography</i>
-									</td>
-									<td>
-										Changes the color of in the text
-									</td>
+									<td><i>Typography</i></td>
+									<td>Changes the color of in the text</td>
 								</tr>
 								<tr>
 									<td>
-										<i class="fa fa-circle fa-lg text-primary"></i>
 										<kbd>.text-danger</kbd>
 									</td>
+									<td><i>Typography</i></td>
+									<td>Changes the color of in the text</td>
+								</tr>
+								<tr>
 									<td>
-										<i>Typography</i>
+										<kbd>.text-white</kbd>
 									</td>
-									<td>
-										Changes the color of in the text
-									</td>
+									<td><i>Typography</i></td>
+									<td>Changes the color of in the text</td>
 								</tr>
 							</tbody>
 						</table>

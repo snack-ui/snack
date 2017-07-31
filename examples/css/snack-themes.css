@@ -1,0 +1,87 @@
+/*
+ * snack-themes.css v0.9.0
+ * Released under the MIT license
+ * Copyright 2017 by nzbin
+ */
+.theme-dark body {
+  background-color: #212121;
+  color: #5c5c5c;
+}
+
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6 {
+  color: #fff;
+}
+
+.theme-dark .table > thead > tr,
+.theme-dark .table > tbody > tr,
+.theme-dark .table > tfoot > tr {
+  border-bottom-color: #2d2d2d;
+}
+
+.theme-dark .table > thead {
+  background-color: #242424;
+  border-bottom-color: #2d2d2d;
+}
+
+.theme-dark .table.bordered {
+  border-color: #2d2d2d;
+}
+
+.theme-dark .table.bordered > thead > tr > th,
+.theme-dark .table.bordered > thead > tr > td,
+.theme-dark .table.bordered > tbody > tr > th,
+.theme-dark .table.bordered > tbody > tr > td,
+.theme-dark .table.bordered > tfoot > tr > th,
+.theme-dark .table.bordered > tfoot > tr > td {
+  border-color: #2d2d2d;
+}
+
+.theme-dark .table.striped > tbody > tr:nth-of-type(2n+2) {
+  background-color: #242424;
+}
+
+.theme-dark .table.hover > tbody > tr:hover {
+  background-color: #242424;
+}
+
+.theme-dark .form-field {
+  border-color: #404040;
+  background-color: #353535;
+  color: #fff;
+}
+
+.theme-dark .form-field:focus {
+  background-color: #282828;
+  border-color: #333333;
+}
+
+.theme-dark .box {
+  border-color: #2d2d2d;
+  background-color: #1A1A1A;
+}
+
+.theme-dark .boxes > .box.heading {
+  background-color: #242424;
+}
+
+.theme-dark .boxes > .box.footer {
+  background-color: #242424;
+}
+
+.theme-dark .boxes.raised {
+  border-color: #2d2d2d;
+  box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.175);
+}
+
+.theme-dark .boxes.default {
+  border-color: #2d2d2d;
+}
+
+.theme-dark .boxes.secondary > .box.heading {
+  background-color: transparent;
+}

@@ -2,41 +2,43 @@
 // Media
 // --------------------------------------------------
 .media {
-    display: table;
-    color: #333;
-    margin-bottom: 15px;
+	display: table;
+	margin-top: 15px;
+
+	&:first-child {
+		margin-top: 0;
+	}
 }
 
-.media-center,
+.media-body,
 .media-left,
 .media-right {
-    display: table-cell;
-    vertical-align: top;
+	display: table-cell;
+	vertical-align: top;
 }
 
 .media-left {
-    padding-right: 10px;
+	padding-right: 10px;
 }
 
 .media-right {
-    padding-left: 10px;
+	padding-left: 10px;
 }
 
-.media-center {
-    width: 10000px;
-    text-align: left;
-    @at-root {
-        .media-heading {
-            margin-top: 0;
-            margin-bottom: 5px;
-        }
-        .media-content {
-            font-size: 13px;
-            color: #999;
-        }
-    }
-    p {
-        margin: 0;
-        margin-bottom: 5px;
-    }
+.media-body {
+	width: 10000px;
+	text-align: left;
+	@at-root {
+		.media-heading {
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+		.media-content {
+			font-size: 13px;
+		}
+	}
+	p {
+		margin: 0;
+		margin-bottom: 5px;
+	}
 }

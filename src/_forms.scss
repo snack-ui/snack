@@ -18,86 +18,95 @@
 // input[type="tel"]
 // input[type="color"]
 input[type="file"] {
-    display: block;
+	display: block;
 }
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 label {
-    display: inline-block;
-    font-weight: bold;
-    margin-bottom: 5px;
+	display: inline-block;
+	font-weight: bold;
+	margin-bottom: 5px;
 }
 
 .form-field {
-    display: block;
-    width: 100%;
-    padding: 4px 8px;
-    border: 1px solid $input-border-color;
-    border-radius: $input-border-radius;
-    font-size: $input-font-size;
-    line-height: $input-line-height;
-    color: $input-text-color;
-    &:focus {
-        border-color: $input-border-color-focus;
-        outline: 0;
-    }
+	display: block;
+	width: 100%;
+	padding: 4px 8px;
+	border: 1px solid $input-border-color;
+	border-radius: $input-border-radius;
+	background-color: $input-bg-color;
+	font-size: $input-font-size;
+	line-height: $input-line-height;
+	color: $input-text-color;
+	&:focus {
+		border-color: $input-border-color-focus;
+		outline: 0;
+	}
 }
 
 .form-label {
-    margin-bottom: 0;
-    padding-top: 3px;
+	margin-bottom: 0;
+	padding-top: 3px;
 }
 
 // label+input
 .form-item {
-    margin-bottom: 15px;
-    @include clearfix;
+	margin-bottom: 15px;
+	@include clearfix;
 }
 
 .form-inline {
-    input[type="file"],
-    .form-item {
-        display: inline-block;
-    }
-    .form-field {
-        display: inline-block;
-        width: auto;
-        vertical-align: middle;
-    }
+	input[type="file"],
+	.form-item {
+		display: inline-block;
+	}
+	.form-field {
+		display: inline-block;
+		width: auto;
+		vertical-align: middle;
+	}
 }
 
 // horizontal
 .form-row {
-    .form-item {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
+	.form-item {
+		margin-right: -15px;
+		margin-left: -15px;
+	}
 }
+
 // checkbox & radio
 .checkbox,
 .radio {
-    display: block;
-    padding-top: 3px;
-    label {
-        font-weight: normal;
-    }
+	display: block;
+	padding-top: 3px;
+	label {
+		font-weight: normal;
+	}
 }
 
 .checkbox-inline,
 .radio-inline {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
-    font-weight: normal;
-    cursor: pointer;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.checkbox-inline+.checkbox-inline,
+.radio-inline+.radio-inline {
+	margin-left: 10px;
 }
 
 [type="checkbox"],
 [type="radio"] {
-    margin: 4px 0 0;
-    line-height: normal;
+	position: relative;
+	top: 2px;
+	margin: 4px 4px 0 0;
+	line-height: normal;
 }

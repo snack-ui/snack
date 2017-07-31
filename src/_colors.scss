@@ -2,40 +2,55 @@
 // Colors
 // --------------------------
 // background color
-.bg-primary{
-	background-color:$color-primary;
+.bg-primary {
+	background-color: $color-primary;
 }
-.bg-info{
-	background-color:$color-info;
+
+.bg-info {
+	background-color: $color-info;
 }
-.bg-success{
-	background-color:$color-success;
+
+.bg-success {
+	background-color: $color-success;
 }
-.bg-danger{
-	background-color:$color-danger;
+
+.bg-danger {
+	background-color: $color-danger;
 }
-.bg-warning{
-	background-color:$color-warning;
+
+.bg-warning {
+	background-color: $color-warning;
 }
-.bg-dark{
-	background-color:$color-dark;
+
+.bg-dark {
+	background-color: $color-dark;
 }
+
 // text color
-.text-muted{
-	color:$grey;
+.text-muted {
+	color: $grey;
 }
-.text-primary{
-	color:$color-primary;
+
+.text-primary {
+	color: $color-primary;
 }
-.text-info{
-	color:$color-info;
+
+.text-info {
+	color: $color-info;
 }
-.text-success{
-	color:$color-success;
+
+.text-success {
+	color: $color-success;
 }
-.text-danger{
-	color:$color-danger;
+
+.text-danger {
+	color: $color-danger;
 }
-.text-warning{
-	color:$color-warning;
+
+.text-warning {
+	color: $color-warning;
+}
+
+.text-white {
+	color: $color-white;
 }

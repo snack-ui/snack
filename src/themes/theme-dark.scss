@@ -1,0 +1,122 @@
+// --------------------------
+// variables
+// --------------------------
+$grey-darker: #262626;
+$grey-dark: #2d2d2d;
+$grey: #383838;
+$grey-light: #444444;
+$grey-lighter: #5c5c5c;
+
+// typography
+$text-color: $grey-lighter;
+
+// table
+$table-border-color: $grey-dark;
+$table-head-bg-color: #242424;
+$table-striped-bg-color: #242424;
+$table-hover-bg-color: #242424;
+
+// form
+$input-bg-color: #353535;
+$input-bg-color-focus: darken($input-bg-color, 5%);
+$input-border-color: #404040;
+$input-border-color-focus: darken($input-border-color, 5%);
+$input-text-color: #fff;
+
+// boxes
+$box-bg-color: #1A1A1A;
+$box-border-color: $grey-dark;
+$box-heading-bg-color: #242424;
+$box-footer-bg-color: #242424;
+$boxes-rasied-shadow: rgba(0, 0, 0, .175);
+
+// --------------------------
+// Theme-dark
+// --------------------------
+.theme-dark {
+	body {
+		background-color: #212121;
+		color: $text-color;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #fff;
+	}
+	.table {
+		>thead,
+		>tbody,
+		>tfoot {
+			>tr {
+				border-bottom-color: $table-border-color;
+			}
+		}
+		>thead {
+			background-color: $table-head-bg-color;
+			border-bottom-color: $table-border-color;
+		}
+		&.bordered {
+			border-color: $table-border-color;
+			>thead,
+			>tbody,
+			>tfoot {
+				>tr {
+					>th,
+					>td {
+						border-color: $table-border-color;
+					}
+				}
+			}
+		}
+		&.striped {
+			>tbody>tr:nth-of-type(2n+2) {
+				background-color: $table-striped-bg-color;
+			}
+		}
+		&.hover {
+			>tbody>tr:hover {
+				background-color: $table-hover-bg-color;
+			}
+		}
+	}
+	.form-field {
+		border-color: $input-border-color;
+		background-color: $input-bg-color;
+		color: $input-text-color;
+		&:focus {
+			background-color: $input-bg-color-focus;
+			border-color: $input-border-color-focus;
+		}
+	}
+	.box {
+		border-color: $box-border-color;
+		background-color: $box-bg-color;
+	}
+	.boxes {
+		>.box {
+			&.heading {
+				background-color: $box-heading-bg-color;
+			}
+			&.footer {
+				background-color: $box-footer-bg-color;
+			}
+		}
+		&.raised {
+			border-color: $box-border-color;
+			box-shadow: 0 2px 10px 3px $boxes-rasied-shadow;
+		}
+		&.default {
+			border-color: $box-border-color;
+		}
+		&.secondary {
+			>.box {
+				&.heading {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
