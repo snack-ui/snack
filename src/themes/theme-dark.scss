@@ -34,6 +34,7 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
 // Theme-dark
 // --------------------------
 .theme-dark {
+	background-color: #212121;
 	body {
 		background-color: #212121;
 		color: $text-color;
@@ -114,6 +115,9 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
 		&.secondary {
 			>.box {
 				&.heading {
+					background-color: transparent;
+				}
+				&.footer {
 					background-color: transparent;
 				}
 			}

@@ -60,7 +60,7 @@
 				<section>
 					<h2 id="grid">Grid</h2>
 					<div class="example">
-						<p>basic</p>
+						<p>Basic</p>
 						<div class="row">
 							<div class="col-1">
 								<div class="grid-box">1/12</div>
@@ -157,7 +157,7 @@
 								<div class="grid-box">12/12</div>
 							</div>
 						</div>
-						<p>offset</p>
+						<p>Offset</p>
 						<div class="row">
 							<div class="col-4 col-offset-4">
 								<div class="grid-box">4/12</div>
@@ -166,7 +166,7 @@
 								<div class="grid-box">4/12</div>
 							</div>
 						</div>
-						<p>collapse</p>
+						<p>Collapse / No-gutter</p>
 						<div class="row no-gutter">
 							<div class="col-4">
 								<div class="grid-box">4/12</div>
@@ -178,7 +178,7 @@
 								<div class="grid-box">4/12</div>
 							</div>
 						</div>
-						<p>equal</p>
+						<p>Equal</p>
 						<div class="row cols-5">
 							<div class="col-1">
 								<div class="grid-box">1/5</div>
@@ -219,7 +219,7 @@
 								<div class="grid-box">1/7</div>
 							</div>
 						</div>
-						<p>nested</p>
+						<p>Nested</p>
 						<div class="row">
 							<div class="col-9">
 								<div class="row">
@@ -364,7 +364,7 @@
 				<section>
 					<h2 id="forms">Forms</h2>
 					<p>Basic Elements</p>
-					<form action="" class="row">
+					<form action="" class="form-row">
 						<div class="form-item">
 							<label for="" class="col-2">Normal Input</label>
 							<div class="col-10">
@@ -398,7 +398,7 @@
 						</div>
 					</form>
 					<p>Checkbox & Radio</p>
-					<form action="" class="row">
+					<form action="" class="form-row">
 						<div class="form-item">
 							<label for="" class="col-2">Checkboxes & Radios</label>
 							<div class="col-10">
@@ -632,7 +632,7 @@
 					<div class="example">
 						<div class="row">
 							<div class="col-6">
-								<p>Basic Box list</p>
+								<p>Basic Box List</p>
 								<div class="boxes default">
 									<div class="box">box</div>
 									<div class="box">box</div>
@@ -640,11 +640,11 @@
 								</div>
 							</div>
 							<div class="col-6">
-								<p>Basic Box with heading and footer</p>
-								<div class="boxes default">
-									<div class="box heading">box heading</div>
-									<div class="box body">box body</div>
-									<div class="box footer">box footer</div>
+								<p>Basic Boxes without Background</p>
+								<div class="boxes transparent default">
+									<div class="box">box</div>
+									<div class="box">box</div>
+									<div class="box">box</div>
 								</div>
 							</div>
 						</div>
@@ -692,6 +692,24 @@
 						</div>
 						<div class="row">
 							<div class="col-6">
+								<p>Basic Boxes with heading and footer</p>
+								<div class="boxes default">
+									<div class="box heading">box heading</div>
+									<div class="box body">box body</div>
+									<div class="box footer">box footer</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<p>Secondary Boxes with heading and footer</p>
+								<div class="boxes secondary">
+									<div class="box heading">box heading</div>
+									<div class="box body">box body</div>
+									<div class="box footer">box footer</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-6">
 								<p>Raised Boxes</p>
 								<div class="boxes raised">
 									<div class="box">box heading</div>
@@ -714,15 +732,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-6">
-								<p>Secondary Boxes / Custom Style</p>
-								<div class="boxes secondary">
-									<div class="box heading">box heading</div>
-									<div class="box body">box body</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</section>
 				<section>
@@ -731,9 +740,9 @@
 						<table class="table">
 							<thead>
 								<tr>
-									<th class="small text-uppercase"><strong>name</strong></th>
-									<th class="small text-uppercase"><strong>where i can use</strong></th>
-									<th class="small text-uppercase"><strong>description</strong></th>
+									<th class="text-uppercase"><strong>name</strong></th>
+									<th class="text-uppercase"><strong>where i can use</strong></th>
+									<th class="text-uppercase"><strong>description</strong></th>
 								</tr>
 							</thead>
 							<tbody>

@@ -18,7 +18,7 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #333;
-  line-height: 1.42857;
+  line-height: 1.42858;
 }
 
 a {
@@ -140,7 +140,7 @@ hr {
   padding: 4px 12px;
   text-align: center;
   vertical-align: middle;
-  line-height: 1.42857;
+  line-height: 1.42858;
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 3px;
@@ -698,7 +698,7 @@ label {
   border-radius: 3px;
   background-color: #fff;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.42858;
   color: #333;
 }
 
@@ -716,15 +716,6 @@ label {
   margin-bottom: 15px;
 }
 
-.form-item:before, .form-item:after {
-  content: " ";
-  display: table;
-}
-
-.form-item:after {
-  clear: both;
-}
-
 .form-inline input[type="file"],
 .form-inline .form-item {
   display: inline-block;
@@ -739,6 +730,15 @@ label {
 .form-row .form-item {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.form-row .form-item:before, .form-row .form-item:after {
+  content: " ";
+  display: table;
+}
+
+.form-row .form-item:after {
+  clear: both;
 }
 
 .checkbox,
@@ -854,6 +854,7 @@ table {
   border: 2px solid transparent;
   border-radius: 5px;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .boxes > .box {
@@ -920,6 +921,10 @@ table {
 
 .boxes.warning {
   border-color: #f59c1a;
+}
+
+.boxes.transparent {
+  background-color: transparent;
 }
 
 .boxes.transparent .box {

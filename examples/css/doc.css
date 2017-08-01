@@ -29,6 +29,7 @@ body {
   position: -webkit-sticky;
   top: 0;
   padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .sidebar ul {

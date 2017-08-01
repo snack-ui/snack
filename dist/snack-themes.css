@@ -3,6 +3,10 @@
  * Released under the MIT license
  * Copyright 2017 by nzbin
  */
+.theme-dark {
+  background-color: #212121;
+}
+
 .theme-dark body {
   background-color: #212121;
   color: #5c5c5c;
@@ -83,5 +87,9 @@
 }
 
 .theme-dark .boxes.secondary > .box.heading {
+  background-color: transparent;
+}
+
+.theme-dark .boxes.secondary > .box.footer {
   background-color: transparent;
 }
