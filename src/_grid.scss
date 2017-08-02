@@ -1,62 +1,37 @@
 // --------------------------
 // Grid
 // --------------------------
-
-$i: 1;
-$list: ".col-#{$i}";
-// get list col-*
-@for $i from (1+1) through $grid-columns {
-    $list: "#{$list}, .col-#{$i}";
-}
-// breakpoint 768
-@media(min-width:768px) {
-    // looping 12-grids default
-    @for $i from 1 through $grid-columns {
-        .col-#{$i} {
-            width: percentage($i / $grid-columns);
-        }
-    }
-    // offset
-    @for $i from 1 through $grid-columns {
-        .col-offset-#{$i} {
-            margin-left: percentage($i / $grid-columns);
-        }
-    }
-    // looping 10-grids
-    @for $i from 1 through $grid-columns-10 {
-        .cols-10>.col-#{$i} {
-            width: percentage($i / $grid-columns-10);
-        }
-    }
-    // equal looping
-    @for $i from 1 through $grid-columns {
-        .cols-#{$i}>.col-1 {
-            width: percentage(1 / $i);
-        }
-    }
-    #{$list} {
-        float: left;
-    }
-}
-
-#{$list} {
-    position: relative;
-    min-height: 1px;
-    padding-left: $grid-gutter / 2;
-    padding-right: $grid-gutter / 2;
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .row {
-    margin-left: $grid-gutter / -2;
-    margin-right: $grid-gutter / -2;
-    @include clearfix;
+	margin-left: $grid-gutter / -2;
+	margin-right: $grid-gutter / -2;
+
+	@include clearfix;
+
+	&.no-gutter {
+		margin-left: 0;
+		margin-right: 0;
+
+		@include make-grid-columns-without-gutter();
+	}
 }
 
-.no-gutter {
-    margin: 0;
-    #{$list} {
-        padding: 0;
-    }
-}
+@include make-grid-columns();
 
-// Flex Grid
+// breakpoint 768
+@media(min-width:576px) {
+	// looping 12-grids default
+	@include loop-grid-columns(12);
+	// looping 10-grids
+	@include loop-grid-columns(10);
+	// equal looping
+	@include loop-grid-columns-equal(12);
+	// grid float
+	@include make-grid-columns-float();
+}

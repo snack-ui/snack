@@ -3,12 +3,72 @@
 // --------------------------
 // clearfix
 @mixin clearfix() {
-    &:before,
-    &:after {
-        content: " "; // 1
-        display: table; // 2
-    }
-    &:after {
-        clear: both;
-    }
+	&:before,
+	&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+// grid
+@mixin make-grid-columns($i: 1, $list: ".col-#{$i}") {
+	@for $i from (1 + 1) through $grid-columns {
+		$list: "#{$list}, .col-#{$i}";
+	}
+	#{$list} {
+		position: relative;
+		min-height: 1px;
+		padding-left: ceil(($grid-gutter / 2));
+		padding-right: floor(($grid-gutter / 2));
+	}
+}
+
+@mixin make-grid-columns-without-gutter($i: 1, $list: ".col-#{$i}") {
+	@for $i from (1 + 1) through $grid-columns {
+		$list: "#{$list}, .col-#{$i}";
+	}
+	#{$list} {
+		padding: 0;
+	}
+}
+
+@mixin make-grid-columns-float($i: 1, $list: ".col-#{$i}") {
+	@for $i from (1 + 1) through $grid-columns {
+		$list: "#{$list}, .col-#{$i}";
+	}
+	#{$list} {
+		float: left;
+	}
+}
+
+@mixin loop-grid-columns($columns) {
+	@for $i from 1 through $columns {
+		@if($columns==12) {
+			.col-#{$i} {
+				width: percentage($i / $columns);
+			}
+			.col-offset-#{$i} {
+				margin-left: percentage($i / $columns);
+			}
+		}
+		@else {
+			.cols-#{$columns}>.col-#{$i} {
+				width: percentage($i / $columns);
+			}
+			.cols-#{$columns}>.col-offset-#{$i} {
+				margin-left: percentage($i / $columns);
+			}
+		}
+	}
+}
+
+@mixin loop-grid-columns-equal($columns) {
+	@for $i from 1 through $columns {
+		.cols-#{$i}>.col-1 {
+			width: percentage(1 / $i);
+		}
+	}
 }
