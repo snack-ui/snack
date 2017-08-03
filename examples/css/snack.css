@@ -34,7 +34,6 @@ h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit;
 }
 
 small,
@@ -96,7 +95,7 @@ hr {
   background-color: #f59c1a;
 }
 
-.bg-dark {
+.bg-inverted {
   background-color: #2d353c;
 }
 
@@ -248,20 +247,20 @@ hr {
   background-color: #eb900a;
 }
 
-.btn.dark {
+.btn.inverted {
   color: #fff;
   background-color: #2d353c;
 }
 
-.btn.dark:hover {
+.btn.inverted:hover {
   background-color: #434f59;
 }
 
-.btn.dark:focus {
+.btn.inverted:focus {
   background-color: #434f59;
 }
 
-.btn.dark:active {
+.btn.inverted:active {
   background-color: #434f59;
 }
 
@@ -413,22 +412,22 @@ hr {
   background-color: #f59c1a;
 }
 
-.btn.outline.dark {
+.btn.outline.inverted {
   color: #2d353c;
   border-color: #2d353c;
 }
 
-.btn.outline.dark:hover {
+.btn.outline.inverted:hover {
   color: #fff;
   background-color: #2d353c;
 }
 
-.btn.outline.dark:focus {
+.btn.outline.inverted:focus {
   color: #fff;
   background-color: #2d353c;
 }
 
-.btn.outline.dark:active {
+.btn.outline.inverted:active {
   color: #fff;
   background-color: #2d353c;
 }
@@ -952,6 +951,10 @@ table {
 
 .boxes.warning {
   border-color: #f59c1a;
+}
+
+.boxes.inverted {
+  border-color: #2d353c;
 }
 
 .boxes.transparent {

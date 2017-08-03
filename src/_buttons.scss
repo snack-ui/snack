@@ -95,17 +95,17 @@
             background-color: darken($color-warning, 5%);
         }
     }
-    &.dark {
+    &.inverted {
         color: #fff;
-        background-color: $color-dark;
+        background-color: $color-inverted;
         &:hover {
-            background-color: lighten($color-dark, 10%);
+            background-color: lighten($color-inverted, 10%);
         }
         &:focus {
-            background-color: lighten($color-dark, 10%);
+            background-color: lighten($color-inverted, 10%);
         }
         &:active {
-            background-color: lighten($color-dark, 10%);
+            background-color: lighten($color-inverted, 10%);
         }
     }
     &.link {
@@ -229,20 +229,20 @@
             background-color: $color-warning;
         }
     }
-    &.dark {
-        color: $color-dark;
-        border-color: $color-dark;
+    &.inverted {
+        color: $color-inverted;
+        border-color: $color-inverted;
         &:hover {
             color: #fff;
-            background-color: $color-dark;
+            background-color: $color-inverted;
         }
         &:focus {
             color: #fff;
-            background-color: $color-dark;
+            background-color: $color-inverted;
         }
         &:active {
             color: #fff;
-            background-color: $color-dark;
+            background-color: $color-inverted;
         }
     }
 }

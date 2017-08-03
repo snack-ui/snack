@@ -68,6 +68,9 @@
 	&.warning {
 		border-color: $color-warning;
 	}
+	&.inverted {
+		border-color: $color-inverted;
+	}
 	&.transparent {
 		background-color: transparent;
 		.box {

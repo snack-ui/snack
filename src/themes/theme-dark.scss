@@ -6,6 +6,7 @@ $grey-dark: #2d2d2d;
 $grey: #383838;
 $grey-light: #444444;
 $grey-lighter: #5c5c5c;
+$color-inverted : #fff;
 
 // typography
 $text-color: $grey-lighter;
@@ -35,6 +36,7 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
 // --------------------------
 .theme-dark {
 	background-color: #212121;
+	color: $text-color;
 	body {
 		background-color: #212121;
 		color: $text-color;
@@ -111,6 +113,9 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
 		}
 		&.default {
 			border-color: $box-border-color;
+		}
+		&.inverted {
+			border-color: $color-inverted;
 		}
 		&.secondary {
 			>.box {

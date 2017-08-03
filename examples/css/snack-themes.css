@@ -5,6 +5,7 @@
  */
 .theme-dark {
   background-color: #212121;
+  color: #5c5c5c;
 }
 
 .theme-dark body {
@@ -84,6 +85,10 @@
 
 .theme-dark .boxes.default {
   border-color: #2d2d2d;
+}
+
+.theme-dark .boxes.inverted {
+  border-color: #fff;
 }
 
 .theme-dark .boxes.secondary > .box.heading {
