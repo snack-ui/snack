@@ -706,6 +706,16 @@ hr {
   margin-bottom: 5px;
 }
 
+.avatar {
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.avatar img {
+  display: block;
+}
+
 input[type="file"] {
   display: block;
 }
