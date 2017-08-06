@@ -737,6 +737,10 @@ label {
   outline: 0;
 }
 
+.form-field[disabled] {
+  cursor: not-allowed;
+}
+
 .form-label {
   margin-bottom: 0;
   padding-top: 3px;
@@ -773,36 +777,61 @@ label {
 
 .checkbox,
 .radio {
+  position: relative;
   display: block;
-  padding-top: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .checkbox label,
 .radio label {
-  font-weight: normal;
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkbox.disabled label,
+.radio.disabled label {
+  cursor: not-allowed;
+}
+
+.checkbox + .checkbox,
+.radio + .radio {
+  margin-top: -5px;
 }
 
 .checkbox-inline,
 .radio-inline {
   position: relative;
   display: inline-block;
+  padding-left: 20px;
   margin-bottom: 0;
+  font-weight: 400;
   vertical-align: middle;
-  font-weight: normal;
   cursor: pointer;
 }
 
 .checkbox-inline + .checkbox-inline,
 .radio-inline + .radio-inline {
+  margin-top: 0;
   margin-left: 10px;
 }
 
-[type="checkbox"],
-[type="radio"] {
-  position: relative;
-  top: 2px;
-  margin: 4px 4px 0 0;
-  line-height: normal;
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: -20px;
+}
+
+fieldset[disabled] .form-control,
+fieldset[disabled] .checkbox label,
+fieldset[disabled] .radio label {
+  cursor: not-allowed;
 }
 
 table {
