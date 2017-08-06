@@ -1,6 +1,6 @@
 # Snack
 
-Snack is a CSS framework for mobile and web.
+Snack is a mini CSS framework for web. But the main purpose of this framework is not mini size. For more reason,I hope the framework can simplified the class name which we used and provide a more generally components.
 
 ## License
 
