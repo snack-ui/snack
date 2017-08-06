@@ -3,7 +3,7 @@ body {
   height: 100%;
 }
 
-:not(.grid-box):not(.btn):not(.form-field):not(.form-field option):not(tr) {
+:not(.grid-box):not(.btn):not(.form-field):not(option):not(tr) {
   transition: background-color .5s;
 }
 
