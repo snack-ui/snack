@@ -16,7 +16,10 @@
 	<link rel="stylesheet" href="css/doc.css">
 	<!-- hightlight.css -->
 	<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css">
-	<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 
 <body class="theme-dark">
@@ -53,7 +56,7 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td>8.0</td>
+									<td>9.0</td>
 									<td>12.0</td>
 									<td>29.0</td>
 									<td>10.0</td>
@@ -386,29 +389,24 @@
 							<label for="" class="col-2">Checkboxes & Radios</label>
 							<div class="col-10">
 								<div class="checkbox">
-									<label>
-										<input type="checkbox" value=""> Option one is this and that—be sure to include why it's great
-									</label>
+									<input type="checkbox" id="checkbox1" value="">
+									<label for="checkbox1">Option one is this and that—be sure to include why it's great</label>
 								</div>
 								<div class="checkbox disabled">
-									<label>
-										<input type="checkbox" value="" disabled=""> Option two is disabled
-									</label>
+									<input type="checkbox" id="checkbox2" value="" disabled="">
+									<label for="checkbox2">Option two is disabled</label>
 								</div>
 								<div class="radio">
-									<label>
-										<input type="radio" name="optionsRadios" checked=""> Option one is this and that—be sure to include why it's great
-									</label>
+									<input type="radio" name="optionsRadios" id="optionsRadios1" checked="">
+									<label for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
 								</div>
 								<div class="radio">
-									<label>
-										<input type="radio" name="optionsRadios"> Option two can be something else and selecting it will deselect option one
-									</label>
+									<input type="radio" name="optionsRadios" id="optionsRadios2" >
+									<label for="optionsRadios2">Option two can be something else and selecting it will deselect option one</label>
 								</div>
 								<div class="radio disabled">
-									<label>
-										<input type="radio" name="optionsRadios" disabled=""> Option three is disabled
-									</label>
+									<input type="radio" name="optionsRadios" id="optionsRadios3" disabled="">
+									<label for="optionsRadios3">Option three is disabled</label>
 								</div>
 							</div>
 						</div>
@@ -416,26 +414,32 @@
 							<label for="" class="col-2">Inline Checkboxes</label>
 							<div class="col-10">
 								<div>
-									<label class="checkbox-inline">
-										<input type="checkbox" value="option1"> One
-									</label>
-									<label class="checkbox-inline">
-										<input type="checkbox" value="option2"> Two
-									</label>
-									<label class="checkbox-inline">
-										<input type="checkbox" id="inlineCheckbox3" value="option3"> Three
-									</label>
+									<div class="checkbox inline">
+										<input type="checkbox" id="inlineCheckbox1" value="option1">
+										<label for="inlineCheckbox1">One</label>
+									</div>
+									<div class="checkbox inline">
+										<input type="checkbox" id="inlineCheckbox2" value="option2">
+										<label for="inlineCheckbox2">Two</label>
+									</div>
+									<div class="checkbox inline">
+										<input type="checkbox" id="inlineCheckbox3" value="option3">
+										<label for="inlineCheckbox3">Three</label>
+									</div>
 								</div>
 								<div>
-									<label class="radio-inline">
-										<input type="radio" name="inlineRadioOptions" value="option1"> One
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="inlineRadioOptions" value="option2"> Two
-									</label>
-									<label class="radio-inline">
-										<input type="radio" name="inlineRadioOptions" value="option3"> Three
-									</label>
+									<div class="radio inline">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadioOptions1" value="option1">
+										<label for="inlineRadioOptions1">One</label>
+									</div>
+									<div class="radio inline">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadioOptions2" value="option2">
+										<label for="inlineRadioOptions2">Two</label>
+									</div>
+									<div class="radio inline">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadioOptions3" value="option3">
+										<label for="inlineRadioOptions3">Three</label>
+									</div>
 								</div>
 							</div>
 						</div>

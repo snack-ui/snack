@@ -791,12 +791,15 @@ label {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 20px;
+  cursor: pointer;
 }
 
 .checkbox label,
 .radio label {
+  position: relative;
+  display: inline-block;
   min-height: 20px;
-  padding-left: 20px;
   margin-bottom: 0;
   font-weight: 400;
   cursor: pointer;
@@ -807,32 +810,27 @@ label {
   cursor: not-allowed;
 }
 
+.checkbox.inline,
+.radio.inline {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
 .checkbox + .checkbox,
 .radio + .radio {
   margin-top: -5px;
 }
 
-.checkbox-inline,
-.radio-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  font-weight: 400;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-.checkbox-inline + .checkbox-inline,
-.radio-inline + .radio-inline {
+.checkbox.inline + .checkbox.inline,
+.radio.inline + .radio.inline {
   margin-top: 0;
   margin-left: 10px;
 }
 
 .checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"],
-.radio input[type="radio"],
-.radio-inline input[type="radio"] {
+.radio input[type="radio"] {
   position: absolute;
   margin-top: 4px;
   margin-left: -20px;
