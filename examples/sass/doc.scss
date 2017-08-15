@@ -61,6 +61,14 @@ body {
 	}
 }
 
+.example {
+	>.btn,
+	>.btns {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
 //grid
 .grid-box {
 	margin: 10px 0;

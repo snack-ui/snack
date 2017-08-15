@@ -60,6 +60,12 @@ body {
   border-bottom: 1px solid #eee;
 }
 
+.example > .btn,
+.example > .btns {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .grid-box {
   margin: 10px 0;
   text-align: center;
