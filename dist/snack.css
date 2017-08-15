@@ -432,23 +432,48 @@ hr {
   background-color: #2d353c;
 }
 
-.btn-group {
-  display: table;
+.btns {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.btn-group > .btn {
-  display: table-cell;
+.btns > .btn {
+  position: relative;
+  float: left;
   border-radius: 0;
   margin-right: -1px;
 }
 
-.btn-group > .btn:first-child {
+.btns > .btn:first-child {
+  margin-left: 0;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
-.btn-group > .btn:last-child {
+.btns > .btn:last-child {
   border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.btns.vertical > .btn {
+  position: relative;
+  display: block;
+  float: none;
+  border-radius: 0;
+  width: 100%;
+  max-width: 100%;
+  margin-top: -1px;
+}
+
+.btns.vertical > .btn:first-child {
+  margin-top: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.btns.vertical > .btn:last-child {
+  border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
 
@@ -816,6 +841,7 @@ label {
   margin-top: 0;
   margin-bottom: 0;
   vertical-align: middle;
+  font-weight: 400;
 }
 
 .checkbox + .checkbox,
