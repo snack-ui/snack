@@ -36,7 +36,7 @@
 		"build": "run-s clean sass autoprefixer",
 		"clean": "rimraf dist",
 		"sass": "node-sass --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css && node-sass --output-style expanded src/themes/snack-themes.scss dist/snack-themes.css && node-sass --output-style compressed src/themes/snack-themes.scss dist/snack-themes.min.css",
-		"sass-doc": "node-sass --output-style expanded examples/sass/doc.scss examples/css/doc.css",
+		"sass-doc": "node-sass --output-style expanded examples/sass/doc.scss examples/css/doc.css && node-sass --output-style expanded src/snack.scss examples/css/snack.css && node-sass --output-style expanded src/themes/snack-themes.scss examples/css/snack-themes.css",
 		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
 		"watch": "onchange src -- run-p build"
 	}
