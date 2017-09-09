@@ -1,43 +1,43 @@
 {
-	"name": "snack",
-	"version": "0.1.0",
-	"description": "A CSS framework for mobile-first.",
-	"homepage": "https://snack.github.io",
-	"repository": "nzbin/snack",
-	"license": "MIT",
-	"author": "nzbin <nzb329@163.com>",
-	"main": "dist/snack.css",
-	"keywords": [
-		"css",
-		"css3",
-		"sass",
-		"front-end",
-		"framework"
-	],
-	"dependencies": {
-		"normalize.css": "~5.0.0"
-	},
-	"devDependencies": {
-		"autoprefixer": "^6.5.4",
-		"editorconfig-tools": "^0.1.1",
-		"eslint": "^3.14.0",
-		"eslint-config-styled": "^0.0.0",
-		"node-sass": "^3.13.1",
-		"npm-run-all": "^2.3.0",
-		"postcss-cli": "^2.6.0",
-		"rimraf": "^2.5.4",
-		"onchange": "^2.5.0"
-	},
-	"engines": {
-		"node": ">=4"
-	},
-	"scripts": {
-		"start": "run-p build watch",
-		"build": "run-s clean sass autoprefixer",
-		"clean": "rimraf dist",
-		"sass": "node-sass --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css && node-sass --output-style expanded src/themes/snack-themes.scss dist/snack-themes.css && node-sass --output-style compressed src/themes/snack-themes.scss dist/snack-themes.min.css",
-		"sass-doc": "node-sass --output-style expanded examples/sass/doc.scss examples/css/doc.css && node-sass --output-style expanded src/snack.scss examples/css/snack.css && node-sass --output-style expanded src/themes/snack-themes.scss examples/css/snack-themes.css",
-		"autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
-		"watch": "onchange src -- run-p build"
-	}
+  "name": "snack",
+  "version": "0.9.1",
+  "description": "A CSS framework for mobile-first.",
+  "homepage": "https://snack.github.io",
+  "repository": "nzbin/snack",
+  "license": "MIT",
+  "author": "nzbin <nzb329@163.com>",
+  "main": "dist/snack.css",
+  "keywords": [
+    "css",
+    "css3",
+    "sass",
+    "front-end",
+    "framework"
+  ],
+  "dependencies": {
+    "normalize.css": "~5.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.4",
+    "editorconfig-tools": "^0.1.1",
+    "eslint": "^3.14.0",
+    "eslint-config-styled": "^0.0.0",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^2.3.0",
+    "onchange": "^2.5.0",
+    "postcss-cli": "^2.6.0",
+    "rimraf": "^2.5.4"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "start": "run-p build watch",
+    "build": "run-s clean sass autoprefixer",
+    "clean": "rimraf dist",
+    "sass": "node-sass --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css && node-sass --output-style expanded src/themes/snack-themes.scss dist/snack-themes.css && node-sass --output-style compressed src/themes/snack-themes.scss dist/snack-themes.min.css",
+    "sass-doc": "node-sass --output-style expanded examples/sass/doc.scss examples/css/doc.css && node-sass --output-style expanded src/snack.scss examples/css/snack.css && node-sass --output-style expanded src/themes/snack-themes.scss examples/css/snack-themes.css",
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
+    "watch": "onchange src -- run-p build"
+  }
 }

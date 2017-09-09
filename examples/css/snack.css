@@ -779,6 +779,7 @@ label {
 .form-label {
   margin-bottom: 0;
   padding-top: 3px;
+  text-align: right;
 }
 
 .form-item {
@@ -1078,7 +1079,7 @@ table {
 }
 
 .center-inline > div,
-.center-inline p {
+.center-inline > p {
   text-align: center;
 }
 
@@ -1088,12 +1089,20 @@ table {
   margin-right: auto;
 }
 
+.align-left {
+  text-align: left;
+}
+
 .align-center {
   text-align: center;
 }
 
 .align-right {
   text-align: right;
+}
+
+.align-top {
+  vertical-align: top;
 }
 
 .align-middle {

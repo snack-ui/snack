@@ -2,947 +2,1165 @@
 <html class="no-js" lang="">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Snack</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg">
-	<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/snack.css">
-	<link rel="stylesheet" href="css/snack-themes.css">
-	<link rel="stylesheet" href="css/doc.css">
-	<!-- hightlight.css -->
-	<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/default.min.css">
-	<!--[if lt IE 9]>
-		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Snack</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/snack.css">
+  <link rel="stylesheet" href="css/snack-themes.css">
+  <link rel="stylesheet" href="css/doc.css">
+  <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai-sublime.min.css"> -->
+  <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
-<body class="theme-dark">
-	<!--[if lt IE 8]>
-			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
-	<header class="header">
-		<div class="show">
-			<h1>Snack</h1>
-			<p>
-				<a class="btn primary" href="https://github.com/nzbin/snack"><i class="fa fa-github-alt" aria-hidden="true"></i> Github</a>
-				<button class="btn danger" id="changeTheme"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
-			</p>
-		</div>
-	</header>
-	<main class="container">
-		<div class="row">
-			<div class="content col-9">
-				<section>
-					<h2 id="introduction">Introduction</h2>
-					<p>Snack is a mini CSS framework for web. But the main purpose of this framework is not mini size. For more reason,I hope the framework can simplified the class name which we used and provide a more generally components.</p>
-					<p>Browser Support</p>
-					<div class="table-overflow">
-						<table class="table bordered">
-							<thead>
-								<tr>
-									<th>IE</th>
-									<th>Edge</th>
-									<th>Firefox</th>
-									<th>Chrome</th>
-									<th>Safari</th>
-									<th>Opera</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>9.0</td>
-									<td>12.0</td>
-									<td>29.0</td>
-									<td>10.0</td>
-									<td>5.1</td>
-									<td>9.5</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
-				<section>
-					<h2 id="grid">Grid</h2>
-					<div class="example">
-						<p>Basic 12 Grid</p>
-						<div class="row">
-							<div class="col-1">
-								<div class="grid-box">1/12</div>
-							</div>
-							<div class="col-2">
-								<div class="grid-box">2/12</div>
-							</div>
-							<div class="col-3">
-								<div class="grid-box">3/12</div>
-							</div>
-							<div class="col-3">
-								<div class="grid-box">3/12</div>
-							</div>
-							<div class="col-3">
-								<div class="grid-box">3/12</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-3">
-								<div class="grid-box">3/12</div>
-							</div>
-							<div class="col-4">
-								<div class="grid-box">4/12</div>
-							</div>
-							<div class="col-5">
-								<div class="grid-box">5/12</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-5">
-								<div class="grid-box">5/12</div>
-							</div>
-							<div class="col-7">
-								<div class="grid-box">7/12</div>
-							</div>
-						</div>
-						<p>Basic 10 Grid</p>
-						<div class="row cols-10">
-							<div class="col-1">
-								<div class="grid-box">1/10</div>
-							</div>
-							<div class="col-2">
-								<div class="grid-box">2/10</div>
-							</div>
-							<div class="col-3">
-								<div class="grid-box">3/10</div>
-							</div>
-							<div class="col-4">
-								<div class="grid-box">4/10</div>
-							</div>
-						</div>
-						<div class="row cols-10">
-							<div class="col-2">
-								<div class="grid-box">2/10</div>
-							</div>
-							<div class="col-8">
-								<div class="grid-box">8/10</div>
-							</div>
-						</div>
-						<p>Offset</p>
-						<div class="row">
-							<div class="col-6 col-offset-3">
-								<div class="grid-box">6/12</div>
-							</div>
-						</div>
-						<div class="row cols-10">
-							<div class="col-5 col-offset-5">
-								<div class="grid-box">5/10</div>
-							</div>
-						</div>
-						<p>No-gutter</p>
-						<div class="row no-gutter">
-							<div class="col-4">
-								<div class="grid-box">4/12</div>
-							</div>
-							<div class="col-4">
-								<div class="grid-box">4/12</div>
-							</div>
-							<div class="col-4">
-								<div class="grid-box">4/12</div>
-							</div>
-						</div>
-						<div class="row no-gutter cols-10">
-							<div class="col-2">
-								<div class="grid-box">2/10</div>
-							</div>
-							<div class="col-3">
-								<div class="grid-box">3/10</div>
-							</div>
-							<div class="col-5">
-								<div class="grid-box">5/10</div>
-							</div>
-						</div>
-						<p>Equal</p>
-						<div class="row cols-5">
-							<div class="col-1">
-								<div class="grid-box">1/5</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/5</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/5</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/5</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/5</div>
-							</div>
-						</div>
-						<div class="row cols-7">
-							<div class="col-1">
-								<div class="grid-box">1/7</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/7</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/7</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/7</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/7</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/7</div>
-							</div>
-							<div class="col-1">
-								<div class="grid-box">1/7</div>
-							</div>
-						</div>
-						<p>Nested</p>
-						<div class="row">
-							<div class="col-9">
-								<div class="row">
-									<div class="col-6">
-										<div class="grid-box">1/2*9/12</div>
-									</div>
-									<div class="col-6">
-										<div class="grid-box">1/2*9/12</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-3">
-								<div class="grid-box">3/12</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h2 id="media">Media</h2>
-					<div class="example">
-						<div class="media">
-							<div class="media-left">
-								<a href="#" class="avatar">
-									<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-								</a>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Media heading</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-body">
-								<h4 class="media-heading">Media heading</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-							</div>
-							<div class="media-right">
-								<a href="#" class="avatar">
-									<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-								</a>
-							</div>
-						</div>
-						<div class="media">
-							<div class="media-left">
-								<a href="#" class="avatar">
-									<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-								</a>
-							</div>
-							<div class="media-body">
-								<h4 class="media-heading">Media heading</h4>
-								<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-								<div class="media">
-									<div class="media-left">
-										<a href="#" class="avatar">
-											<img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
-										</a>
-									</div>
-									<div class="media-body">
-										<h4 class="media-heading">Media heading</h4>
-										<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h2 id="colors">Colors</h2>
-					<div class="example">
-						<div class="row">
-							<div class="col-3">
-								<div class="palette bg-primary">
-									<div class="palette-info">primary</div>
-								</div>
-							</div>
-							<div class="col-3">
-								<div class="palette bg-info">
-									<div class="palette-info">info</div>
-								</div>
-							</div>
-							<div class="col-3">
-								<div class="palette bg-success">
-									<div class="palette-info">success</div>
-								</div>
-							</div>
-							<div class="col-3">
-								<div class="palette bg-danger">
-									<div class="palette-info">danger</div>
-								</div>
-							</div>
-							<div class="col-3">
-								<div class="palette bg-warning">
-									<div class="palette-info">warning</div>
-								</div>
-							</div>
-							<div class="col-3">
-								<div class="palette bg-inverted">
-									<div class="palette-info">inverted</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h2 id="typography">Typography</h2>
-					<p>Headings</p>
-					<div class="example">
-						<h1>h1 Example Heading <small>subtitle</small></h1>
-						<h2>h2 Example Heading <small>subtitle</small></h2>
-						<h3>h3 Example Heading <small>subtitle</small></h3>
-						<h4>h4 Example Heading <small>subtitle</small></h4>
-						<h5>h5 Example Heading <small>subtitle</small></h5>
-						<h6>h6 Example Heading <small>subtitle</small></h6>
-					</div>
-				</section>
-				<section>
-					<h2 id="buttons">Buttons</h2>
-					<div class="example">
-						<p>Colors Options</p>
-						<button class="btn default">default</button>
-						<button class="btn primary">primary</button>
-						<button class="btn info">info</button>
-						<button class="btn success">success</button>
-						<button class="btn danger">danger</button>
-						<button class="btn warning">warning</button>
-						<button class="btn inverted">inverted</button>
-						<button class="btn link">link</button>
-						<p>Colors Outline Options</p>
-						<button class="btn outline default">default</button>
-						<button class="btn outline primary">primary</button>
-						<button class="btn outline info">info</button>
-						<button class="btn outline success">success</button>
-						<button class="btn outline danger">danger</button>
-						<button class="btn outline warning">warning</button>
-						<button class="btn outline inverted">inverted</button>
-						<p>Button Group</p>
-						<div class="btns">
-							<button class="btn default">default</button>
-							<button class="btn default">default</button>
-							<button class="btn default">default</button>
-						</div>
-						<div class="btns">
-							<button class="btn primary">primary</button>
-							<button class="btn primary">primary</button>
-							<button class="btn primary">primary</button>
-						</div>
-						<p>Button Group Vertical</p>
-						<div class="btns vertical">
-							<button class="btn default">default</button>
-							<button class="btn default">default</button>
-							<button class="btn default">default</button>
-						</div>
-						<div class="btns vertical">
-							<button class="btn primary">primary</button>
-							<button class="btn primary">primary</button>
-							<button class="btn primary">primary</button>
-						</div>
-						<p>Button Group Outline</p>
-						<div class="btns">
-							<button class="btn outline default">default</button>
-							<button class="btn outline default">default</button>
-							<button class="btn outline default">default</button>
-						</div>
-						<div class="btns">
-							<button class="btn outline primary">primary</button>
-							<button class="btn outline primary">primary</button>
-							<button class="btn outline primary">primary</button>
-						</div>
-						<p>Button Group Outline Vertical</p>
-						<div class="btns vertical">
-							<button class="btn outline default">default</button>
-							<button class="btn outline default">default</button>
-							<button class="btn outline default">default</button>
-						</div>
-						<div class="btns vertical">
-							<button class="btn outline primary">primary</button>
-							<button class="btn outline primary">primary</button>
-							<button class="btn outline primary">primary</button>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h2 id="forms">Forms</h2>
-					<p>Basic Elements</p>
-					<form action="" class="form-row">
-						<div class="form-item">
-							<label for="" class="col-2">Normal Input</label>
-							<div class="col-10">
-								<input class="form-field" type="text" />
-							</div>
-						</div>
-						<div class="form-item">
-							<label for="" class="col-2">Help Text</label>
-							<div class="col-10">
-								<input class="form-field" type="text" />
-								<span>A block of help text that breaks onto a new line and may extend beyond one line.</span>
-							</div>
-						</div>
-						<div class="form-item">
-							<label for="" class="col-2">Placeholder</label>
-							<div class="col-10">
-								<input class="form-field" type="text" placeholder="placeholder" />
-							</div>
-						</div>
-						<div class="form-item">
-							<label for="" class="col-2">Disabled Input</label>
-							<div class="col-10">
-								<input class="form-field" type="text" disabled="disabled" />
-							</div>
-						</div>
-						<div class="form-item">
-							<label for="" class="col-2">Textarea</label>
-							<div class="col-10">
-								<textarea class="form-field" name="" id="" rows="3"></textarea>
-							</div>
-						</div>
-					</form>
-					<p>Checkbox & Radio</p>
-					<form action="" class="form-row">
-						<div class="form-item">
-							<label for="" class="col-2">Checkboxes & Radios</label>
-							<div class="col-10">
-								<div class="checkbox">
-									<input type="checkbox" id="checkbox1" value="">
-									<label for="checkbox1">Option one is this and that—be sure to include why it's great</label>
-								</div>
-								<div class="checkbox disabled">
-									<input type="checkbox" id="checkbox2" value="" disabled="">
-									<label for="checkbox2">Option two is disabled</label>
-								</div>
-								<div class="radio">
-									<input type="radio" name="optionsRadios" id="optionsRadios1" checked="">
-									<label for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
-								</div>
-								<div class="radio">
-									<input type="radio" name="optionsRadios" id="optionsRadios2">
-									<label for="optionsRadios2">Option two can be something else and selecting it will deselect option one</label>
-								</div>
-								<div class="radio disabled">
-									<input type="radio" name="optionsRadios" id="optionsRadios3" disabled="">
-									<label for="optionsRadios3">Option three is disabled</label>
-								</div>
-							</div>
-						</div>
-						<div class="form-item">
-							<label for="" class="col-2">Inline Checkboxes</label>
-							<div class="col-10">
-								<div>
-									<div class="checkbox inline">
-										<input type="checkbox" id="inlineCheckbox1" value="option1">
-										<label for="inlineCheckbox1">One</label>
-									</div>
-									<div class="checkbox inline">
-										<input type="checkbox" id="inlineCheckbox2" value="option2">
-										<label for="inlineCheckbox2">Two</label>
-									</div>
-									<div class="checkbox inline">
-										<input type="checkbox" id="inlineCheckbox3" value="option3">
-										<label for="inlineCheckbox3">Three</label>
-									</div>
-								</div>
-								<div>
-									<div class="radio inline">
-										<input type="radio" name="inlineRadioOptions" id="inlineRadioOptions1" value="option1">
-										<label for="inlineRadioOptions1">One</label>
-									</div>
-									<div class="radio inline">
-										<input type="radio" name="inlineRadioOptions" id="inlineRadioOptions2" value="option2">
-										<label for="inlineRadioOptions2">Two</label>
-									</div>
-									<div class="radio inline">
-										<input type="radio" name="inlineRadioOptions" id="inlineRadioOptions3" value="option3">
-										<label for="inlineRadioOptions3">Three</label>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="form-item">
-							<label for="" class="col-2">Select</label>
-							<div class="col-10">
-								<select class="form-field">
-									<option>One</option>
-									<option>Two</option>
-									<option>Three</option>
-									<option>Four</option>
-									<option>Five</option>
-								</select>
-							</div>
-						</div>
-						<div class="form-item">
-							<label for="" class="col-2">Multiple Select</label>
-							<div class="col-10">
-								<select class="form-field" multiple="multiple">
-									<option>One</option>
-									<option>Two</option>
-									<option>Three</option>
-									<option>Four</option>
-									<option>Five</option>
-								</select>
-							</div>
-						</div>
-					</form>
-				</section>
-				<section>
-					<h2 id="tables">Tables</h2>
-					<p>Basic</p>
-					<div class="table-overflow">
-						<table class="table hover">
-							<thead>
-								<tr>
-									<th>Name</th>
-									<th>Registration Date</th>
-									<th>E-mail address</th>
-									<th>Premium Plan</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Nicky Almera</td>
-									<td>September 14, 2013</td>
-									<td>nicky@hotmail.com</td>
-									<td>No</td>
-								</tr>
-								<tr>
-									<td>Edmund Wong</td>
-									<td>January 11, 2014</td>
-									<td>edmund@yahoo.com</td>
-									<td>Yes</td>
-								</tr>
-								<tr>
-									<td>Harvinder Singh</td>
-									<td>May 11, 2014</td>
-									<td>harvinder@gmail.com</td>
-									<td>Yes</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<p>Bordered</p>
-					<div class="table-overflow">
-						<table class="table bordered">
-							<thead>
-								<tr>
-									<th>Name</th>
-									<th>Registration Date</th>
-									<th>E-mail address</th>
-									<th>Premium Plan</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Nicky Almera</td>
-									<td>September 14, 2013</td>
-									<td>nicky@hotmail.com</td>
-									<td>No</td>
-								</tr>
-								<tr>
-									<td>Edmund Wong</td>
-									<td>January 11, 2014</td>
-									<td>edmund@yahoo.com</td>
-									<td>Yes</td>
-								</tr>
-								<tr>
-									<td>Harvinder Singh</td>
-									<td>May 11, 2014</td>
-									<td>harvinder@gmail.com</td>
-									<td>Yes</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<p>Striped</p>
-					<div class="table-overflow">
-						<table class="table bordered striped">
-							<thead>
-								<tr>
-									<th>Name</th>
-									<th>Registration Date</th>
-									<th>E-mail address</th>
-									<th>Premium Plan</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Nicky Almera</td>
-									<td>September 14, 2013</td>
-									<td>nicky@hotmail.com</td>
-									<td>No</td>
-								</tr>
-								<tr>
-									<td>Edmund Wong</td>
-									<td>January 11, 2014</td>
-									<td>edmund@yahoo.com</td>
-									<td>Yes</td>
-								</tr>
-								<tr>
-									<td>Harvinder Singh</td>
-									<td>May 11, 2014</td>
-									<td>harvinder@gmail.com</td>
-									<td>Yes</td>
-								</tr>
-								<tr>
-									<td>Terry Khoo</td>
-									<td>June 6, 2013</td>
-									<td>terry@gmail.com</td>
-									<td>No</td>
-								</tr>
-								<tr>
-									<td>Jamie Harington</td>
-									<td>January 15, 2014</td>
-									<td>jharingonton@yahoo.com</td>
-									<td>Yes</td>
-								</tr>
-								<tr>
-									<td>Jill Lewis</td>
-									<td>May 1, 2014</td>
-									<td>jilsewris22@yahoo.com</td>
-									<td>Yes</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
-				<section>
-					<h2 id="boxes">Boxes</h2>
-					<div class="example">
-						<div class="row">
-							<div class="col-6">
-								<p>Basic Box List</p>
-								<div class="boxes default">
-									<div class="box">box</div>
-									<div class="box">box</div>
-									<div class="box">box</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<p>Basic Boxes without Background</p>
-								<div class="boxes transparent default">
-									<div class="box">box</div>
-									<div class="box">box</div>
-									<div class="box">box</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<p>Primary</p>
-								<div class="boxes primary">
-									<div class="box">box</div>
-									<div class="box">box</div>
-									<div class="box">box</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<p>Info</p>
-								<div class="boxes info">
-									<div class="box">box</div>
-									<div class="box">box</div>
-									<div class="box">box</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<p>Success</p>
-								<div class="boxes success">
-									<div class="box">box</div>
-									<div class="box">box</div>
-									<div class="box">box</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<p>Danger</p>
-								<div class="boxes danger">
-									<div class="box">box</div>
-									<div class="box">box</div>
-									<div class="box">box</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<p>Warning</p>
-								<div class="boxes warning">
-									<div class="box">box</div>
-									<div class="box">box</div>
-									<div class="box">box</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<p>Inverted</p>
-								<div class="boxes inverted">
-									<div class="box">box</div>
-									<div class="box">box</div>
-									<div class="box">box</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-6">
-								<p>Basic Boxes with heading and footer</p>
-								<div class="boxes default">
-									<div class="box heading">box heading</div>
-									<div class="box body">box body</div>
-									<div class="box footer">box footer</div>
-								</div>
-							</div>
-							<div class="col-6">
-								<p>Secondary Boxes with heading and footer</p>
-								<div class="boxes secondary">
-									<div class="box heading">box heading</div>
-									<div class="box body">box body</div>
-									<div class="box footer">box footer</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-6">
-								<p>Raised Boxes</p>
-								<div class="boxes raised">
-									<div class="box">box heading</div>
-									<div class="box body">box body</div>
-									<div class="box">box footer</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-6">
-								<p>Nested Boxes</p>
-								<div class="boxes default">
-									<div class="box">
-										<div class="boxes default">
-											<div class="box">box nested</div>
-										</div>
-									</div>
-									<div class="box body">box body</div>
-									<div class="box">box footer</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section>
-					<h2 id="helpers">Helpers</h2>
-					<div class="table-overflow">
-						<table class="table">
-							<thead>
-								<tr>
-									<th class="text-uppercase"><strong>name</strong></th>
-									<th class="text-uppercase"><strong>where i can use</strong></th>
-									<th class="text-uppercase"><strong>description</strong></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>
-										<kbd>.text-muted</kbd>
-									</td>
-									<td><i>Typography</i></td>
-									<td>Changes the color of in the text</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.text-primary</kbd>
-									</td>
-									<td><i>Typography</i></td>
-									<td>Changes the color of in the text</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.text-info</kbd>
-									</td>
-									<td><i>Typography</i></td>
-									<td>Changes the color of in the text</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.text-success</kbd>
-									</td>
-									<td><i>Typography</i></td>
-									<td>Changes the color of in the text</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.text-warning</kbd>
-									</td>
-									<td><i>Typography</i></td>
-									<td>Changes the color of in the text</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.text-danger</kbd>
-									</td>
-									<td><i>Typography</i></td>
-									<td>Changes the color of in the text</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.text-white</kbd>
-									</td>
-									<td><i>Typography</i></td>
-									<td>Changes the color of in the text</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.bg-primary</kbd>
-									</td>
-									<td><i>Background</i></td>
-									<td>Changes the color of background</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.bg-info</kbd>
-									</td>
-									<td><i>Background</i></td>
-									<td>Changes the color of background</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.bg-success</kbd>
-									</td>
-									<td><i>Background</i></td>
-									<td>Changes the color of background</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.bg-warning</kbd>
-									</td>
-									<td><i>Background</i></td>
-									<td>Changes the color of background</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.bg-danger</kbd>
-									</td>
-									<td><i>Background</i></td>
-									<td>Changes the color of background</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.bg-inverted</kbd>
-									</td>
-									<td><i>Background</i></td>
-									<td>Changes the color of background</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.border-left-right</kbd>
-									</td>
-									<td><i>Border</i></td>
-									<td>Adds left and right border of object</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.border-top-bottom</kbd>
-									</td>
-									<td><i>Border</i></td>
-									<td>Adds top and bottom border of object</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.border-left</kbd>
-									</td>
-									<td><i>Border</i></td>
-									<td>Adds left border of object</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.border-right</kbd>
-									</td>
-									<td><i>Border</i></td>
-									<td>Adds right border of object</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.border-top</kbd>
-									</td>
-									<td><i>Border</i></td>
-									<td>Adds top border of object</td>
-								</tr>
-								<tr>
-									<td>
-										<kbd>.border-bottom</kbd>
-									</td>
-									<td><i>Border</i></td>
-									<td>Adds bottom border of object</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
-			</div>
-			<div class="sidebar col-3">
-				<ul>
-					<li>
-						<a href="#introduction">Introduction</a>
-					</li>
-					<li>
-						<a href="#grid">Grid</a>
-					</li>
-					<li>
-						<a href="#media">Media</a>
-					</li>
-					<li>
-						<a href="#colors">Colors</a>
-					</li>
-					<li>
-						<a href="#typography">Typography</a>
-					</li>
-					<li>
-						<a href="#buttons">Buttons</a>
-					</li>
-					<li>
-						<a href="#forms">Forms</a>
-					</li>
-					<li>
-						<a href="#tables">Tables</a>
-					</li>
-					<li>
-						<a href="#boxes">Boxes</a>
-					</li>
-					<li>
-						<a href="#helpers">Helpers</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</main>
-	<footer class="footer">
-		<div class="container">Designed by nzbin. Licensed under the MIT License.</div>
-	</footer>
-	<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-	<script>
-	hljs.initHighlightingOnLoad();
+<body class="">
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <header class="header">
+    <div class="show">
+      <h1>Snack</h1>
+      <p>
+        <a class="btn primary" href="https://github.com/nzbin/snack"><i class="fa fa-github-alt" aria-hidden="true"></i> Github</a>
+        <button class="btn danger" id="changeTheme"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
+      </p>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row">
+      <div class="content col-9">
+        <section>
+          <h2 id="introduction">Introduction</h2>
+          <p>Snack is a mini CSS framework for web. But the main purpose of this framework is not mini size. For more reason,I hope the framework can simplified the class name which we used and provide a more generally components.</p>
+          <p>Browser Support</p>
+          <div class="table-overflow">
+            <table class="table bordered">
+              <thead>
+                <tr>
+                  <th>IE</th>
+                  <th>Edge</th>
+                  <th>Firefox</th>
+                  <th>Chrome</th>
+                  <th>Safari</th>
+                  <th>Opera</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9.0</td>
+                  <td>12.0</td>
+                  <td>29.0</td>
+                  <td>10.0</td>
+                  <td>5.1</td>
+                  <td>9.5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section>
+          <h2 id="grid">Grid</h2>
+          <div class="example">
+            <p>Basic 12 Grid</p>
+            <div class="row">
+              <div class="col-1">
+                <div class="grid-box">1/12</div>
+              </div>
+              <div class="col-2">
+                <div class="grid-box">2/12</div>
+              </div>
+              <div class="col-3">
+                <div class="grid-box">3/12</div>
+              </div>
+              <div class="col-3">
+                <div class="grid-box">3/12</div>
+              </div>
+              <div class="col-3">
+                <div class="grid-box">3/12</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-3">
+                <div class="grid-box">3/12</div>
+              </div>
+              <div class="col-4">
+                <div class="grid-box">4/12</div>
+              </div>
+              <div class="col-5">
+                <div class="grid-box">5/12</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <div class="grid-box">5/12</div>
+              </div>
+              <div class="col-7">
+                <div class="grid-box">7/12</div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="col-1"&gt;1/12&lt;/div&gt;
+  &lt;div class="col-2"&gt;2/12&lt;/div&gt;
+  ...
+&lt;/div&gt;
+</pre>
+            <p>Basic 10 Grid</p>
+            <div class="row cols-10">
+              <div class="col-1">
+                <div class="grid-box">1/10</div>
+              </div>
+              <div class="col-2">
+                <div class="grid-box">2/10</div>
+              </div>
+              <div class="col-3">
+                <div class="grid-box">3/10</div>
+              </div>
+              <div class="col-4">
+                <div class="grid-box">4/10</div>
+              </div>
+            </div>
+            <div class="row cols-10">
+              <div class="col-2">
+                <div class="grid-box">2/10</div>
+              </div>
+              <div class="col-8">
+                <div class="grid-box">8/10</div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="row cols-10"&gt;
+  &lt;div class="col-1"&gt;1/10&lt;/div&gt;
+  &lt;div class="col-2"&gt;2/10&lt;/div&gt;
+  ...
+&lt;/div&gt;
+</pre>
+            <p>Offset</p>
+            <div class="row">
+              <div class="col-6 col-offset-3">
+                <div class="grid-box">6/12</div>
+              </div>
+            </div>
+            <div class="row cols-10">
+              <div class="col-5 col-offset-5">
+                <div class="grid-box">5/10</div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="col-6 col-offset-3"&gt;6/12&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <p>No-gutter</p>
+            <div class="row no-gutter">
+              <div class="col-4">
+                <div class="grid-box">4/12</div>
+              </div>
+              <div class="col-4">
+                <div class="grid-box">4/12</div>
+              </div>
+              <div class="col-4">
+                <div class="grid-box">4/12</div>
+              </div>
+            </div>
+            <div class="row no-gutter cols-10">
+              <div class="col-2">
+                <div class="grid-box">2/10</div>
+              </div>
+              <div class="col-3">
+                <div class="grid-box">3/10</div>
+              </div>
+              <div class="col-5">
+                <div class="grid-box">5/10</div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="row no-gutter"&gt;
+  &lt;div class="col-4"&gt;4/12&lt;/div&gt;
+  &lt;div class="col-4"&gt;4/12&lt;/div&gt;
+  ...
+&lt;/div&gt;
+</pre>
+            <p>Equal</p>
+            <div class="row cols-5">
+              <div class="col-1">
+                <div class="grid-box">1/5</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/5</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/5</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/5</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/5</div>
+              </div>
+            </div>
+            <div class="row cols-7">
+              <div class="col-1">
+                <div class="grid-box">1/7</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/7</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/7</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/7</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/7</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/7</div>
+              </div>
+              <div class="col-1">
+                <div class="grid-box">1/7</div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="row cols-7"&gt;
+  &lt;div class="col-1"&gt;1/7&lt;/div&gt;
+  &lt;div class="col-1"&gt;1/7&lt;/div&gt;
+  ...
+&lt;/div&gt;
+</pre>
+            <p>Nested</p>
+            <div class="row">
+              <div class="col-9">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="grid-box">1/2*9/12</div>
+                  </div>
+                  <div class="col-6">
+                    <div class="grid-box">1/2*9/12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="grid-box">3/12</div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="row"&gt;
+  &lt;div class="col-9"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-6"&gt;1/2*9/12&lt;/div&gt;
+      &lt;div class="col-6"&gt;1/2*9/12&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-3"&gt;3/12&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          </div>
+        </section>
+        <section>
+          <h2 id="media">Media</h2>
+          <div class="example">
+            <div class="media">
+              <div class="media-left">
+                <a href="#" class="avatar">
+                  <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="media"&gt;
+  &lt;div class="media-left"&gt;
+    &lt;a href="#" class="avatar"&gt;
+      &lt;img class="media-object" alt="" src="..."&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;Media heading&lt;/h4&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <div class="media">
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+              </div>
+              <div class="media-right">
+                <a href="#" class="avatar">
+                  <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                </a>
+              </div>
+            </div>
+            <div class="media">
+              <div class="media-left">
+                <a href="#" class="avatar">
+                  <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                <div class="media">
+                  <div class="media-left">
+                    <a href="#" class="avatar">
+                      <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Media heading</h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 id="colors">Colors</h2>
+          <div class="example">
+            <div class="row">
+              <div class="col-3">
+                <div class="palette bg-primary">
+                  <div class="palette-info">primary</div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-info">
+                  <div class="palette-info">info</div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-success">
+                  <div class="palette-info">success</div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-danger">
+                  <div class="palette-info">danger</div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-warning">
+                  <div class="palette-info">warning</div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-inverted">
+                  <div class="palette-info">inverted</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 id="typography">Typography</h2>
+          <p>Headings</p>
+          <div class="example">
+            <h1>h1 Example Heading <small>subtitle</small></h1>
+            <h2>h2 Example Heading <small>subtitle</small></h2>
+            <h3>h3 Example Heading <small>subtitle</small></h3>
+            <h4>h4 Example Heading <small>subtitle</small></h4>
+            <h5>h5 Example Heading <small>subtitle</small></h5>
+            <h6>h6 Example Heading <small>subtitle</small></h6>
+          </div>
+          <pre class="prettyprint linenums">
+&lt;h1&gt;h1 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;h2 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;h3 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;h4 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;h5 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;h6 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h6&gt;
+</pre>
+        </section>
+        <section>
+          <h2 id="buttons">Buttons</h2>
+          <div class="example">
+            <p>Colors Options</p>
+            <button class="btn default">default</button>
+            <button class="btn primary">primary</button>
+            <button class="btn info">info</button>
+            <button class="btn success">success</button>
+            <button class="btn danger">danger</button>
+            <button class="btn warning">warning</button>
+            <button class="btn inverted">inverted</button>
+            <button class="btn link">link</button>
+            <pre class="prettyprint linenums">
+&lt;button class="btn default"&gt;default&lt;/button&gt;
+&lt;button class="btn primary"&gt;primary&lt;/button&gt;
+...
+&lt;button class="btn link"&gt;link&lt;/button&gt;
+</pre>
+            <p>Colors Outline Options</p>
+            <button class="btn outline default">default</button>
+            <button class="btn outline primary">primary</button>
+            <button class="btn outline info">info</button>
+            <button class="btn outline success">success</button>
+            <button class="btn outline danger">danger</button>
+            <button class="btn outline warning">warning</button>
+            <button class="btn outline inverted">inverted</button>
+            <pre class="prettyprint linenums">
+&lt;button class="btn outline default"&gt;default&lt;/button&gt;
+&lt;button class="btn outline primary"&gt;primary&lt;/button&gt;
+...
+</pre>
+            <p>Button Group</p>
+            <div class="btns">
+              <button class="btn default">default</button>
+              <button class="btn default">default</button>
+              <button class="btn default">default</button>
+            </div>
+            <div class="btns">
+              <button class="btn primary">primary</button>
+              <button class="btn primary">primary</button>
+              <button class="btn primary">primary</button>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="btns"&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+&lt;/div&gt;
+...
+</pre>
+            <p>Button Group Vertical</p>
+            <div class="btns vertical">
+              <button class="btn default">default</button>
+              <button class="btn default">default</button>
+              <button class="btn default">default</button>
+            </div>
+            <div class="btns vertical">
+              <button class="btn primary">primary</button>
+              <button class="btn primary">primary</button>
+              <button class="btn primary">primary</button>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="btns vertical"&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+&lt;/div&gt;
+...
+</pre>
+            <p>Button Group Outline</p>
+            <div class="btns">
+              <button class="btn outline default">default</button>
+              <button class="btn outline default">default</button>
+              <button class="btn outline default">default</button>
+            </div>
+            <div class="btns">
+              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">primary</button>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="btns"&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+&lt;/div&gt;
+...
+</pre>
+            <p>Button Group Outline Vertical</p>
+            <div class="btns vertical">
+              <button class="btn outline default">default</button>
+              <button class="btn outline default">default</button>
+              <button class="btn outline default">default</button>
+            </div>
+            <div class="btns vertical">
+              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">primary</button>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="btns vertical"&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+&lt;/div&gt;
+...
+</pre>
+          </div>
+        </section>
+        <section>
+          <h2 id="forms">Forms</h2>
+          <p>Basic Elements</p>
+          <form action="" class="form-row">
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Normal Input</label>
+              <div class="col-10">
+                <input class="form-field" type="text" />
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Help Text</label>
+              <div class="col-10">
+                <input class="form-field" type="text" />
+                <span>A block of help text that breaks onto a new line and may extend beyond one line.</span>
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Placeholder</label>
+              <div class="col-10">
+                <input class="form-field" type="text" placeholder="placeholder" />
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Disabled Input</label>
+              <div class="col-10">
+                <input class="form-field" type="text" disabled="disabled" />
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Textarea</label>
+              <div class="col-10">
+                <textarea class="form-field" name="" id="" rows="3"></textarea>
+              </div>
+            </div>
+          </form>
+          <pre class="prettyprint linenums">
+&lt;div class="form-row"&gt;
+  &lt;div class="form-item"&gt;
+    &lt;label for="" class="col-2 form-label"&gt;Normal Input&lt;/label&gt;
+    &lt;div class="col-10"&gt;
+      &lt;input class="form-field" type="text" /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  ...
+&lt;/div&gt;
+</pre>
+          <p>Checkbox & Radio</p>
+          <form action="" class="form-row">
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Checkboxes & Radios</label>
+              <div class="col-10">
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox1" value="">
+                  <label for="checkbox1">Option one is this and that—be sure to include why it's great</label>
+                </div>
+                <div class="checkbox disabled">
+                  <input type="checkbox" id="checkbox2" value="" disabled="">
+                  <label for="checkbox2">Option two is disabled</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="optionsRadios" id="optionsRadios1" checked="">
+                  <label for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
+                </div>
+                <div class="radio">
+                  <input type="radio" name="optionsRadios" id="optionsRadios2">
+                  <label for="optionsRadios2">Option two can be something else and selecting it will deselect option one</label>
+                </div>
+                <div class="radio disabled">
+                  <input type="radio" name="optionsRadios" id="optionsRadios3" disabled="">
+                  <label for="optionsRadios3">Option three is disabled</label>
+                </div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="checkbox"&gt;
+  &lt;input type="checkbox" id="checkbox1" value=""&gt;
+  &lt;label for="checkbox1"&gt;Option one ...&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios1" checked=""&gt;
+  &lt;label for="optionsRadios1"&gt;Option one ...&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Inline Checkboxes</label>
+              <div class="col-10">
+                <div>
+                  <div class="checkbox inline">
+                    <input type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label for="inlineCheckbox1">One</label>
+                  </div>
+                  <div class="checkbox inline">
+                    <input type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label for="inlineCheckbox2">Two</label>
+                  </div>
+                  <div class="checkbox inline">
+                    <input type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label for="inlineCheckbox3">Three</label>
+                  </div>
+                </div>
+                <div>
+                  <div class="radio inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions1" value="option1">
+                    <label for="inlineRadioOptions1">One</label>
+                  </div>
+                  <div class="radio inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions2" value="option2">
+                    <label for="inlineRadioOptions2">Two</label>
+                  </div>
+                  <div class="radio inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions3" value="option3">
+                    <label for="inlineRadioOptions3">Three</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="checkbox inline"&gt;
+  &lt;input type="checkbox" id="checkbox1" value=""&gt;
+  &lt;label for="checkbox1"&gt;Option one ...&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio inline"&gt;
+  &lt;input type="radio" name="optionsRadios" id="optionsRadios1" checked=""&gt;
+  &lt;label for="optionsRadios1"&gt;Option one ...&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Select</label>
+              <div class="col-10">
+                <select class="form-field">
+                  <option>One</option>
+                  <option>Two</option>
+                  <option>Three</option>
+                  <option>Four</option>
+                  <option>Five</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-item">
+              <label for="" class="col-2 form-label">Multiple Select</label>
+              <div class="col-10">
+                <select class="form-field" multiple="multiple">
+                  <option>One</option>
+                  <option>Two</option>
+                  <option>Three</option>
+                  <option>Four</option>
+                  <option>Five</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section>
+          <h2 id="tables">Tables</h2>
+          <p>Basic</p>
+          <div class="table-overflow">
+            <table class="table hover">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Registration Date</th>
+                  <th>E-mail address</th>
+                  <th>Premium Plan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nicky Almera</td>
+                  <td>September 14, 2013</td>
+                  <td>nicky@hotmail.com</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Edmund Wong</td>
+                  <td>January 11, 2014</td>
+                  <td>edmund@yahoo.com</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Harvinder Singh</td>
+                  <td>May 11, 2014</td>
+                  <td>harvinder@gmail.com</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <pre class="prettyprint linenums">
+&lt;table class="table hover"&gt;
+...
+&lt;/table&gt;
+</pre>
+          <p>Bordered</p>
+          <div class="table-overflow">
+            <table class="table bordered">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Registration Date</th>
+                  <th>E-mail address</th>
+                  <th>Premium Plan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nicky Almera</td>
+                  <td>September 14, 2013</td>
+                  <td>nicky@hotmail.com</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Edmund Wong</td>
+                  <td>January 11, 2014</td>
+                  <td>edmund@yahoo.com</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Harvinder Singh</td>
+                  <td>May 11, 2014</td>
+                  <td>harvinder@gmail.com</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <pre class="prettyprint linenums">
+&lt;table class="table bordered"&gt;
+...
+&lt;/table&gt;
+</pre>
+          <p>Striped</p>
+          <div class="table-overflow">
+            <table class="table bordered striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Registration Date</th>
+                  <th>E-mail address</th>
+                  <th>Premium Plan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nicky Almera</td>
+                  <td>September 14, 2013</td>
+                  <td>nicky@hotmail.com</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Edmund Wong</td>
+                  <td>January 11, 2014</td>
+                  <td>edmund@yahoo.com</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Harvinder Singh</td>
+                  <td>May 11, 2014</td>
+                  <td>harvinder@gmail.com</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Terry Khoo</td>
+                  <td>June 6, 2013</td>
+                  <td>terry@gmail.com</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Jamie Harington</td>
+                  <td>January 15, 2014</td>
+                  <td>jharingonton@yahoo.com</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Jill Lewis</td>
+                  <td>May 1, 2014</td>
+                  <td>jilsewris22@yahoo.com</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <pre class="prettyprint linenums">
+&lt;table class="table bordered striped"&gt;
+...
+&lt;/table&gt;
+</pre>
+        </section>
+        <section>
+          <h2 id="boxes">Boxes</h2>
+          <div class="example">
+            <div class="row">
+              <div class="col-6">
+                <p>Single Box</p>
+                <div class="box">box</div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="box"&gt;box&lt;/div&gt;
+</pre>
+            <div class="row">
+              <div class="col-6">
+                <p>Basic Box List</p>
+                <div class="boxes default">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Basic Boxes without Background</p>
+                <div class="boxes default transparent">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="boxes default"&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="boxes default transparent"&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <div class="row">
+              <div class="col-6">
+                <p>Color Primary</p>
+                <div class="boxes primary">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Color Info</p>
+                <div class="boxes info">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Color Success</p>
+                <div class="boxes success">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Color Danger</p>
+                <div class="boxes danger">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Color Warning</p>
+                <div class="boxes warning">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Color Inverted</p>
+                <div class="boxes inverted">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="boxes primary"&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+&lt;/div&gt;
+...
+</pre>
+            <div class="row">
+              <div class="col-6">
+                <p>Basic Boxes with heading and footer</p>
+                <div class="boxes default">
+                  <div class="box heading">box heading</div>
+                  <div class="box body">box body</div>
+                  <div class="box footer">box footer</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <p>Secondary Boxes with heading and footer</p>
+                <div class="boxes secondary">
+                  <div class="box heading">box heading</div>
+                  <div class="box body">box body</div>
+                  <div class="box footer">box footer</div>
+                </div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="boxes default"&gt;
+  &lt;div class="box heading"&gt;box&lt;/div&gt;
+  &lt;div class="box body"&gt;box&lt;/div&gt;
+  &lt;div class="box footer"&gt;box&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="boxes secondary"&gt;
+  &lt;div class="box heading"&gt;box&lt;/div&gt;
+  &lt;div class="box body"&gt;box&lt;/div&gt;
+  &lt;div class="box footer"&gt;box&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <div class="row">
+              <div class="col-6">
+                <p>Raised Boxes</p>
+                <div class="boxes raised">
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="boxes raised"&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <div class="row">
+              <div class="col-6">
+                <p>Nested Boxes</p>
+                <div class="boxes default">
+                  <div class="box">
+                    <div class="boxes default">
+                      <div class="box">box nested</div>
+                    </div>
+                  </div>
+                  <div class="box">box</div>
+                  <div class="box">box</div>
+                </div>
+              </div>
+            </div>
+            <pre class="prettyprint linenums">
+&lt;div class="boxes default"&gt;
+  &lt;div class="box"&gt;
+    &lt;div class="boxes default"&gt;
+      &lt;div class="box"&gt;box nested&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          </div>
+        </section>
+        <section>
+          <h2 id="helpers">Helpers</h2>
+          <div class="table-overflow">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="text-uppercase"><strong>name</strong></th>
+                  <th class="text-uppercase"><strong>where i can use</strong></th>
+                  <th class="text-uppercase"><strong>description</strong></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <kbd>.text-muted</kbd>
+                  </td>
+                  <td><i>Typography</i></td>
+                  <td>Changes the color of in the text</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.text-primary</kbd>
+                  </td>
+                  <td><i>Typography</i></td>
+                  <td>Changes the color of in the text</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.text-info</kbd>
+                  </td>
+                  <td><i>Typography</i></td>
+                  <td>Changes the color of in the text</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.text-success</kbd>
+                  </td>
+                  <td><i>Typography</i></td>
+                  <td>Changes the color of in the text</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.text-warning</kbd>
+                  </td>
+                  <td><i>Typography</i></td>
+                  <td>Changes the color of in the text</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.text-danger</kbd>
+                  </td>
+                  <td><i>Typography</i></td>
+                  <td>Changes the color of in the text</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.text-white</kbd>
+                  </td>
+                  <td><i>Typography</i></td>
+                  <td>Changes the color of in the text</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.bg-primary</kbd>
+                  </td>
+                  <td><i>Background</i></td>
+                  <td>Changes the color of background</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.bg-info</kbd>
+                  </td>
+                  <td><i>Background</i></td>
+                  <td>Changes the color of background</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.bg-success</kbd>
+                  </td>
+                  <td><i>Background</i></td>
+                  <td>Changes the color of background</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.bg-warning</kbd>
+                  </td>
+                  <td><i>Background</i></td>
+                  <td>Changes the color of background</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.bg-danger</kbd>
+                  </td>
+                  <td><i>Background</i></td>
+                  <td>Changes the color of background</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.bg-inverted</kbd>
+                  </td>
+                  <td><i>Background</i></td>
+                  <td>Changes the color of background</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.border-left-right</kbd>
+                  </td>
+                  <td><i>Border</i></td>
+                  <td>Adds left and right border of object</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.border-top-bottom</kbd>
+                  </td>
+                  <td><i>Border</i></td>
+                  <td>Adds top and bottom border of object</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.border-left</kbd>
+                  </td>
+                  <td><i>Border</i></td>
+                  <td>Adds left border of object</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.border-right</kbd>
+                  </td>
+                  <td><i>Border</i></td>
+                  <td>Adds right border of object</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.border-top</kbd>
+                  </td>
+                  <td><i>Border</i></td>
+                  <td>Adds top border of object</td>
+                </tr>
+                <tr>
+                  <td>
+                    <kbd>.border-bottom</kbd>
+                  </td>
+                  <td><i>Border</i></td>
+                  <td>Adds bottom border of object</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+      <div class="sidebar col-3">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#grid">Grid</a>
+          </li>
+          <li>
+            <a href="#media">Media</a>
+          </li>
+          <li>
+            <a href="#colors">Colors</a>
+          </li>
+          <li>
+            <a href="#typography">Typography</a>
+          </li>
+          <li>
+            <a href="#buttons">Buttons</a>
+          </li>
+          <li>
+            <a href="#forms">Forms</a>
+          </li>
+          <li>
+            <a href="#tables">Tables</a>
+          </li>
+          <li>
+            <a href="#boxes">Boxes</a>
+          </li>
+          <li>
+            <a href="#helpers">Helpers</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">Designed by nzbin. Licensed under the MIT License.</div>
+  </footer>
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script>
+  $(function() {
 
-	$(function() {
-		$("#changeTheme").click(function() {
-			$('body').toggleClass("theme-dark");
-		});
-	});
+    // hljs.initHighlightingOnLoad();
+    window.prettyPrint && prettyPrint();
 
-	</script>
+    $("#changeTheme").click(function() {
+      $('body').toggleClass("theme-dark");
+    });
+  });
+
+  </script>
 </body>
 
 </html>
