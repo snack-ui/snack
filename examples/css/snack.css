@@ -797,17 +797,17 @@ label {
   vertical-align: middle;
 }
 
-.form-row .form-item {
+.form-horizontal .form-item {
   margin-right: -15px;
   margin-left: -15px;
 }
 
-.form-row .form-item:before, .form-row .form-item:after {
+.form-horizontal .form-item:before, .form-horizontal .form-item:after {
   content: " ";
   display: table;
 }
 
-.form-row .form-item:after {
+.form-horizontal .form-item:after {
   clear: both;
 }
 
