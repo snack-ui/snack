@@ -36,25 +36,67 @@ ol {
 }
 
 .header {
-  width: 100%;
-  height: 50%;
-  text-align: center;
+  height: 60px;
+  line-height: 60px;
   background-color: #f5f5f5;
   color: #333;
+}
+
+.navbar-brand{
+  font-size: 24px;
+}
+
+// logo
+.logo-wrap {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 42px;
+  height: 42px;
+  margin-top: 9px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: -2px 1px 10px 0 rgba(0, 0, 0, .2);
+  -webkit-transform: rotateZ(-34deg);
+  transform: rotateZ(-34deg);
+}
+
+@mixin logo-shape() {
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+  background: #ffa200;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -8px;
+  @include logo-shape;
+
   &:before {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 100%;
-    vertical-align: middle;
-    overflow: hidden;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 4px;
+    @include logo-shape;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -4px;
+    @include logo-shape;
   }
 }
 
-.show {
-  display: inline-block;
-  vertical-align: middle;
-}
 
 .sidebar {
   position: sticky;

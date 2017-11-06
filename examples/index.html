@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/snack.css">
   <link rel="stylesheet" href="css/snack-themes.css">
   <link rel="stylesheet" href="css/doc.css">
-  <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/monokai-sublime.min.css"> -->
   <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -27,12 +26,14 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <header class="header">
-    <div class="show">
-      <h1>Snack</h1>
-      <p>
-        <a class="btn primary" href="https://github.com/nzbin/snack"><i class="fa fa-github-alt" aria-hidden="true"></i> Github</a>
+    <div class="container clearfix">
+      <div class="navbar-brand pull-left">
+        <div class="logo-wrap"><span class="logo"></span></div> Snack
+      </div>
+      <div class="navbar-right pull-right">
         <button class="btn danger" id="changeTheme"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
-      </p>
+        <a class="btn primary" href="https://github.com/nzbin/snack"><i class="fa fa-github-alt" aria-hidden="true"></i> Github</a>
+      </div>
     </div>
   </header>
   <main class="container">
@@ -68,7 +69,7 @@
           </div>
         </section>
         <section>
-          <h2 id="grid">Grid</h2>
+          <h2 id="grid">Grids</h2>
           <div class="example">
             <p>Basic 12 Grid</p>
             <div class="row">
@@ -1113,7 +1114,7 @@
             <a href="#introduction">Introduction</a>
           </li>
           <li>
-            <a href="#grid">Grid</a>
+            <a href="#grid">Grids</a>
           </li>
           <li>
             <a href="#media">Media</a>
@@ -1147,7 +1148,6 @@
     <div class="container">Designed by nzbin. Licensed under the MIT License.</div>
   </footer>
   <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   <script src="js/google-code-prettify/prettify.js"></script>
   <script>
   $(function() {
