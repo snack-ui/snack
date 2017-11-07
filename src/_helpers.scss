@@ -14,15 +14,6 @@
 	@include clearfix;
 }
 
-// center
-.center-inline {
-	text-align: center;
-	>div,
-	>p {
-		text-align: center;
-	}
-}
-
 .center-block {
 	display: block;
 	margin-left: auto;
@@ -57,37 +48,10 @@
 // text
 .text-ellipsis {
 	overflow: hidden;
+    white-space: nowrap;
 	text-overflow: ellipsis;
-	white-space: nowrap;
 }
 
 .text-uppercase {
 	text-transform: uppercase;
-}
-
-// border
-.border-left-right {
-	border-left: 1px solid $grey-lighter;
-	border-right: 1px solid $grey-lighter;
-}
-
-.border-top-bottom {
-	border-top: 1px solid $grey-lighter;
-	border-bottom: 1px solid $grey-lighter;
-}
-
-.border-left {
-	border-left: 1px solid $grey-lighter;
-}
-
-.border-right {
-	border-right: 1px solid $grey-lighter;
-}
-
-.border-top {
-	border-top: 1px solid $grey-lighter;
-}
-
-.border-bottom {
-	border-bottom: 1px solid $grey-lighter;
 }
