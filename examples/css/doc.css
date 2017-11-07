@@ -28,7 +28,8 @@ ol {
   padding: 0;
 }
 
-:not(.grid-box):not(.btn):not(.form-field):not(option):not(tr) {
+body,
+header {
   transition: background-color .5s;
 }
 
@@ -53,9 +54,7 @@ ol {
   margin-right: 10px;
   text-align: center;
   border-radius: 100%;
-  box-shadow: -2px 1px 10px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transform: rotateZ(-34deg);
-  transform: rotateZ(-34deg);
+  box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -65,6 +64,8 @@ ol {
   left: 50%;
   margin-top: -2px;
   margin-left: -8px;
+  -webkit-transform: rotateZ(-34deg);
+  transform: rotateZ(-34deg);
   width: 16px;
   height: 4px;
   border-radius: 2px;
@@ -103,21 +104,33 @@ ol {
   padding-bottom: 32px;
 }
 
-.sidebar ul {
+.sidebar > ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.sidebar ul > li {
-  margin-bottom: 10px;
-  font-size: 16px;
+.sidebar > ul > li + li {
+  margin-top: 2px;
 }
 
-.sidebar ul > li > a {
+.sidebar > ul > li {
+  position: relative;
   display: block;
-  margin-bottom: 5px;
+}
+
+.sidebar > ul > li > a {
+  position: relative;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
   color: #555;
+}
+
+.sidebar > ul > li > a:hover, .sidebar > ul > li > a:focus, .sidebar > ul > li > a:active {
+  text-decoration: none;
+  background-color: #eee;
 }
 
 .content > section {
@@ -138,6 +151,7 @@ ol {
   background-color: #ffeeed;
   line-height: 2;
   border: 1px solid #ffb7b5;
+  border-radius: 3px;
 }
 
 .grid-box:hover {
@@ -168,5 +182,63 @@ ol {
 }
 
 .theme-dark .grid-box:hover {
-  background-color: #424242;
+  background-color: #2d2d2d;
+}
+
+.theme-dark .sidebar > ul > li > a:hover {
+  background-color: #191919;
+}
+
+.theme-dark .com {
+  color: #93a1a1;
+}
+
+.theme-dark .lit {
+  color: #195f91;
+}
+
+.theme-dark .pun,
+.theme-dark .opn,
+.theme-dark .clo {
+  color: #fff;
+}
+
+.theme-dark .fun {
+  color: #dc322f;
+}
+
+.theme-dark .str,
+.theme-dark .atv {
+  color: #96b38a;
+}
+
+.theme-dark .kwd,
+.theme-dark .linenums .tag {
+  color: #a7925a;
+}
+
+.theme-dark .typ,
+.theme-dark .atn,
+.theme-dark .dec,
+.theme-dark .var {
+  color: #ddca7e;
+}
+
+.theme-dark .pln {
+  color: #fff;
+}
+
+.theme-dark .prettyprint {
+  background-color: #1f1f1f;
+  border: 1px solid #313131;
+}
+
+.theme-dark .prettyprint.linenums {
+  -webkit-box-shadow: inset 40px 0 0 #292929, inset 41px 0 0 #313131;
+  -moz-box-shadow: inset 40px 0 0 #292929, inset 41px 0 0 #313131;
+  box-shadow: inset 40px 0 0 #292929, inset 41px 0 0 #313131;
+}
+
+.theme-dark ol.linenums li {
+  text-shadow: none;
 }

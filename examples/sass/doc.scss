@@ -31,7 +31,8 @@ ol {
   padding: 0;
 }
 
-:not(.grid-box):not(.btn):not(.form-field):not(option):not(tr) {
+body,
+header {
   transition: background-color .5s;
 }
 
@@ -42,7 +43,7 @@ ol {
   color: #333;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 24px;
 }
 
@@ -57,9 +58,7 @@ ol {
   margin-right: 10px;
   text-align: center;
   border-radius: 100%;
-  box-shadow: -2px 1px 10px 0 rgba(0, 0, 0, .2);
-  -webkit-transform: rotateZ(-34deg);
-  transform: rotateZ(-34deg);
+  box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, .2);
 }
 
 @mixin logo-shape() {
@@ -76,6 +75,9 @@ ol {
   left: 50%;
   margin-top: -2px;
   margin-left: -8px;
+  -webkit-transform: rotateZ(-34deg);
+  transform: rotateZ(-34deg);
+
   @include logo-shape;
 
   &:before {
@@ -97,24 +99,35 @@ ol {
   }
 }
 
-
 .sidebar {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   padding-top: 32px;
   padding-bottom: 32px;
-  ul {
+  >ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    >li+li {
+      margin-top: 2px;
+    }
     >li {
-      margin-bottom: 10px;
-      font-size: 16px;
+      position: relative;
+      display: block;
       >a {
+        position: relative;
         display: block;
-        margin-bottom: 5px;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 16px;
         color: #555;
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+          background-color: #eee;
+        }
       }
     }
   }
@@ -143,6 +156,7 @@ ol {
   background-color: #ffeeed;
   line-height: 2;
   border: 1px solid #ffb7b5;
+  border-radius: 3px;
   &:hover {
     background-color: #fbe2e1;
   }
@@ -175,7 +189,54 @@ ol {
     border-color: #424242;
     color: #eee;
     &:hover {
-      background-color: #424242;
+      background-color: #2d2d2d;
     }
+  }
+  .sidebar>ul>li>a:hover {
+    background-color: #191919;
+  }
+  // prettify code style
+  .com {
+    color: #93a1a1;
+  }
+  .lit {
+    color: #195f91;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #fff;//pun
+  }
+  .fun {
+    color: #dc322f;
+  }
+  .str,
+  .atv {
+    color: #96b38a;//atv
+  }
+  .kwd,
+  .linenums .tag {
+    color: #a7925a;//tag
+  }
+  .typ,
+  .atn,
+  .dec,
+  .var {
+    color: #ddca7e;//atn
+  }
+  .pln {
+    color: #fff;//pln
+  }
+  .prettyprint {
+    background-color: #1f1f1f;
+    border: 1px solid #313131;
+  }
+  .prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #292929, inset 41px 0 0 #313131;
+    -moz-box-shadow: inset 40px 0 0 #292929, inset 41px 0 0 #313131;
+    box-shadow: inset 40px 0 0 #292929, inset 41px 0 0 #313131;
+  }
+  ol.linenums li {
+    text-shadow: none;
   }
 }
