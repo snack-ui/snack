@@ -4,21 +4,29 @@
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 12px;
+  box-sizing: border-box;
+  font-size: 12px;
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: $font-size-base;
-    color: $text-color;
-    line-height: $line-height-base;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $font-size-base;
+  color: $text-color;
+  line-height: $line-height-base;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: $color-primary;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }

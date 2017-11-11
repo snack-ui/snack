@@ -3,13 +3,6 @@ body {
   height: 100%;
 }
 
-code,
-kbd,
-pre,
-samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
 pre {
   display: block;
   font-size: 13px;
@@ -54,7 +47,7 @@ header {
   margin-right: 10px;
   text-align: center;
   border-radius: 100%;
-  box-shadow: -2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -190,7 +183,7 @@ header {
 }
 
 .theme-dark .com {
-  color: #93a1a1;
+  color: #666;
 }
 
 .theme-dark .lit {

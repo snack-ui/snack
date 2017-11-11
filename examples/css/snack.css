@@ -471,6 +471,14 @@ body {
 
 a {
   text-decoration: none;
+  color: #348fe2;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 h1,
