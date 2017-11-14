@@ -1498,6 +1498,10 @@ table {
   color: #555;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .text-primary {
   color: #348fe2;
 }
@@ -1518,8 +1522,8 @@ table {
   color: #f59c1a;
 }
 
-.text-white {
-  color: #fff;
+.text-inverted {
+  color: #2d353c;
 }
 
 .pull-right {

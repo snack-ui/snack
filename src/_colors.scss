@@ -31,6 +31,10 @@
 	color: $grey;
 }
 
+.text-white {
+    color: $color-white;
+}
+
 .text-primary {
 	color: $color-primary;
 }
@@ -51,6 +55,6 @@
 	color: $color-warning;
 }
 
-.text-white {
-	color: $color-white;
+.text-inverted {
+    color: $color-inverted;
 }
