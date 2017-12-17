@@ -1,7 +1,13 @@
-/*
+/**
+ *
  * snack.css v0.9.2
+ *
+ * https://nzbin.github.io/snack/
+ *
+ * Copyright (c) 2017 nzbin
+ *
  * Released under the MIT license
- * Copyright 2017 by nzbin
+ *
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1498,6 +1504,10 @@ table {
   color: #555;
 }
 
+.text-white {
+  color: #fff;
+}
+
 .text-primary {
   color: #348fe2;
 }
@@ -1518,8 +1528,8 @@ table {
   color: #f59c1a;
 }
 
-.text-white {
-  color: #fff;
+.text-inverted {
+  color: #2d353c;
 }
 
 .pull-right {
@@ -1578,3 +1588,5 @@ table {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+/*# sourceMappingURL=snack.css.map */
