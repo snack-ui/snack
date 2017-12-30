@@ -1,0 +1,285 @@
+// --------------------------
+// Documentation
+// --------------------------
+html,
+body {
+  height: 100%;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+header {
+  transition: background-color .5s;
+}
+
+.header {
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+// logo
+.logo-wrap {
+  display: inline-block;
+  position: relative;
+  float: left;
+  width: 42px;
+  height: 42px;
+  margin-top: 9px;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 100%;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+}
+
+@mixin logo-shape() {
+  width: 16px;
+  height: 4px;
+  border-radius: 2px;
+  background: #ffa200;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -8px;
+  -webkit-transform: rotateZ(-34deg);
+  transform: rotateZ(-34deg);
+
+  @include logo-shape;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 4px;
+    @include logo-shape;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -4px;
+    @include logo-shape;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  >ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    >li+li {
+      margin-top: 2px;
+    }
+    >li {
+      position: relative;
+      display: block;
+      >a {
+        position: relative;
+        display: block;
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #555;
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: none;
+          background-color: #eee;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  >section {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.example {
+  >.btn,
+  >.btns {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+//grid
+.grid-box {
+  margin: 10px 0;
+  text-align: center;
+  background-color: #ffeeed;
+  line-height: 2;
+  border: 1px solid #ffb7b5;
+  border-radius: 3px;
+  &:hover {
+    background-color: #fbe2e1;
+  }
+}
+
+//palette
+.palette {
+  border-radius: 4px;
+  min-height: 100px;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: #fff;
+}
+
+// prettify code style
+.com {
+  color: #93a1a1;
+}
+
+.lit {
+  color: #195f91;
+}
+
+.pun,
+.opn,
+.clo {
+  color: #93a1a1;
+}
+
+.fun {
+  color: #dc322f;
+}
+
+.str,
+.atv {
+  color: #D14;
+}
+
+.kwd,
+.linenums .tag {
+  color: #1e347b;
+}
+
+.typ,
+.atn,
+.dec,
+.var {
+  color: teal;
+}
+
+.pln {
+  color: #48484c;
+}
+
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+.prettyprint.linenums {
+  box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+}
+
+
+/* Specify class=linenums on a pre to get line numbering */
+
+ol.linenums {
+  margin: 0 0 0 33px;/* IE indents via margin-left */
+}
+
+ol.linenums li {
+  padding-left: 12px;
+  color: #bebec5;
+  line-height: 18px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+// ------------------------------
+// Theme-dark
+// ------------------------------
+.theme-dark {
+  .header {
+    background-color: #262626;
+    color: #fff;
+  }
+  .content {
+    >section {
+      border-bottom-color: #2d2d2d;
+    }
+  }
+  .grid-box {
+    background-color: #313131;
+    border-color: #424242;
+    color: #eee;
+    &:hover {
+      background-color: #2d2d2d;
+    }
+  }
+  .sidebar>ul>li>a:hover {
+    background-color: #191919;
+  }
+
+  // prettify code style
+  .com {
+    color: #666;
+  }
+  .lit {
+    color: #195f91;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #fff; //pun
+  }
+  .fun {
+    color: #dc322f;
+  }
+  .str,
+  .atv {
+    color: #96b38a; //atv
+  }
+  .kwd,
+  .linenums .tag {
+    color: #a7925a; //tag
+  }
+  .typ,
+  .atn,
+  .dec,
+  .var {
+    color: #ddca7e; //atn
+  }
+  .pln {
+    color: #fff; //pln
+  }
+  .prettyprint {
+    background-color: #1f1f1f;
+    border: 1px solid #313131;
+  }
+  .prettyprint.linenums {
+    box-shadow: inset 40px 0 0 #292929, inset 41px 0 0 #313131;
+  }
+  ol.linenums li {
+    text-shadow: none;
+  }
+}
