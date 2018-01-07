@@ -1,24 +1,22 @@
 {
   "name": "snack",
   "version": "0.9.2",
-  "description": "A CSS framework for mobile-first.",
+  "description": "A minimal CSS framework for web.",
   "homepage": "https://snack.github.io",
   "repository": "nzbin/snack",
   "license": "MIT",
   "author": "nzbin <nzb329@163.com>",
   "main": "dist/snack.css",
   "keywords": [
-    "css",
+    "css-framework",
+    "minimal",
+    "snack",
     "css3",
-    "sass",
-    "front-end",
-    "framework"
+    "sass"
   ],
-  "dependencies": {
-    "normalize.css": "~5.0.0"
-  },
   "devDependencies": {
     "autoprefixer": "^6.5.4",
+    "cpy-cli": "^1.0.1",
     "editorconfig-tools": "^0.1.1",
     "eslint": "^3.14.0",
     "eslint-config-styled": "^0.0.0",
@@ -33,10 +31,11 @@
   },
   "scripts": {
     "start": "run-p build watch",
-    "build": "run-s clean sass autoprefixer",
+    "build": "run-s clean sass sass:theme autoprefixer",
     "clean": "rimraf dist",
-    "sass": "node-sass --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css && node-sass --output-style expanded src/themes/snack-themes.scss dist/snack-themes.css && node-sass --output-style compressed src/themes/snack-themes.scss dist/snack-themes.min.css",
-    "sass-doc": "node-sass --output-style expanded docs/sass/docs.scss docs/css/docs.css && node-sass --output-style expanded src/snack.scss docs/css/snack.css && node-sass --output-style expanded src/themes/snack-themes.scss docs/css/snack-themes.css",
+    "sass": "node-sass --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css",
+    "sass:theme":"node-sass --output-style expanded src/themes/snack-themes.scss dist/snack-themes.css && node-sass --output-style compressed src/themes/snack-themes.scss dist/snack-themes.min.css",
+    "docs": "node-sass --output-style expanded docs/sass/docs.scss docs/css/docs.css && cpy dist/*.css !dist/*.min.css docs/css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
     "watch": "onchange src -- run-p build"
   }
