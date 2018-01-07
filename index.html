@@ -55,21 +55,22 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>9.0</td>
-                  <td>12.0</td>
-                  <td>29.0</td>
-                  <td>10.0</td>
-                  <td>5.1</td>
-                  <td>9.5</td>
+                  <td>8</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p>The IE8 just supports parts of features, and it requires use of <a href="https://github.com/scottjehl/Respond">Respond.js</a>.</p>
         </section>
         <section>
           <h2 id="grid">Grids</h2>
+          <p>Basic 12 Grid</p>
           <div class="example">
-            <p>Basic 12 Grid</p>
             <div class="row">
               <div class="col-1">
                 <div class="grid-box">1/12</div>
@@ -106,14 +107,16 @@
                 <div class="grid-box">7/12</div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="col-1"&gt;1/12&lt;/div&gt;
   &lt;div class="col-2"&gt;2/12&lt;/div&gt;
   ...
 &lt;/div&gt;
 </pre>
-            <p>Basic 10 Grid</p>
+          <p>Basic 10 Grid</p>
+          <div class="example">
             <div class="row cols-10">
               <div class="col-1">
                 <div class="grid-box">1/10</div>
@@ -136,14 +139,16 @@
                 <div class="grid-box">8/10</div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="row cols-10"&gt;
   &lt;div class="col-1"&gt;1/10&lt;/div&gt;
   &lt;div class="col-2"&gt;2/10&lt;/div&gt;
   ...
 &lt;/div&gt;
 </pre>
-            <p>Offset</p>
+          <p>Offset</p>
+          <div class="example">
             <div class="row">
               <div class="col-6 col-offset-3">
                 <div class="grid-box">6/12</div>
@@ -154,12 +159,14 @@
                 <div class="grid-box">5/10</div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="col-6 col-offset-3"&gt;6/12&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-            <p>No-gutter</p>
+          <p>No-gutter</p>
+          <div class="example">
             <div class="row no-gutter">
               <div class="col-4">
                 <div class="grid-box">4/12</div>
@@ -182,14 +189,16 @@
                 <div class="grid-box">5/10</div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="row no-gutter"&gt;
   &lt;div class="col-4"&gt;4/12&lt;/div&gt;
   &lt;div class="col-4"&gt;4/12&lt;/div&gt;
   ...
 &lt;/div&gt;
 </pre>
-            <p>Equal</p>
+          <p>Equal</p>
+          <div class="example">
             <div class="row cols-5">
               <div class="col-1">
                 <div class="grid-box">1/5</div>
@@ -230,14 +239,16 @@
                 <div class="grid-box">1/7</div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="row cols-7"&gt;
   &lt;div class="col-1"&gt;1/7&lt;/div&gt;
   &lt;div class="col-1"&gt;1/7&lt;/div&gt;
   ...
 &lt;/div&gt;
 </pre>
-            <p>Nested</p>
+          <p>Nested</p>
+          <div class="example">
             <div class="row">
               <div class="col-9">
                 <div class="row">
@@ -253,7 +264,8 @@
                 <div class="grid-box">3/12</div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="col-9"&gt;
     &lt;div class="row"&gt;
@@ -264,10 +276,10 @@
   &lt;div class="col-3"&gt;3/12&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-          </div>
         </section>
         <section>
           <h2 id="media">Media <span class="small">( Bootstrap )</span></h2>
+          <h5 class="text-danger">The media component is important, but there is no room for improvment, so I use the media of Bootstrap. In addtion, I add a <code>avatar</code> class, we can use it as needed.</h5>
           <div class="example">
             <div class="media">
               <div class="media-left">
@@ -280,7 +292,8 @@
                 <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="media"&gt;
   &lt;div class="media-left"&gt;
     &lt;a href="#" class="avatar"&gt;
@@ -293,6 +306,7 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
+          <div class="example">
             <div class="media">
               <div class="media-body">
                 <h4 class="media-heading">Media heading</h4>
@@ -387,8 +401,8 @@
         </section>
         <section>
           <h2 id="buttons">Buttons</h2>
+          <p>Colors Options</p>
           <div class="example">
-            <p>Colors Options</p>
             <button class="btn default">default</button>
             <button class="btn primary">primary</button>
             <button class="btn info">info</button>
@@ -403,7 +417,9 @@
 ...
 &lt;button class="btn link"&gt;link&lt;/button&gt;
 </pre>
-            <p>Colors Outline Options</p>
+          </div>
+          <p>Colors Outline Options</p>
+          <div class="example">
             <button class="btn outline default">default</button>
             <button class="btn outline primary">primary</button>
             <button class="btn outline info">info</button>
@@ -411,12 +427,14 @@
             <button class="btn outline danger">danger</button>
             <button class="btn outline warning">warning</button>
             <button class="btn outline inverted">inverted</button>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;button class="btn outline default"&gt;default&lt;/button&gt;
 &lt;button class="btn outline primary"&gt;primary&lt;/button&gt;
 ...
 </pre>
-            <p>Button Group</p>
+          <p>Button Group</p>
+          <div class="example">
             <div class="btns">
               <button class="btn default">default</button>
               <button class="btn default">default</button>
@@ -427,109 +445,117 @@
               <button class="btn primary">primary</button>
               <button class="btn primary">primary</button>
             </div>
-            <pre class="prettyprint linenums">
-&lt;div class="btns"&gt;
-  &lt;button class="btn default"&gt;default&lt;/button&gt;
-  &lt;button class="btn default"&gt;default&lt;/button&gt;
-  &lt;button class="btn default"&gt;default&lt;/button&gt;
-&lt;/div&gt;
-...
-</pre>
-            <p>Button Group Vertical</p>
-            <div class="btns vertical">
-              <button class="btn default">default</button>
-              <button class="btn default">default</button>
-              <button class="btn default">default</button>
-            </div>
-            <div class="btns vertical">
-              <button class="btn primary">primary</button>
-              <button class="btn primary">primary</button>
-              <button class="btn primary">primary</button>
-            </div>
-            <pre class="prettyprint linenums">
-&lt;div class="btns vertical"&gt;
-  &lt;button class="btn default"&gt;default&lt;/button&gt;
-  &lt;button class="btn default"&gt;default&lt;/button&gt;
-  &lt;button class="btn default"&gt;default&lt;/button&gt;
-&lt;/div&gt;
-...
-</pre>
-            <p>Button Group Outline</p>
-            <div class="btns">
-              <button class="btn outline default">default</button>
-              <button class="btn outline default">default</button>
-              <button class="btn outline default">default</button>
-            </div>
-            <div class="btns">
-              <button class="btn outline primary">primary</button>
-              <button class="btn outline primary">primary</button>
-              <button class="btn outline primary">primary</button>
-            </div>
-            <pre class="prettyprint linenums">
-&lt;div class="btns"&gt;
-  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
-  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
-  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
-&lt;/div&gt;
-...
-</pre>
-            <p>Button Group Outline Vertical</p>
-            <div class="btns vertical">
-              <button class="btn outline default">default</button>
-              <button class="btn outline default">default</button>
-              <button class="btn outline default">default</button>
-            </div>
-            <div class="btns vertical">
-              <button class="btn outline primary">primary</button>
-              <button class="btn outline primary">primary</button>
-              <button class="btn outline primary">primary</button>
-            </div>
-            <pre class="prettyprint linenums">
-&lt;div class="btns vertical"&gt;
-  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
-  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
-  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
-&lt;/div&gt;
-...
-</pre>
           </div>
+          <pre class="prettyprint linenums">
+&lt;div class="btns"&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+&lt;/div&gt;
+...
+</pre>
+          <p>Button Group Vertical</p>
+          <div class="example">
+            <div class="btns vertical">
+              <button class="btn default">default</button>
+              <button class="btn default">default</button>
+              <button class="btn default">default</button>
+            </div>
+            <div class="btns vertical">
+              <button class="btn primary">primary</button>
+              <button class="btn primary">primary</button>
+              <button class="btn primary">primary</button>
+            </div>
+          </div>
+          <pre class="prettyprint linenums">
+&lt;div class="btns vertical"&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+  &lt;button class="btn default"&gt;default&lt;/button&gt;
+&lt;/div&gt;
+...
+</pre>
+          <p>Button Group Outline</p>
+          <div class="example">
+            <div class="btns">
+              <button class="btn outline default">default</button>
+              <button class="btn outline default">default</button>
+              <button class="btn outline default">default</button>
+            </div>
+            <div class="btns">
+              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">primary</button>
+            </div>
+          </div>
+          <pre class="prettyprint linenums">
+&lt;div class="btns"&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+&lt;/div&gt;
+...
+</pre>
+          <p>Button Group Outline Vertical</p>
+          <div class="example">
+            <div class="btns vertical">
+              <button class="btn outline default">default</button>
+              <button class="btn outline default">default</button>
+              <button class="btn outline default">default</button>
+            </div>
+            <div class="btns vertical">
+              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">primary</button>
+            </div>
+          </div>
+          <pre class="prettyprint linenums">
+&lt;div class="btns vertical"&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+  &lt;button class="btn outline default"&gt;default&lt;/button&gt;
+&lt;/div&gt;
+...
+</pre>
         </section>
         <section>
           <h2 id="forms">Forms</h2>
           <p>Basic Elements</p>
-          <form action="" class="form-horizontal">
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Normal Input</label>
-              <div class="col-10">
-                <input class="form-field" type="text" />
+          <div class="example">
+            <form action="" class="form-horizontal">
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Normal Input</label>
+                <div class="col-10">
+                  <input class="form-field" type="text" />
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Help Text</label>
-              <div class="col-10">
-                <input class="form-field" type="text" />
-                <span>A block of help text that breaks onto a new line and may extend beyond one line.</span>
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Help Text</label>
+                <div class="col-10">
+                  <input class="form-field" type="text" />
+                  <span>A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Placeholder</label>
-              <div class="col-10">
-                <input class="form-field" type="text" placeholder="placeholder" />
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Placeholder</label>
+                <div class="col-10">
+                  <input class="form-field" type="text" placeholder="placeholder" />
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Disabled Input</label>
-              <div class="col-10">
-                <input class="form-field" type="text" disabled="disabled" />
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Disabled Input</label>
+                <div class="col-10">
+                  <input class="form-field" type="text" disabled="disabled" />
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Textarea</label>
-              <div class="col-10">
-                <textarea class="form-field" name="" id="" rows="3"></textarea>
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Textarea</label>
+                <div class="col-10">
+                  <textarea class="form-field" name="" id="" rows="3"></textarea>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
           <pre class="prettyprint linenums">
 &lt;div class="form-horizontal"&gt;
   &lt;div class="form-item"&gt;
@@ -542,33 +568,37 @@
 &lt;/div&gt;
 </pre>
           <p>Checkbox & Radio</p>
-          <form action="" class="form-horizontal">
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Checkboxes & Radios</label>
-              <div class="col-10">
-                <div class="checkbox">
-                  <input type="checkbox" id="checkbox1" value="">
-                  <label for="checkbox1">Option one is this and that—be sure to include why it's great</label>
-                </div>
-                <div class="checkbox disabled">
-                  <input type="checkbox" id="checkbox2" value="" disabled="">
-                  <label for="checkbox2">Option two is disabled</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="optionsRadios" id="optionsRadios1" checked="">
-                  <label for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
-                </div>
-                <div class="radio">
-                  <input type="radio" name="optionsRadios" id="optionsRadios2">
-                  <label for="optionsRadios2">Option two can be something else and selecting it will deselect option one</label>
-                </div>
-                <div class="radio disabled">
-                  <input type="radio" name="optionsRadios" id="optionsRadios3" disabled="">
-                  <label for="optionsRadios3">Option three is disabled</label>
+          <h5 class="text-danger">The structures of checkbox/radio in snack allow you customize its styles. <a href="https://codepen.io/nzbin/pen/XaMMzQ" target="_blank">Demo on CodePen</a></h5>
+          <div class="example">
+            <form action="" class="form-horizontal">
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Checkboxes & Radios</label>
+                <div class="col-10">
+                  <div class="checkbox">
+                    <input type="checkbox" id="checkbox1" value="">
+                    <label for="checkbox1">Option one is this and that—be sure to include why it's great</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <input type="checkbox" id="checkbox2" value="" disabled="">
+                    <label for="checkbox2">Option two is disabled</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" checked="">
+                    <label for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" name="optionsRadios" id="optionsRadios2">
+                    <label for="optionsRadios2">Option two can be something else and selecting it will deselect option one</label>
+                  </div>
+                  <div class="radio disabled">
+                    <input type="radio" name="optionsRadios" id="optionsRadios3" disabled="">
+                    <label for="optionsRadios3">Option three is disabled</label>
+                  </div>
                 </div>
               </div>
-            </div>
-            <pre class="prettyprint linenums">
+            </form>
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="checkbox"&gt;
   &lt;input type="checkbox" id="checkbox1" value=""&gt;
   &lt;label for="checkbox1"&gt;Option one ...&lt;/label&gt;
@@ -578,40 +608,44 @@
   &lt;label for="optionsRadios1"&gt;Option one ...&lt;/label&gt;
 &lt;/div&gt;
 </pre>
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Inline Checkboxes</label>
-              <div class="col-10">
-                <div>
-                  <div class="checkbox inline">
-                    <input type="checkbox" id="inlineCheckbox1" value="option1">
-                    <label for="inlineCheckbox1">One</label>
+          <div class="example">
+            <form action="" class="form-horizontal">
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Inline Checkboxes</label>
+                <div class="col-10">
+                  <div>
+                    <div class="checkbox inline">
+                      <input type="checkbox" id="inlineCheckbox1" value="option1">
+                      <label for="inlineCheckbox1">One</label>
+                    </div>
+                    <div class="checkbox inline">
+                      <input type="checkbox" id="inlineCheckbox2" value="option2">
+                      <label for="inlineCheckbox2">Two</label>
+                    </div>
+                    <div class="checkbox inline">
+                      <input type="checkbox" id="inlineCheckbox3" value="option3">
+                      <label for="inlineCheckbox3">Three</label>
+                    </div>
                   </div>
-                  <div class="checkbox inline">
-                    <input type="checkbox" id="inlineCheckbox2" value="option2">
-                    <label for="inlineCheckbox2">Two</label>
-                  </div>
-                  <div class="checkbox inline">
-                    <input type="checkbox" id="inlineCheckbox3" value="option3">
-                    <label for="inlineCheckbox3">Three</label>
-                  </div>
-                </div>
-                <div>
-                  <div class="radio inline">
-                    <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions1" value="option1">
-                    <label for="inlineRadioOptions1">One</label>
-                  </div>
-                  <div class="radio inline">
-                    <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions2" value="option2">
-                    <label for="inlineRadioOptions2">Two</label>
-                  </div>
-                  <div class="radio inline">
-                    <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions3" value="option3">
-                    <label for="inlineRadioOptions3">Three</label>
+                  <div>
+                    <div class="radio inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions1" value="option1">
+                      <label for="inlineRadioOptions1">One</label>
+                    </div>
+                    <div class="radio inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions2" value="option2">
+                      <label for="inlineRadioOptions2">Two</label>
+                    </div>
+                    <div class="radio inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions3" value="option3">
+                      <label for="inlineRadioOptions3">Three</label>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <pre class="prettyprint linenums">
+            </form>
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="checkbox inline"&gt;
   &lt;input type="checkbox" id="checkbox1" value=""&gt;
   &lt;label for="checkbox1"&gt;Option one ...&lt;/label&gt;
@@ -621,66 +655,71 @@
   &lt;label for="optionsRadios1"&gt;Option one ...&lt;/label&gt;
 &lt;/div&gt;
 </pre>
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Select</label>
-              <div class="col-10">
-                <select class="form-field">
-                  <option>One</option>
-                  <option>Two</option>
-                  <option>Three</option>
-                  <option>Four</option>
-                  <option>Five</option>
-                </select>
+          <div class="example">
+            <form action="" class="form-horizontal">
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Select</label>
+                <div class="col-10">
+                  <select class="form-field">
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                    <option>Four</option>
+                    <option>Five</option>
+                  </select>
+                </div>
               </div>
-            </div>
-            <div class="form-item">
-              <label for="" class="col-2 form-label">Multiple Select</label>
-              <div class="col-10">
-                <select class="form-field" multiple="multiple">
-                  <option>One</option>
-                  <option>Two</option>
-                  <option>Three</option>
-                  <option>Four</option>
-                  <option>Five</option>
-                </select>
+              <div class="form-item">
+                <label for="" class="col-2 form-label">Multiple Select</label>
+                <div class="col-10">
+                  <select class="form-field" multiple="multiple">
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                    <option>Four</option>
+                    <option>Five</option>
+                  </select>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </section>
         <section>
           <h2 id="tables">Tables</h2>
           <p>Basic</p>
-          <div class="table-overflow">
-            <table class="table hover">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Registration Date</th>
-                  <th>E-mail address</th>
-                  <th>Premium Plan</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Nicky Almera</td>
-                  <td>September 14, 2013</td>
-                  <td>nicky@hotmail.com</td>
-                  <td>No</td>
-                </tr>
-                <tr>
-                  <td>Edmund Wong</td>
-                  <td>January 11, 2014</td>
-                  <td>edmund@yahoo.com</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Harvinder Singh</td>
-                  <td>May 11, 2014</td>
-                  <td>harvinder@gmail.com</td>
-                  <td>Yes</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="example">
+            <div class="table-overflow">
+              <table class="table hover">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Registration Date</th>
+                    <th>E-mail address</th>
+                    <th>Premium Plan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nicky Almera</td>
+                    <td>September 14, 2013</td>
+                    <td>nicky@hotmail.com</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Edmund Wong</td>
+                    <td>January 11, 2014</td>
+                    <td>edmund@yahoo.com</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Harvinder Singh</td>
+                    <td>May 11, 2014</td>
+                    <td>harvinder@gmail.com</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <pre class="prettyprint linenums">
 &lt;table class="table hover"&gt;
@@ -688,37 +727,39 @@
 &lt;/table&gt;
 </pre>
           <p>Bordered</p>
-          <div class="table-overflow">
-            <table class="table bordered">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Registration Date</th>
-                  <th>E-mail address</th>
-                  <th>Premium Plan</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Nicky Almera</td>
-                  <td>September 14, 2013</td>
-                  <td>nicky@hotmail.com</td>
-                  <td>No</td>
-                </tr>
-                <tr>
-                  <td>Edmund Wong</td>
-                  <td>January 11, 2014</td>
-                  <td>edmund@yahoo.com</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Harvinder Singh</td>
-                  <td>May 11, 2014</td>
-                  <td>harvinder@gmail.com</td>
-                  <td>Yes</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="example">
+            <div class="table-overflow">
+              <table class="table bordered">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Registration Date</th>
+                    <th>E-mail address</th>
+                    <th>Premium Plan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nicky Almera</td>
+                    <td>September 14, 2013</td>
+                    <td>nicky@hotmail.com</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Edmund Wong</td>
+                    <td>January 11, 2014</td>
+                    <td>edmund@yahoo.com</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Harvinder Singh</td>
+                    <td>May 11, 2014</td>
+                    <td>harvinder@gmail.com</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <pre class="prettyprint linenums">
 &lt;table class="table bordered"&gt;
@@ -726,55 +767,57 @@
 &lt;/table&gt;
 </pre>
           <p>Striped</p>
-          <div class="table-overflow">
-            <table class="table bordered striped">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Registration Date</th>
-                  <th>E-mail address</th>
-                  <th>Premium Plan</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Nicky Almera</td>
-                  <td>September 14, 2013</td>
-                  <td>nicky@hotmail.com</td>
-                  <td>No</td>
-                </tr>
-                <tr>
-                  <td>Edmund Wong</td>
-                  <td>January 11, 2014</td>
-                  <td>edmund@yahoo.com</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Harvinder Singh</td>
-                  <td>May 11, 2014</td>
-                  <td>harvinder@gmail.com</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Terry Khoo</td>
-                  <td>June 6, 2013</td>
-                  <td>terry@gmail.com</td>
-                  <td>No</td>
-                </tr>
-                <tr>
-                  <td>Jamie Harington</td>
-                  <td>January 15, 2014</td>
-                  <td>jharingonton@yahoo.com</td>
-                  <td>Yes</td>
-                </tr>
-                <tr>
-                  <td>Jill Lewis</td>
-                  <td>May 1, 2014</td>
-                  <td>jilsewris22@yahoo.com</td>
-                  <td>Yes</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="example">
+            <div class="table-overflow">
+              <table class="table bordered striped">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Registration Date</th>
+                    <th>E-mail address</th>
+                    <th>Premium Plan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nicky Almera</td>
+                    <td>September 14, 2013</td>
+                    <td>nicky@hotmail.com</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Edmund Wong</td>
+                    <td>January 11, 2014</td>
+                    <td>edmund@yahoo.com</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Harvinder Singh</td>
+                    <td>May 11, 2014</td>
+                    <td>harvinder@gmail.com</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Terry Khoo</td>
+                    <td>June 6, 2013</td>
+                    <td>terry@gmail.com</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Jamie Harington</td>
+                    <td>January 15, 2014</td>
+                    <td>jharingonton@yahoo.com</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Jill Lewis</td>
+                    <td>May 1, 2014</td>
+                    <td>jilsewris22@yahoo.com</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <pre class="prettyprint linenums">
 &lt;table class="table bordered striped"&gt;
@@ -791,9 +834,11 @@
                 <div class="box">box</div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="box"&gt;box&lt;/div&gt;
 </pre>
+          <div class="example">
             <div class="row">
               <div class="col-6">
                 <p>Basic Box List</p>
@@ -812,7 +857,8 @@
                 </div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="boxes default"&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
@@ -824,6 +870,7 @@
   &lt;div class="box"&gt;box&lt;/div&gt;
 &lt;/div&gt;
 </pre>
+          <div class="example">
             <div class="row">
               <div class="col-6">
                 <p>Color Primary</p>
@@ -874,7 +921,8 @@
                 </div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="boxes primary"&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
@@ -882,6 +930,7 @@
 &lt;/div&gt;
 ...
 </pre>
+          <div class="example">
             <div class="row">
               <div class="col-6">
                 <p>Basic Boxes with heading and footer</p>
@@ -900,7 +949,8 @@
                 </div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="boxes default"&gt;
   &lt;div class="box heading"&gt;box&lt;/div&gt;
   &lt;div class="box body"&gt;box&lt;/div&gt;
@@ -912,6 +962,7 @@
   &lt;div class="box footer"&gt;box&lt;/div&gt;
 &lt;/div&gt;
 </pre>
+          <div class="example">
             <div class="row">
               <div class="col-6">
                 <p>Raised Boxes</p>
@@ -922,13 +973,15 @@
                 </div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="boxes raised"&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
 &lt;/div&gt;
 </pre>
+          <div class="example">
             <div class="row">
               <div class="col-6">
                 <p>Nested Boxes</p>
@@ -943,7 +996,8 @@
                 </div>
               </div>
             </div>
-            <pre class="prettyprint linenums">
+          </div>
+          <pre class="prettyprint linenums">
 &lt;div class="boxes default"&gt;
   &lt;div class="box"&gt;
     &lt;div class="boxes default"&gt;
@@ -954,118 +1008,119 @@
   &lt;div class="box"&gt;box&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-          </div>
         </section>
         <section>
           <h2 id="helpers">Helpers</h2>
-          <div class="table-overflow">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th class="text-uppercase"><strong>name</strong></th>
-                  <th class="text-uppercase"><strong>where i can use</strong></th>
-                  <th class="text-uppercase"><strong>description</strong></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <kbd>.text-muted</kbd>
-                  </td>
-                  <td><i>Typography</i></td>
-                  <td>Changes the color of in the text</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.text-primary</kbd>
-                  </td>
-                  <td><i>Typography</i></td>
-                  <td>Changes the color of in the text</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.text-info</kbd>
-                  </td>
-                  <td><i>Typography</i></td>
-                  <td>Changes the color of in the text</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.text-success</kbd>
-                  </td>
-                  <td><i>Typography</i></td>
-                  <td>Changes the color of in the text</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.text-warning</kbd>
-                  </td>
-                  <td><i>Typography</i></td>
-                  <td>Changes the color of in the text</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.text-danger</kbd>
-                  </td>
-                  <td><i>Typography</i></td>
-                  <td>Changes the color of in the text</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.text-white</kbd>
-                  </td>
-                  <td><i>Typography</i></td>
-                  <td>Changes the color of in the text</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.bg-primary</kbd>
-                  </td>
-                  <td><i>Background</i></td>
-                  <td>Changes the color of background</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.bg-info</kbd>
-                  </td>
-                  <td><i>Background</i></td>
-                  <td>Changes the color of background</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.bg-success</kbd>
-                  </td>
-                  <td><i>Background</i></td>
-                  <td>Changes the color of background</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.bg-warning</kbd>
-                  </td>
-                  <td><i>Background</i></td>
-                  <td>Changes the color of background</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.bg-danger</kbd>
-                  </td>
-                  <td><i>Background</i></td>
-                  <td>Changes the color of background</td>
-                </tr>
-                <tr>
-                  <td>
-                    <kbd>.bg-inverted</kbd>
-                  </td>
-                  <td><i>Background</i></td>
-                  <td>Changes the color of background</td>
-                </tr>
-                <tr>
-                  <td>...</td>
-                  <td>...</td>
-                  <td>...</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="example">
+            <div class="table-overflow">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="text-uppercase"><strong>name</strong></th>
+                    <th class="text-uppercase"><strong>where i can use</strong></th>
+                    <th class="text-uppercase"><strong>description</strong></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <kbd>.text-muted</kbd>
+                    </td>
+                    <td><i>Typography</i></td>
+                    <td>Changes the color of in the text</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.text-primary</kbd>
+                    </td>
+                    <td><i>Typography</i></td>
+                    <td>Changes the color of in the text</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.text-info</kbd>
+                    </td>
+                    <td><i>Typography</i></td>
+                    <td>Changes the color of in the text</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.text-success</kbd>
+                    </td>
+                    <td><i>Typography</i></td>
+                    <td>Changes the color of in the text</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.text-warning</kbd>
+                    </td>
+                    <td><i>Typography</i></td>
+                    <td>Changes the color of in the text</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.text-danger</kbd>
+                    </td>
+                    <td><i>Typography</i></td>
+                    <td>Changes the color of in the text</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.text-white</kbd>
+                    </td>
+                    <td><i>Typography</i></td>
+                    <td>Changes the color of in the text</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.bg-primary</kbd>
+                    </td>
+                    <td><i>Background</i></td>
+                    <td>Changes the color of background</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.bg-info</kbd>
+                    </td>
+                    <td><i>Background</i></td>
+                    <td>Changes the color of background</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.bg-success</kbd>
+                    </td>
+                    <td><i>Background</i></td>
+                    <td>Changes the color of background</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.bg-warning</kbd>
+                    </td>
+                    <td><i>Background</i></td>
+                    <td>Changes the color of background</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.bg-danger</kbd>
+                    </td>
+                    <td><i>Background</i></td>
+                    <td>Changes the color of background</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <kbd>.bg-inverted</kbd>
+                    </td>
+                    <td><i>Background</i></td>
+                    <td>Changes the color of background</td>
+                  </tr>
+                  <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div>more helpers to <a href="https://github.com/nzbin/snack-helper" target="_blank">Snack-helper</a></div>
         </section>

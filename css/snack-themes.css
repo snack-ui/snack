@@ -1,7 +1,13 @@
-/*
- * snack-themes.css v0.9.0
+/**
+ *
+ * snack.css v0.9.2
+ *
+ * https://nzbin.github.io/snack/
+ *
+ * Copyright (c) 2017 nzbin
+ *
  * Released under the MIT license
- * Copyright 2017 by nzbin
+ *
  */
 .theme-dark {
   background-color: #212121;
@@ -98,3 +104,5 @@
 .theme-dark .boxes.secondary > .box.footer {
   background-color: transparent;
 }
+
+/*# sourceMappingURL=snack-themes.css.map */

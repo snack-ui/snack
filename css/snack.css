@@ -267,6 +267,14 @@ code {
   border-radius: 3px;
 }
 
+kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+}
+
 h1,
 h2,
 h3,
@@ -1368,3 +1376,5 @@ table {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+/*# sourceMappingURL=snack.css.map */
