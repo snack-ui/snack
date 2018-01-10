@@ -35,7 +35,7 @@ label {
 	display: block;
 	width: 100%;
 	padding: 4px 8px;
-	border: 1px solid $input-border-color;
+	border: $input-border-width solid $input-border-color;
 	border-radius: $input-border-radius;
 	background-color: $input-bg-color;
 	font-size: $input-font-size;

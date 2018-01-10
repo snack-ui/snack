@@ -967,8 +967,8 @@ label {
   display: block;
   width: 100%;
   padding: 4px 8px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
   background-color: #fff;
   font-size: 14px;
   line-height: 1.42858;
