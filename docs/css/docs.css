@@ -144,6 +144,11 @@ header {
   margin-bottom: 15px;
   padding: 10px;
   color: #fff;
+  font-weight: bold;
+}
+
+.palette small {
+  color: #fff;
 }
 
 .com {
