@@ -1,40 +1,37 @@
-// --------------------------
+// --------------------------------------------------
 // Grid
-// --------------------------
+// --------------------------------------------------
 .container {
-	max-width: 1170px;
-	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
-
-    @include clearfix;
-
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @include clearfix;
 }
 
 .row {
-	margin-left: $grid-gutter / -2;
-	margin-right: $grid-gutter / -2;
+  margin-left: $grid-gutter / -2;
+  margin-right: $grid-gutter / -2;
+  @include clearfix;
 
-	@include clearfix;
+  &.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+    @include make-grid-columns-without-gutter();
+  }
 
-	&.no-gutter {
-		margin-left: 0;
-		margin-right: 0;
-
-		@include make-grid-columns-without-gutter();
-	}
 }
 
 @include make-grid-columns();
 
 // breakpoint 768
 @media(min-width:576px) {
-	// looping 12-grids default
-	@include loop-grid-columns(12);
-	// looping 10-grids
-	@include loop-grid-columns(10);
-	// equal looping
-	@include loop-grid-columns-equal(12);
-	// grid float
-	@include make-grid-columns-float();
+  // looping 12-grids default
+  @include loop-grid-columns(12);
+  // looping 10-grids
+  @include loop-grid-columns(10);
+  // equal looping
+  @include loop-grid-columns-equal(12);
+  // grid float
+  @include make-grid-columns-float();
 }

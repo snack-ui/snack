@@ -1,57 +1,57 @@
-// --------------------------
+// --------------------------------------------------
 // Helpers
-// --------------------------
+// --------------------------------------------------
 // float
 .pull-right {
-	float: right;
+  float: right;
 }
 
 .pull-left {
-	float: left;
+  float: left;
 }
 
 .clearfix {
-	@include clearfix;
+  @include clearfix;
 }
 
 .center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // align
 .text-left {
-	text-align: left;
+  text-align: left;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 .text-right {
-	text-align: right;
+  text-align: right;
 }
 
 .align-top {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 .align-middle {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 .align-bottom {
-	vertical-align: bottom;
+  vertical-align: bottom;
 }
 
 // text
 .text-ellipsis {
-	overflow: hidden;
-    white-space: nowrap;
-	text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .text-uppercase {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }

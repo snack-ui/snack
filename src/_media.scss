@@ -2,53 +2,61 @@
 // Media
 // --------------------------------------------------
 .media {
-	display: table;
-	margin-top: 15px;
+  display: table;
+  margin-top: 15px;
 
-	&:first-child {
-		margin-top: 0;
-	}
+  &:first-child {
+    margin-top: 0;
+  }
+
 }
 
 .media-body,
 .media-left,
 .media-right {
-	display: table-cell;
-	vertical-align: top;
+  display: table-cell;
+  vertical-align: top;
 }
 
 .media-left {
-	padding-right: 10px;
+  padding-right: 10px;
 }
 
 .media-right {
-	padding-left: 10px;
+  padding-left: 10px;
 }
 
 .media-body {
-	width: 10000px;
-	text-align: left;
-	@at-root {
-		.media-heading {
-			margin-top: 0;
-			margin-bottom: 5px;
-		}
-		.media-content {
-			font-size: 13px;
-		}
-	}
-	p {
-		margin: 0;
-		margin-bottom: 5px;
-	}
+  width: 10000px;
+  text-align: left;
+
+  @at-root {
+    .media-heading {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    .media-content {
+      font-size: 13px;
+    }
+
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
 }
 
 // avatar
-.avatar{
-	display:inline-block;
-	border-radius:100%;
-	overflow:hidden;
-	img{
-		display: block;
-	}
+.avatar {
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
+
 }
