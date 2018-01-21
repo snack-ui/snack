@@ -1175,16 +1175,16 @@ table {
   border-bottom-right-radius: 3px !important;
 }
 
-.boxes > .box.heading {
+.boxes > .box.headed {
   background-color: #f5f5f5;
 }
 
-.boxes > .box.body {
+.boxes > .box.bodied {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.boxes > .box.footer {
+.boxes > .box.footed {
   background-color: #f5f5f5;
 }
 
@@ -1246,20 +1246,20 @@ table {
   border-radius: 4px;
 }
 
-.boxes.secondary > .box.heading {
+.boxes.secondary > .box.headed {
   background-color: transparent;
   margin-bottom: 0;
   border-width: 0;
   border-radius: 0 !important;
 }
 
-.boxes.secondary > .box.body {
+.boxes.secondary > .box.bodied {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
 }
 
-.boxes.secondary > .box.footer {
+.boxes.secondary > .box.footed {
   background-color: transparent;
   border-width: 0;
   border-radius: 0 !important;
@@ -1377,3 +1377,5 @@ table {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+/*# sourceMappingURL=snack.css.map */
