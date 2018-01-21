@@ -28,14 +28,14 @@
 			border-bottom-left-radius: $boxes-box-border-radius !important;
 			border-bottom-right-radius: $boxes-box-border-radius !important;
 		}
-		&.heading {
+		&.headed {
 			background-color: $box-heading-bg-color;
 		}
-		&.body {
+		&.bodied {
 			padding-top: 15px;
 			padding-bottom: 15px;
 		}
-		&.footer {
+		&.footed {
 			background-color: $box-footer-bg-color;
 		}
 	}
@@ -83,18 +83,18 @@
 		>.box {
 			border-width: 1px;
 			border-radius: 4px;
-			&.heading {
+			&.headed {
 				background-color: transparent;
 				margin-bottom: 0;
 				border-width: 0;
 				border-radius: 0 !important;
 			}
-			&.body {
+			&.bodied {
 				padding-top: 15px;
 				padding-bottom: 15px;
 				margin-bottom: 0;
 			}
-			&.footer {
+			&.footed {
 				background-color: transparent;
 				border-width: 0;
 				border-radius: 0 !important;

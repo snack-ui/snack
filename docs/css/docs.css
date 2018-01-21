@@ -13,11 +13,18 @@ header {
   transition: background-color .5s;
 }
 
-.header {
+header {
   height: 60px;
   line-height: 60px;
+  border-bottom: 1px solid #eee;
   background-color: #f5f5f5;
   color: #333;
+}
+
+footer {
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  background-color: #f5f5f5;
 }
 
 .navbar-brand {
@@ -116,7 +123,11 @@ header {
 .content > section {
   padding-bottom: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eee;
+}
+
+.content > section h2 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .example > .btn,
@@ -213,12 +224,19 @@ ol.linenums li {
   text-shadow: 0 1px 0 #fff;
 }
 
-.theme-dark .header {
+.theme-dark header {
   background-color: #262626;
+  border-color: #2d2d2d;
   color: #fff;
 }
 
-.theme-dark .content > section {
+.theme-dark footer {
+  background-color: #262626;
+  border-color: #2d2d2d;
+  color: #fff;
+}
+
+.theme-dark .content > section h2 {
   border-bottom-color: #2d2d2d;
 }
 
