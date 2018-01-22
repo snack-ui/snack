@@ -76,11 +76,11 @@
   background-color: #1A1A1A;
 }
 
-.theme-dark .boxes > .box.heading {
+.theme-dark .boxes > .box.headed {
   background-color: #242424;
 }
 
-.theme-dark .boxes > .box.footer {
+.theme-dark .boxes > .box.footed {
   background-color: #242424;
 }
 
@@ -97,11 +97,11 @@
   border-color: #fff;
 }
 
-.theme-dark .boxes.secondary > .box.heading {
+.theme-dark .boxes.secondary > .box.headed {
   background-color: transparent;
 }
 
-.theme-dark .boxes.secondary > .box.footer {
+.theme-dark .boxes.secondary > .box.footed {
   background-color: transparent;
 }
 
