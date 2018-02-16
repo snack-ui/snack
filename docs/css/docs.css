@@ -125,7 +125,7 @@ footer {
   margin-bottom: 30px;
 }
 
-.content > section h2 {
+.content > section > h2 {
   padding-bottom: 20px;
   border-bottom: 1px solid #f1f1f1;
 }
