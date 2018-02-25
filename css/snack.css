@@ -1109,6 +1109,13 @@ fieldset[disabled] .radio label {
   cursor: not-allowed;
 }
 
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+
 table {
   background: transparent;
   border-spacing: 0;
@@ -1410,3 +1417,5 @@ table {
 .text-uppercase {
   text-transform: uppercase;
 }
+
+/*# sourceMappingURL=snack.css.map */
