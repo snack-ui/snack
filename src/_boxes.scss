@@ -16,7 +16,7 @@
   border-radius: $boxes-border-radius;
   margin-bottom: 15px;
 
-  >.box {
+  > .box {
     border-width: 0;
     border-radius: 0;
     margin-bottom: 0;
@@ -43,7 +43,6 @@
     &.footed {
       background-color: $box-footer-bg-color;
     }
-
   }
 
   .box + .box {
@@ -94,14 +93,13 @@
     .box {
       background-color: transparent;
     }
-
   }
 
   &.secondary {
     // boxes with no border, you can custom you like
     border-width: 0;
 
-    >.box {
+    > .box {
       border-width: 1px;
       border-radius: 4px;
 
@@ -123,9 +121,6 @@
         border-width: 0;
         border-radius: 0 !important;
       }
-
     }
-
   }
-
 }

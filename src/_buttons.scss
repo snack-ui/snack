@@ -33,7 +33,6 @@
     &:active {
       background-color: darken($color-default, 5%);
     }
-
   }
 
   &.primary {
@@ -51,7 +50,6 @@
     &:active {
       background-color: darken($color-primary, 5%);
     }
-
   }
 
   &.info {
@@ -69,7 +67,6 @@
     &:active {
       background-color: darken($color-info, 5%);
     }
-
   }
 
   &.success {
@@ -87,7 +84,6 @@
     &:active {
       background-color: darken($color-success, 5%);
     }
-
   }
 
   &.danger {
@@ -105,7 +101,6 @@
     &:active {
       background-color: darken($color-danger, 5%);
     }
-
   }
 
   &.warning {
@@ -123,7 +118,6 @@
     &:active {
       background-color: darken($color-warning, 5%);
     }
-
   }
 
   &.inverted {
@@ -141,7 +135,6 @@
     &:active {
       background-color: lighten($color-inverted, 10%);
     }
-
   }
 
   &.link {
@@ -166,9 +159,7 @@
       text-decoration: underline;
       background-color: transparent;
     }
-
   }
-
 }
 
 // outline button
@@ -193,7 +184,6 @@
       color: #fff;
       background-color: $color-default;
     }
-
   }
 
   &.primary {
@@ -214,7 +204,6 @@
       color: #fff;
       background-color: $color-primary;
     }
-
   }
 
   &.info {
@@ -235,7 +224,6 @@
       color: #fff;
       background-color: $color-info;
     }
-
   }
 
   &.success {
@@ -256,7 +244,6 @@
       color: #fff;
       background-color: $color-success;
     }
-
   }
 
   &.danger {
@@ -277,7 +264,6 @@
       color: #fff;
       background-color: $color-danger;
     }
-
   }
 
   &.warning {
@@ -298,7 +284,6 @@
       color: #fff;
       background-color: $color-warning;
     }
-
   }
 
   &.inverted {
@@ -319,9 +304,7 @@
       color: #fff;
       background-color: $color-inverted;
     }
-
   }
-
 }
 
 .btns {
@@ -329,7 +312,7 @@
   display: inline-block;
   vertical-align: middle;
 
-  >.btn {
+  > .btn {
     position: relative;
     float: left;
     border-radius: 0;
@@ -345,11 +328,10 @@
       border-top-right-radius: $btn-border-radius;
       border-bottom-right-radius: $btn-border-radius;
     }
-
   }
 
   &.vertical {
-    >.btn {
+    > .btn {
       position: relative;
       display: block;
       float: none;
@@ -369,9 +351,6 @@
         border-bottom-left-radius: $btn-border-radius;
         border-bottom-right-radius: $btn-border-radius;
       }
-
     }
-
   }
-
 }

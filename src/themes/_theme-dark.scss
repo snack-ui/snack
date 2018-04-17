@@ -4,7 +4,7 @@
 $grey-darker: #262626;
 $grey-dark: #2d2d2d;
 $grey: #383838;
-$grey-light: #444444;
+$grey-light: #444;
 $grey-lighter: #5c5c5c;
 $color-inverted: #fff;
 // typography
@@ -21,7 +21,7 @@ $input-border-color: #404040;
 $input-border-color-focus: darken($input-border-color, 5%);
 $input-text-color: #fff;
 // boxes
-$box-bg-color: #1A1A1A;
+$box-bg-color: #1a1a1a;
 $box-border-color: $grey-dark;
 $box-heading-bg-color: #242424;
 $box-footer-bg-color: #242424;
@@ -49,16 +49,15 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
   }
 
   .table {
-    >thead,
-    >tbody,
-    >tfoot {
-      >tr {
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
         border-bottom-color: $table-border-color;
       }
-
     }
 
-    >thead {
+    > thead {
       background-color: $table-head-bg-color;
       border-bottom-color: $table-border-color;
     }
@@ -66,35 +65,29 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
     &.bordered {
       border-color: $table-border-color;
 
-      >thead,
-      >tbody,
-      >tfoot {
-        >tr {
-          >th,
-          >td {
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th,
+          > td {
             border-color: $table-border-color;
           }
-
         }
-
       }
-
     }
 
     &.striped {
-      >tbody>tr:nth-of-type(2n+2) {
+      > tbody > tr:nth-of-type(2n+2) {
         background-color: $table-striped-bg-color;
       }
-
     }
 
     &.hover {
-      >tbody>tr:hover {
+      > tbody > tr:hover {
         background-color: $table-hover-bg-color;
       }
-
     }
-
   }
 
   .form-field {
@@ -106,7 +99,6 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
       background-color: $input-bg-color-focus;
       border-color: $input-border-color-focus;
     }
-
   }
 
   .box {
@@ -115,7 +107,7 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
   }
 
   .boxes {
-    >.box {
+    > .box {
       &.headed {
         background-color: $box-heading-bg-color;
       }
@@ -123,7 +115,6 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
       &.footed {
         background-color: $box-footer-bg-color;
       }
-
     }
 
     &.raised {
@@ -140,7 +131,7 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
     }
 
     &.secondary {
-      >.box {
+      > .box {
         &.headed {
           background-color: transparent;
         }
@@ -148,11 +139,7 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
         &.footed {
           background-color: transparent;
         }
-
       }
-
     }
-
   }
-
 }

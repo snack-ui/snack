@@ -50,7 +50,6 @@ label {
   &[disabled] {
     cursor: not-allowed;
   }
-
 }
 
 .form-label {
@@ -75,7 +74,6 @@ label {
     width: auto;
     vertical-align: middle;
   }
-
 }
 
 // horizontal
@@ -83,9 +81,9 @@ label {
   .form-item {
     margin-right: -15px;
     margin-left: -15px;
+
     @include clearfix;
   }
-
 }
 
 // checkbox & radio
@@ -117,16 +115,15 @@ label {
     vertical-align: middle;
     font-weight: 400;
   }
-
 }
 
-.checkbox+.checkbox,
-.radio+.radio {
+.checkbox + .checkbox,
+.radio + .radio {
   margin-top: -5px;
 }
 
-.checkbox.inline+.checkbox.inline,
-.radio.inline+.radio.inline {
+.checkbox.inline + .checkbox.inline,
+.radio.inline + .radio.inline {
   margin-top: 0;
   margin-left: 10px;
 }
@@ -145,12 +142,11 @@ fieldset[disabled] {
   .radio label {
     cursor: not-allowed;
   }
-
 }
 
 .help-block {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    color: #737373;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
 }
