@@ -34,6 +34,10 @@ footer {
   font-size: 24px;
 }
 
+.navbar-brand:hover .logo-wrap {
+  box-shadow: 0 4px 18px 3px rgba(0, 0, 0, 0.1);
+}
+
 .logo-wrap {
   display: inline-block;
   position: relative;
@@ -45,6 +49,7 @@ footer {
   text-align: center;
   border-radius: 100%;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow .3s ease-in-out;
 }
 
 .logo {
@@ -52,38 +57,27 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -2px;
-  margin-left: -8px;
-  -webkit-transform: rotateZ(-34deg);
-  transform: rotateZ(-34deg);
-  width: 16px;
+  width: 24px;
   height: 4px;
-  border-radius: 2px;
+  margin-top: -2px;
+  margin-left: -12px;
   background: #ffa200;
+  transform: rotateZ(45deg);
 }
 
-.logo:before {
+.logo:before, .logo:after {
   content: '';
   display: block;
   position: absolute;
-  top: -6px;
-  left: 4px;
-  width: 16px;
+  top: -10px;
+  left: 8px;
+  width: 8px;
   height: 4px;
-  border-radius: 2px;
   background: #ffa200;
 }
 
 .logo:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 6px;
-  left: -4px;
-  width: 16px;
-  height: 4px;
-  border-radius: 2px;
-  background: #ffa200;
+  top: 10px;
 }
 
 .sidebar {
