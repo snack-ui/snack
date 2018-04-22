@@ -35,6 +35,12 @@ footer {
 
 .navbar-brand {
   font-size: 24px;
+
+  &:hover {
+    .logo-wrap {
+      box-shadow: 0 4px 18px 3px rgba(0, 0, 0, .1);
+    }
+  }
 }
 
 // logo
@@ -49,42 +55,38 @@ footer {
   text-align: center;
   border-radius: 100%;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .2);
+  transition: box-shadow .3s ease-in-out;
 }
 
-@mixin logo-shape() {
-  width: 16px;
-  height: 4px;
-  border-radius: 2px;
-  background: #ffa200;
-}
+$logo-color: #ffa200;
+$logo-line-width: 24px;
+$logo-line-height: 4px;
 
 .logo {
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -2px;
-  margin-left: -8px;
-  -webkit-transform: rotateZ(-34deg);
-  transform: rotateZ(-34deg);
-  @include logo-shape;
+  width: $logo-line-width;
+  height: $logo-line-height;
+  margin-top: $logo-line-height / -2;
+  margin-left: $logo-line-width / -2;
+  background: $logo-color;
+  transform: rotateZ(45deg);
 
-  &:before {
+  &:before,&:after {
     content: '';
     display: block;
     position: absolute;
-    top: -6px;
-    left: 4px;
-    @include logo-shape;
+    top: -10px;
+    left: $logo-line-width /3;
+    width: $logo-line-width / 3;
+    height: $logo-line-height;
+    background: $logo-color;
   }
 
   &:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 6px;
-    left: -4px;
-    @include logo-shape;
+    top: 10px;
   }
 
 }
@@ -96,20 +98,20 @@ footer {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  >ul {
+  > ul {
     list-style: none;
     padding: 0;
     margin: 0;
 
-    >li+li {
+    > li + li {
       margin-top: 2px;
     }
 
-    >li {
+    > li {
       position: relative;
       display: block;
 
-      >a {
+      > a {
         position: relative;
         display: block;
         padding: 8px 12px;
@@ -123,40 +125,33 @@ footer {
           text-decoration: none;
           background-color: #eee;
         }
-
       }
-
     }
-
   }
-
 }
 
 .content {
-  >section {
+  > section {
     padding: 15px;
     margin: 15px 0;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 5px 10px -7px rgba(87, 53, 117, 0.13), 0 10px 30px -6px rgba(0, 60, 170, 0.1);
 
-    >h2 {
+    > h2 {
       padding-bottom: 20px;
       margin-top: 10px;
       border-bottom: 1px solid #f1f1f1;
     }
-
   }
-
 }
 
 .example {
-  >.btn,
-  >.btns {
+  > .btn,
+  > .btns {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-
 }
 
 //grid
@@ -171,7 +166,6 @@ footer {
   &:hover {
     background-color: #fbe2e1;
   }
-
 }
 
 //palette
@@ -186,7 +180,6 @@ footer {
   small {
     color: #fff;
   }
-
 }
 
 // prettify code style
@@ -268,16 +261,14 @@ ol.linenums li {
   }
 
   .content {
-    >section {
+    > section {
       background-color: transparent;
       box-shadow: none;
 
       h2 {
         border-bottom-color: #2d2d2d;
       }
-
     }
-
   }
 
   .grid-box {
@@ -288,10 +279,9 @@ ol.linenums li {
     &:hover {
       background-color: #2d2d2d;
     }
-
   }
 
-  .sidebar>ul>li>a:hover {
+  .sidebar > ul > li > a:hover {
     background-color: #191919;
   }
 
@@ -352,5 +342,4 @@ ol.linenums li {
   ol.linenums li {
     text-shadow: none;
   }
-
 }
