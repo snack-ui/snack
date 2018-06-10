@@ -41,6 +41,6 @@
     "copy": "cpy dist/*.css !dist/*.min.css docs/css",
     "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
     "watch": "onchange src -- run-p build",
-    "lint": "stylelint --syntax scss \"src/**/*.scss\""
+    "lint": "stylelint --syntax scss \"src/**/*.scss\" --fix"
   }
 }
