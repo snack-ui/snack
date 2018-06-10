@@ -3,13 +3,13 @@
 // --------------------------------------------------
 // clearfix
 @mixin clearfix() {
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: " "; // 1
     display: table; // 2
   }
 
-  &:after {
+  &::after {
     clear: both;
   }
 }
