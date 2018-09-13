@@ -15,12 +15,16 @@
   margin-right: $grid-gutter / -2;
 
   @include clearfix;
+}
 
-  &.no-gutter {
-    margin-left: 0;
-    margin-right: 0;
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 
-    @include make-grid-columns-without-gutter();
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 

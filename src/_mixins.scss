@@ -20,6 +20,7 @@
     $list: "#{$list}, .col-#{$i}";
   }
 
+  .col,
   #{$list} {
     position: relative;
     min-height: 1px;
@@ -28,21 +29,12 @@
   }
 }
 
-@mixin make-grid-columns-without-gutter($i: 1, $list: ".col-#{$i}") {
-  @for $i from (1 + 1) through $grid-columns {
-    $list: "#{$list}, .col-#{$i}";
-  }
-
-  #{$list} {
-    padding: 0;
-  }
-}
-
 @mixin make-grid-columns-float($i: 1, $list: ".col-#{$i}") {
   @for $i from (1 + 1) through $grid-columns {
     $list: "#{$list}, .col-#{$i}";
   }
 
+  .col,
   #{$list} {
     float: left;
   }
@@ -73,8 +65,8 @@
 }
 
 @mixin loop-grid-columns-equal($columns) {
-  @for $i from 1 through $columns {
-    .cols-#{$i} > .col-1 {
+  @for $i from 2 through $columns {
+    .cols-#{$i} > .col {
       width: percentage(1 / $i);
     }
   }
