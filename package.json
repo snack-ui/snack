@@ -32,15 +32,18 @@
   },
   "scripts": {
     "start": "run-p build watch",
-    "build": "run-s clean sass sass:theme docs autoprefixer",
+    "build": "run-s clean sass sass:min sass-theme sass-theme:min autoprefixer docs",
+    "build:dev": "run-s sass",
     "clean": "rimraf dist",
-    "sass": "node-sass --output-style expanded src/snack.scss dist/snack.css && node-sass --output-style compressed src/snack.scss dist/snack.min.css",
-    "sass:theme": "node-sass --output-style expanded src/themes/snack-themes.scss dist/snack-themes.css && node-sass --output-style compressed src/themes/snack-themes.scss dist/snack-themes.min.css",
+    "sass": "node-sass --output-style expanded src/snack.scss dist/snack.css",
+    "sass:min": "node-sass --output-style compressed src/snack.scss dist/snack.min.css",
+    "sass-theme": "node-sass --output-style expanded src/themes/snack-themes.scss dist/snack-themes.css",
+    "sass-theme:min": "node-sass --output-style compressed src/themes/snack-themes.scss dist/snack-themes.min.css",
     "docs": "run-p sass:docs copy",
     "sass:docs": "node-sass --output-style expanded docs/sass/docs.scss docs/css/docs.css",
     "copy": "cpy dist/*.css !dist/*.min.css docs/css",
-    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 1 versions\" -r dist/*.css",
-    "watch": "onchange src -- run-p build",
+    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 20 versions\" -r dist/*.css",
+    "watch": "onchange src -- run-p build:dev",
     "lint": "stylelint --syntax scss \"src/**/*.scss\" --fix"
   }
 }
