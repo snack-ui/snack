@@ -16,7 +16,7 @@ Snack is a minimal CSS framework for web. But the main purpose of this framework
 - [Forms](https://nzbin.github.io/snack/#forms)
 - [Tables](https://nzbin.github.io/snack/#tables)
 - [Boxes](https://nzbin.github.io/snack/#boxes)
-- [Helpers](https://nzbin.github.io/snack/#helpers)
+- [Utilities](https://nzbin.github.io/snack/#utilities)
 
 ## License
 
