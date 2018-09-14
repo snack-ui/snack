@@ -15,12 +15,13 @@
     "sass"
   ],
   "devDependencies": {
-    "autoprefixer": "^6.5.4",
+    "autoprefixer": "^7.1.6",
     "cpy-cli": "^1.0.1",
     "node-sass": "^4.5.3",
     "npm-run-all": "^2.3.0",
     "onchange": "^2.5.0",
-    "postcss-cli": "^2.6.0",
+    "postcss-cli": "^4.1.1",
+    "postcss-header": "^1.0.0",
     "rimraf": "^2.5.4",
     "stylelint": "^9.2.0",
     "stylelint-config-recommended-scss": "^3.2.0",
@@ -32,7 +33,7 @@
   },
   "scripts": {
     "start": "run-p build watch",
-    "build": "run-s clean sass sass:min sass-theme sass-theme:min autoprefixer docs",
+    "build": "run-s clean sass sass:min sass-theme sass-theme:min postcss docs",
     "build:dev": "run-s sass",
     "clean": "rimraf dist",
     "sass": "node-sass --output-style expanded src/snack.scss dist/snack.css",
@@ -42,7 +43,7 @@
     "docs": "run-p sass:docs copy",
     "sass:docs": "node-sass --output-style expanded docs/sass/docs.scss docs/css/docs.css",
     "copy": "cpy dist/*.css !dist/*.min.css docs/css",
-    "autoprefixer": "postcss -u autoprefixer --no-map.inline --autoprefixer.browsers \"last 20 versions\" -r dist/*.css",
+    "postcss": "postcss -r dist/*.css --map",
     "watch": "onchange src -- run-p build:dev",
     "lint": "stylelint --syntax scss \"src/**/*.scss\" --fix"
   }
