@@ -1,14 +1,13 @@
-/**
+
+/*!
+ * snack.css - v1.0.0
+ * A minimal CSS framework for web
+ * https://snack.github.io
  *
- * snack.css v0.9.5
- *
- * https://nzbin.github.io/snack/
- *
- * Copyright (c) 2017 nzbin
- *
- * Released under the MIT license
- *
+ * Copyright (c) 2017 nzbin <nzb329@163.com>
+ * Released under MIT License
  */
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -46,7 +45,7 @@ figure {
 
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -70,7 +69,7 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 b,
@@ -184,7 +183,7 @@ fieldset {
 
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -204,7 +203,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
 }
 
@@ -253,12 +252,12 @@ template {
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 12px;
 }
 
@@ -290,8 +289,7 @@ pre {
   word-wrap: break-word;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   overflow: auto;
 }
 
@@ -300,8 +298,7 @@ code {
   font-size: 90%;
   color: #c7254e;
   background-color: #f9f2f4;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
 }
 
 kbd {
@@ -309,8 +306,7 @@ kbd {
   font-size: 90%;
   color: #fff;
   background-color: #333;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
 }
 
 h1,
@@ -371,15 +367,9 @@ hr {
   line-height: 1.42858;
   font-size: 14px;
   border: 2px solid transparent;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   cursor: pointer;
   outline: none;
-}
-
-.btn.fluid {
-  display: block;
-  width: 100%;
 }
 
 .btn.default {
@@ -669,6 +659,15 @@ hr {
   background-color: #2d353c;
 }
 
+.btn.fluid {
+  display: block;
+  width: 100%;
+}
+
+.btn.pill {
+  border-radius: 16px;
+}
+
 .btns {
   position: relative;
   display: inline-block;
@@ -678,32 +677,26 @@ hr {
 .btns > .btn {
   position: relative;
   float: left;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   margin-left: -2px;
 }
 
 .btns > .btn:first-child {
   margin-left: 0;
-  -webkit-border-top-left-radius: 4px;
-          border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-          border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
 }
 
 .btns > .btn:last-child {
-  -webkit-border-top-right-radius: 4px;
-          border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-          border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .btns.vertical > .btn {
   position: relative;
   display: block;
   float: none;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   width: 100%;
   max-width: 100%;
   margin-left: 0;
@@ -712,17 +705,13 @@ hr {
 
 .btns.vertical > .btn:first-child {
   margin-top: 0;
-  -webkit-border-top-left-radius: 4px;
-          border-top-left-radius: 4px;
-  -webkit-border-top-right-radius: 4px;
-          border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .btns.vertical > .btn:last-child {
-  -webkit-border-bottom-left-radius: 4px;
-          border-bottom-left-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-          border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .container {
@@ -991,8 +980,7 @@ hr {
 
 .avatar {
   display: inline-block;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
+  border-radius: 100%;
   overflow: hidden;
 }
 
@@ -1019,8 +1007,7 @@ label {
   width: 100%;
   padding: 4px 8px;
   border: 2px solid #ddd;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background-color: #fff;
   font-size: 14px;
   line-height: 1.42858;
@@ -1207,37 +1194,30 @@ table {
   padding: 10px 15px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background-color: #fff;
 }
 
 .boxes {
   border: 2px solid transparent;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   margin-bottom: 15px;
 }
 
 .boxes > .box {
   border-width: 0;
-  -webkit-border-radius: 0;
-          border-radius: 0;
+  border-radius: 0;
   margin-bottom: 0;
 }
 
 .boxes > .box:first-child {
-  -webkit-border-top-left-radius: 3px !important;
-          border-top-left-radius: 3px !important;
-  -webkit-border-top-right-radius: 3px !important;
-          border-top-right-radius: 3px !important;
+  border-top-left-radius: 3px !important;
+  border-top-right-radius: 3px !important;
 }
 
 .boxes > .box:last-child {
-  -webkit-border-bottom-left-radius: 3px !important;
-          border-bottom-left-radius: 3px !important;
-  -webkit-border-bottom-right-radius: 3px !important;
-          border-bottom-right-radius: 3px !important;
+  border-bottom-left-radius: 3px !important;
+  border-bottom-right-radius: 3px !important;
 }
 
 .boxes > .box.headed {
@@ -1264,7 +1244,7 @@ table {
 .boxes.raised {
   border-color: #ddd;
   -webkit-box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
-          box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
+  box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
 }
 
 .boxes.default {
@@ -1309,16 +1289,14 @@ table {
 
 .boxes.secondary > .box {
   border-width: 1px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 
 .boxes.secondary > .box.headed {
   background-color: transparent;
   margin-bottom: 0;
   border-width: 0;
-  -webkit-border-radius: 0 !important;
-          border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 .boxes.secondary > .box.bodied {
@@ -1330,8 +1308,7 @@ table {
 .boxes.secondary > .box.footed {
   background-color: transparent;
   border-width: 0;
-  -webkit-border-radius: 0 !important;
-          border-radius: 0 !important;
+  border-radius: 0 !important;
 }
 
 .bg-primary {
@@ -1440,12 +1417,19 @@ table {
 .text-ellipsis {
   overflow: hidden;
   white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-middle::before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=snack.css.map */

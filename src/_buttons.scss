@@ -13,11 +13,6 @@
   cursor: pointer;
   outline: none;
 
-  &.fluid {
-    display: block;
-    width: 100%;
-  }
-
   &.default {
     color: #fff;
     background-color: $color-default;
@@ -307,6 +302,18 @@
   }
 }
 
+// fluid button
+.btn.fluid {
+  display: block;
+  width: 100%;
+}
+
+// pill button
+.btn.pill{
+  border-radius: 16px;
+}
+
+// button group
 .btns {
   position: relative;
   display: inline-block;
