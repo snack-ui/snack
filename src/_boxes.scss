@@ -31,16 +31,16 @@
       border-bottom-right-radius: $boxes-box-border-radius !important;
     }
 
-    &.headed {
+    &.box-header {
       background-color: $box-heading-bg-color;
     }
 
-    &.bodied {
+    &.box-body {
       padding-top: 15px;
       padding-bottom: 15px;
     }
 
-    &.footed {
+    &.box-footer {
       background-color: $box-footer-bg-color;
     }
   }
@@ -54,11 +54,7 @@
     margin-bottom: 0;
   }
 
-  &.raised {
-    border-color: $box-border-color;
-    box-shadow: 0 2px 10px 3px $boxes-rasied-shadow;
-  }
-
+  // boxes color option
   &.default {
     border-color: $box-border-color;
   }
@@ -95,32 +91,38 @@
     }
   }
 
-  &.secondary {
-    // boxes with no border, you can custom you like
-    border-width: 0;
+  &.raised {
+    border-color: $box-border-color;
+    box-shadow: 0 2px 10px 3px $boxes-rasied-shadow;
+  }
+}
 
-    > .box {
-      border-width: 1px;
-      border-radius: 4px;
+// another boxes style
+.boxes.secondary {
+  // boxes with no border, you can custom you like
+  border-width: 0;
 
-      &.headed {
-        background-color: transparent;
-        margin-bottom: 0;
-        border-width: 0;
-        border-radius: 0 !important;
-      }
+  > .box {
+    border-width: 1px;
+    border-radius: 4px;
 
-      &.bodied {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-bottom: 0;
-      }
+    &.box-header {
+      background-color: transparent;
+      margin-bottom: 0;
+      border-width: 0;
+      border-radius: 0 !important;
+    }
 
-      &.footed {
-        background-color: transparent;
-        border-width: 0;
-        border-radius: 0 !important;
-      }
+    &.box-body {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 0;
+    }
+
+    &.box-footer {
+      background-color: transparent;
+      border-width: 0;
+      border-radius: 0 !important;
     }
   }
 }
