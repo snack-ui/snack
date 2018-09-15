@@ -1023,6 +1023,11 @@ label {
   cursor: not-allowed;
 }
 
+.form-field[disabled], .form-field[readonly] {
+  background-color: #eee;
+  opacity: 1;
+}
+
 .form-label {
   margin-bottom: 0;
   padding-top: 3px;
@@ -1109,10 +1114,15 @@ label {
   margin-left: -20px;
 }
 
-fieldset[disabled] .form-control,
+fieldset[disabled] .form-field,
 fieldset[disabled] .checkbox label,
 fieldset[disabled] .radio label {
   cursor: not-allowed;
+}
+
+fieldset[disabled] .form-field {
+  background-color: #eee;
+  opacity: 1;
 }
 
 .help-block {
@@ -1220,16 +1230,16 @@ table {
   border-bottom-right-radius: 3px !important;
 }
 
-.boxes > .box.headed {
+.boxes > .box.box-header {
   background-color: #f5f5f5;
 }
 
-.boxes > .box.bodied {
+.boxes > .box.box-body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.boxes > .box.footed {
+.boxes > .box.box-footer {
   background-color: #f5f5f5;
 }
 
@@ -1239,12 +1249,6 @@ table {
 
 .boxes .boxes {
   margin-bottom: 0;
-}
-
-.boxes.raised {
-  border-color: #ddd;
-  -webkit-box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
-  box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
 }
 
 .boxes.default {
@@ -1283,6 +1287,12 @@ table {
   background-color: transparent;
 }
 
+.boxes.raised {
+  border-color: #ddd;
+  -webkit-box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
+  box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
+}
+
 .boxes.secondary {
   border-width: 0;
 }
@@ -1292,20 +1302,20 @@ table {
   border-radius: 4px;
 }
 
-.boxes.secondary > .box.headed {
+.boxes.secondary > .box.box-header {
   background-color: transparent;
   margin-bottom: 0;
   border-width: 0;
   border-radius: 0 !important;
 }
 
-.boxes.secondary > .box.bodied {
+.boxes.secondary > .box.box-body {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 0;
 }
 
-.boxes.secondary > .box.footed {
+.boxes.secondary > .box.box-footer {
   background-color: transparent;
   border-width: 0;
   border-radius: 0 !important;
