@@ -65,13 +65,13 @@ label {
 }
 
 // label+input
-.form-item {
+.form-group {
   margin-bottom: 15px;
 }
 
 .form-inline {
   input[type="file"],
-  .form-item {
+  .form-group {
     display: inline-block;
   }
 
@@ -84,7 +84,7 @@ label {
 
 // horizontal
 .form-horizontal {
-  .form-item {
+  .form-group {
     margin-right: -15px;
     margin-left: -15px;
 

@@ -1,6 +1,6 @@
 
 /*!
- * snack.css - v1.1.0
+ * snack.css - v1.1.1
  * A minimal CSS framework for web
  * https://snack.github.io
  *
@@ -1034,12 +1034,12 @@ label {
   text-align: right;
 }
 
-.form-item {
+.form-group {
   margin-bottom: 15px;
 }
 
 .form-inline input[type="file"],
-.form-inline .form-item {
+.form-inline .form-group {
   display: inline-block;
 }
 
@@ -1049,17 +1049,17 @@ label {
   vertical-align: middle;
 }
 
-.form-horizontal .form-item {
+.form-horizontal .form-group {
   margin-right: -15px;
   margin-left: -15px;
 }
 
-.form-horizontal .form-item::before, .form-horizontal .form-item::after {
+.form-horizontal .form-group::before, .form-horizontal .form-group::after {
   content: " ";
   display: table;
 }
 
-.form-horizontal .form-item::after {
+.form-horizontal .form-group::after {
   clear: both;
 }
 
