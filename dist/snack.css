@@ -1,13 +1,14 @@
-
-/*!
- * snack.css - v1.1.1
- * A minimal CSS framework for web
- * https://snack.github.io
+/**
  *
- * Copyright (c) 2017 nzbin <nzb329@163.com>
- * Released under MIT License
+ * snack.css v2.0.0
+ *
+ * https://nzbin.github.io/snack/
+ *
+ * Copyright (c) 2017 nzbin
+ *
+ * Released under the MIT license
+ *
  */
-
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -44,7 +45,6 @@ figure {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible;
@@ -68,7 +68,6 @@ a:hover {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -182,7 +181,6 @@ fieldset {
 }
 
 legend {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: inherit;
   display: table;
@@ -202,7 +200,6 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -251,12 +248,10 @@ template {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 12px;
 }
@@ -731,6 +726,8 @@ hr {
 }
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
 }
@@ -744,20 +741,18 @@ hr {
   clear: both;
 }
 
-.no-gutters {
-  margin-right: 0;
+.row.no-gutter {
   margin-left: 0;
+  margin-right: 0;
 }
 
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
+.row.no-gutter .col, .row.no-gutter .col-1, .row.no-gutter .col-2, .row.no-gutter .col-3, .row.no-gutter .col-4, .row.no-gutter .col-5, .row.no-gutter .col-6, .row.no-gutter .col-7, .row.no-gutter .col-8, .row.no-gutter .col-9, .row.no-gutter .col-10, .row.no-gutter .col-11, .row.no-gutter .col-12 {
+  padding: 0;
 }
 
-.col,
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   position: relative;
+  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -765,190 +760,173 @@ hr {
 
 @media (min-width: 576px) {
   .col-1 {
-    width: 8.33333%;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
   }
   .col-offset-1 {
     margin-left: 8.33333%;
   }
   .col-2 {
-    width: 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
   }
   .col-offset-2 {
     margin-left: 16.66667%;
   }
   .col-3 {
-    width: 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
   .col-offset-3 {
     margin-left: 25%;
   }
   .col-4 {
-    width: 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
   }
   .col-offset-4 {
     margin-left: 33.33333%;
   }
   .col-5 {
-    width: 41.66667%;
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
   }
   .col-offset-5 {
     margin-left: 41.66667%;
   }
   .col-6 {
-    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   .col-offset-6 {
     margin-left: 50%;
   }
   .col-7 {
-    width: 58.33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
   }
   .col-offset-7 {
     margin-left: 58.33333%;
   }
   .col-8 {
-    width: 66.66667%;
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
   }
   .col-offset-8 {
     margin-left: 66.66667%;
   }
   .col-9 {
-    width: 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
   }
   .col-offset-9 {
     margin-left: 75%;
   }
   .col-10 {
-    width: 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
   }
   .col-offset-10 {
     margin-left: 83.33333%;
   }
   .col-11 {
-    width: 91.66667%;
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
   }
   .col-offset-11 {
     margin-left: 91.66667%;
   }
   .col-12 {
-    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .col-offset-12 {
     margin-left: 100%;
   }
   .cols-10 > .col-1 {
-    width: 10%;
+    flex: 0 0 10%;
+    max-width: 10%;
   }
   .cols-10 > .col-offset-1 {
     margin-left: 10%;
   }
   .cols-10 > .col-2 {
-    width: 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
   }
   .cols-10 > .col-offset-2 {
     margin-left: 20%;
   }
   .cols-10 > .col-3 {
-    width: 30%;
+    flex: 0 0 30%;
+    max-width: 30%;
   }
   .cols-10 > .col-offset-3 {
     margin-left: 30%;
   }
   .cols-10 > .col-4 {
-    width: 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
   }
   .cols-10 > .col-offset-4 {
     margin-left: 40%;
   }
   .cols-10 > .col-5 {
-    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   .cols-10 > .col-offset-5 {
     margin-left: 50%;
   }
   .cols-10 > .col-6 {
-    width: 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
   }
   .cols-10 > .col-offset-6 {
     margin-left: 60%;
   }
   .cols-10 > .col-7 {
-    width: 70%;
+    flex: 0 0 70%;
+    max-width: 70%;
   }
   .cols-10 > .col-offset-7 {
     margin-left: 70%;
   }
   .cols-10 > .col-8 {
-    width: 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
   }
   .cols-10 > .col-offset-8 {
     margin-left: 80%;
   }
   .cols-10 > .col-9 {
-    width: 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
   }
   .cols-10 > .col-offset-9 {
     margin-left: 90%;
   }
   .cols-10 > .col-10 {
-    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
   .cols-10 > .col-offset-10 {
     margin-left: 100%;
   }
-  .cols-2 > .col {
-    width: 50%;
-  }
-  .cols-3 > .col {
-    width: 33.33333%;
-  }
-  .cols-4 > .col {
-    width: 25%;
-  }
-  .cols-5 > .col {
-    width: 20%;
-  }
-  .cols-6 > .col {
-    width: 16.66667%;
-  }
-  .cols-7 > .col {
-    width: 14.28571%;
-  }
-  .cols-8 > .col {
-    width: 12.5%;
-  }
-  .cols-9 > .col {
-    width: 11.11111%;
-  }
-  .cols-10 > .col {
-    width: 10%;
-  }
-  .cols-11 > .col {
-    width: 9.09091%;
-  }
-  .cols-12 > .col {
-    width: 8.33333%;
-  }
-  .col,
-  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-    float: left;
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
   }
 }
 
 .media {
-  display: table;
-  margin-top: 15px;
+  display: flex;
+  align-items: flex-start;
 }
 
-.media:first-child {
-  margin-top: 0;
-}
-
-.media-body,
-.media-left,
-.media-right {
-  display: table-cell;
-  vertical-align: top;
+.media-body {
+  flex: 1;
 }
 
 .media-left {
@@ -959,11 +937,6 @@ hr {
   padding-left: 10px;
 }
 
-.media-body {
-  width: 10000px;
-  text-align: left;
-}
-
 .media-heading {
   margin-top: 0;
   margin-bottom: 5px;
@@ -971,11 +944,6 @@ hr {
 
 .media-content {
   font-size: 13px;
-}
-
-.media-body p {
-  margin: 0;
-  margin-bottom: 5px;
 }
 
 .avatar {
@@ -1021,11 +989,6 @@ label {
 
 .form-field[disabled] {
   cursor: not-allowed;
-}
-
-.form-field[disabled], .form-field[readonly] {
-  background-color: #eee;
-  opacity: 1;
 }
 
 .form-label {
@@ -1114,15 +1077,10 @@ label {
   margin-left: -20px;
 }
 
-fieldset[disabled] .form-field,
+fieldset[disabled] .form-control,
 fieldset[disabled] .checkbox label,
 fieldset[disabled] .radio label {
   cursor: not-allowed;
-}
-
-fieldset[disabled] .form-field {
-  background-color: #eee;
-  opacity: 1;
 }
 
 .help-block {
@@ -1289,7 +1247,6 @@ table {
 
 .boxes.raised {
   border-color: #ddd;
-  -webkit-box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
   box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
 }
 
@@ -1441,5 +1398,3 @@ table {
   height: 100%;
   vertical-align: middle;
 }
-
-/*# sourceMappingURL=snack.css.map */

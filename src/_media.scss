@@ -2,19 +2,12 @@
 // Media
 // --------------------------------------------------
 .media {
-  display: table;
-  margin-top: 15px;
-
-  &:first-child {
-    margin-top: 0;
-  }
+  display: flex;
+  align-items: flex-start;
 }
 
-.media-body,
-.media-left,
-.media-right {
-  display: table-cell;
-  vertical-align: top;
+.media-body {
+  flex: 1;
 }
 
 .media-left {
@@ -25,25 +18,13 @@
   padding-left: 10px;
 }
 
-.media-body {
-  width: 10000px;
-  text-align: left;
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 
-  @at-root {
-    .media-heading {
-      margin-top: 0;
-      margin-bottom: 5px;
-    }
-
-    .media-content {
-      font-size: 13px;
-    }
-  }
-
-  p {
-    margin: 0;
-    margin-bottom: 5px;
-  }
+.media-content {
+  font-size: 13px;
 }
 
 // avatar

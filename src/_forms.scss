@@ -50,12 +50,6 @@ label {
   &[disabled] {
     cursor: not-allowed;
   }
-
-  &[disabled],
-  &[readonly] {
-    background-color: #eee;
-    opacity: 1;
-  }
 }
 
 .form-label {
@@ -123,13 +117,13 @@ label {
   }
 }
 
-.checkbox+.checkbox,
-.radio+.radio {
+.checkbox + .checkbox,
+.radio + .radio {
   margin-top: -5px;
 }
 
-.checkbox.inline+.checkbox.inline,
-.radio.inline+.radio.inline {
+.checkbox.inline + .checkbox.inline,
+.radio.inline + .radio.inline {
   margin-top: 0;
   margin-left: 10px;
 }
@@ -143,15 +137,10 @@ label {
 
 // fieldset disabled
 fieldset[disabled] {
-  .form-field,
+  .form-control,
   .checkbox label,
   .radio label {
     cursor: not-allowed;
-  }
-
-  .form-field {
-    background-color: #eee;
-    opacity: 1;
   }
 }
 

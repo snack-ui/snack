@@ -34,7 +34,7 @@
   "scripts": {
     "start": "run-p build watch",
     "build": "run-s clean sass sass:min sass-theme sass-theme:min postcss docs",
-    "build:dev": "run-s sass",
+    "build:dev": "run-s sass docs",
     "clean": "rimraf dist",
     "sass": "node-sass --output-style expanded src/snack.scss dist/snack.css",
     "sass:min": "node-sass --output-style compressed src/snack.scss dist/snack.min.css",
