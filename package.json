@@ -1,7 +1,7 @@
 {
   "name": "snack.css",
-  "version": "1.1.1",
-  "description": "A minimal CSS framework for web",
+  "version": "1.1.2",
+  "description": "A minimal CSS framework for web.",
   "main": "dist/snack.css",
   "files":[
     "dist",
@@ -37,9 +37,9 @@
     "node": ">=4"
   },
   "scripts": {
-    "start": "run-p build watch",
+    "start": "run-p build:dev watch",
     "build": "run-s clean sass sass:min sass-theme sass-theme:min postcss docs",
-    "build:dev": "run-s sass docs",
+    "build:dev": "run-s sass copy",
     "clean": "rimraf dist",
     "sass": "node-sass --output-style expanded src/snack.scss dist/snack.css",
     "sass:min": "node-sass --output-style compressed src/snack.scss dist/snack.min.css",
