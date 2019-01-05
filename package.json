@@ -2,15 +2,20 @@
   "name": "snack.css",
   "version": "1.1.1",
   "description": "A minimal CSS framework for web",
+  "main": "dist/snack.css",
+  "files":[
+    "dist",
+    "src"
+  ],
   "homepage": "https://snack.github.io",
   "repository": "nzbin/snack",
   "license": "MIT",
-  "author": "nzbin <nzb329@163.com>",
-  "main": "dist/snack.css",
+  "author": "nzbin",
   "keywords": [
-    "css-framework",
-    "minimal",
     "snack",
+    "minimal",
+    "css-framework",
+    "grid-layout",
     "css3",
     "sass"
   ],
