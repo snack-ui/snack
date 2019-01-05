@@ -64,25 +64,22 @@ label {
 }
 
 .form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  
   input[type="file"],
   .form-group {
-    display: inline-block;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
   }
 
   .form-field {
     display: inline-block;
     width: auto;
     vertical-align: middle;
-  }
-}
-
-// horizontal
-.form-horizontal {
-  .form-group {
-    margin-right: -15px;
-    margin-left: -15px;
-
-    @include clearfix;
   }
 }
 

@@ -39,16 +39,6 @@
   }
 }
 
-@mixin make-grid-columns-float($i: 1, $list: ".col-#{$i}") {
-  @for $i from (1 + 1) through $grid-columns {
-    $list: "#{$list}, .col-#{$i}";
-  }
-
-  #{$list} {
-    float: left;
-  }
-}
-
 @mixin loop-grid-columns($columns) {
   @for $i from 1 through $columns {
     @if ($columns==12) {

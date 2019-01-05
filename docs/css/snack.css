@@ -1062,29 +1062,40 @@ label {
   margin-bottom: 15px;
 }
 
+.form-inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .form-inline input[type="file"],
 .form-inline .form-group {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .form-inline .form-field {
   display: inline-block;
   width: auto;
   vertical-align: middle;
-}
-
-.form-horizontal .form-group {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.form-horizontal .form-group::before, .form-horizontal .form-group::after {
-  content: " ";
-  display: table;
-}
-
-.form-horizontal .form-group::after {
-  clear: both;
 }
 
 .checkbox,
