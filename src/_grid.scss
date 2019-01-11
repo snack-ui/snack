@@ -6,8 +6,6 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @include clearfix;
 }
 
 .row {
@@ -15,8 +13,6 @@
   flex-wrap: wrap;
   margin-left: $grid-gutter / -2;
   margin-right: $grid-gutter / -2;
-
-  @include clearfix;
 
   &.no-gutter {
     margin-left: 0;
