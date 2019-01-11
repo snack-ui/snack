@@ -6,25 +6,19 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @include clearfix;
 }
 
 .row {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: $grid-gutter / -2;
   margin-right: $grid-gutter / -2;
 
-  @include clearfix;
-}
+  &.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
 
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-
-  > .col,
-  > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
+    @include make-grid-columns-without-gutter();
   }
 }
 
@@ -36,8 +30,6 @@
   @include loop-grid-columns(12);
   // looping 10-grids
   @include loop-grid-columns(10);
-  // equal looping
-  @include loop-grid-columns-equal(12);
-  // grid float
-  @include make-grid-columns-float();
+  // equal grid
+  @include make-grid-columns-equal();
 }

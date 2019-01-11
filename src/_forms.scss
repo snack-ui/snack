@@ -31,7 +31,7 @@ label {
   margin-bottom: 5px;
 }
 
-.form-field {
+.form-control {
   display: block;
   width: 100%;
   padding: 4px 8px;
@@ -50,12 +50,6 @@ label {
   &[disabled] {
     cursor: not-allowed;
   }
-
-  &[disabled],
-  &[readonly] {
-    background-color: #eee;
-    opacity: 1;
-  }
 }
 
 .form-label {
@@ -70,25 +64,22 @@ label {
 }
 
 .form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  
   input[type="file"],
   .form-group {
-    display: inline-block;
+    display: flex;
+    flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
   }
 
-  .form-field {
+  .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
-  }
-}
-
-// horizontal
-.form-horizontal {
-  .form-group {
-    margin-right: -15px;
-    margin-left: -15px;
-
-    @include clearfix;
   }
 }
 
@@ -123,13 +114,13 @@ label {
   }
 }
 
-.checkbox+.checkbox,
-.radio+.radio {
+.checkbox + .checkbox,
+.radio + .radio {
   margin-top: -5px;
 }
 
-.checkbox.inline+.checkbox.inline,
-.radio.inline+.radio.inline {
+.checkbox.inline + .checkbox.inline,
+.radio.inline + .radio.inline {
   margin-top: 0;
   margin-left: 10px;
 }
@@ -143,15 +134,10 @@ label {
 
 // fieldset disabled
 fieldset[disabled] {
-  .form-field,
+  .form-control,
   .checkbox label,
   .radio label {
     cursor: not-allowed;
-  }
-
-  .form-field {
-    background-color: #eee;
-    opacity: 1;
   }
 }
 

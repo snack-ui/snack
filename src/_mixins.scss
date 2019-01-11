@@ -20,23 +20,22 @@
     $list: "#{$list}, .col-#{$i}";
   }
 
-  .col,
-  #{$list} {
+  .col, #{$list} {
     position: relative;
+    width: 100%;
     min-height: 1px;
     padding-left: ceil(($grid-gutter / 2));
     padding-right: floor(($grid-gutter / 2));
   }
 }
 
-@mixin make-grid-columns-float($i: 1, $list: ".col-#{$i}") {
+@mixin make-grid-columns-without-gutter($i: 1, $list: ".col-#{$i}") {
   @for $i from (1 + 1) through $grid-columns {
     $list: "#{$list}, .col-#{$i}";
   }
 
-  .col,
-  #{$list} {
-    float: left;
+  .col, #{$list} {
+    padding: 0;
   }
 }
 
@@ -44,7 +43,8 @@
   @for $i from 1 through $columns {
     @if ($columns==12) {
       .col-#{$i} {
-        width: percentage($i / $columns);
+        flex: 0 0 percentage($i / $columns);
+        max-width: percentage($i / $columns);
       }
 
       .col-offset-#{$i} {
@@ -54,7 +54,8 @@
 
     @else {
       .cols-#{$columns} > .col-#{$i} {
-        width: percentage($i / $columns);
+        flex: 0 0 percentage($i / $columns);
+        max-width: percentage($i / $columns);
       }
 
       .cols-#{$columns} > .col-offset-#{$i} {
@@ -64,10 +65,10 @@
   }
 }
 
-@mixin loop-grid-columns-equal($columns) {
-  @for $i from 2 through $columns {
-    .cols-#{$i} > .col {
-      width: percentage(1 / $i);
-    }
+@mixin make-grid-columns-equal() {
+  .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
   }
 }
