@@ -1,8 +1,8 @@
 
 /*!
- * snack.css - v1.1.2
+ * snack.css - v2.0.0
  * A minimal CSS framework for web.
- * https://snack.github.io
+ * https://nzbin.github.io/snack/
  *
  * Copyright (c) 2017 nzbin
  * Released under MIT License
@@ -721,15 +721,6 @@ hr {
   padding-right: 15px;
 }
 
-.container::before, .container::after {
-  content: " ";
-  display: table;
-}
-
-.container::after {
-  clear: both;
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,15 +729,6 @@ hr {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-}
-
-.row::before, .row::after {
-  content: " ";
-  display: table;
-}
-
-.row::after {
-  clear: both;
 }
 
 .row.no-gutter {
@@ -1031,7 +1013,7 @@ label {
   margin-bottom: 5px;
 }
 
-.form-field {
+.form-control {
   display: block;
   width: 100%;
   padding: 4px 8px;
@@ -1043,12 +1025,12 @@ label {
   color: #333;
 }
 
-.form-field:focus {
+.form-control:focus {
   border-color: #348fe2;
   outline: 0;
 }
 
-.form-field[disabled] {
+.form-control[disabled] {
   cursor: not-allowed;
 }
 
@@ -1092,7 +1074,7 @@ label {
   align-items: center;
 }
 
-.form-inline .form-field {
+.form-inline .form-control {
   display: inline-block;
   width: auto;
   vertical-align: middle;
