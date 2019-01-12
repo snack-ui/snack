@@ -81,14 +81,14 @@ footer {
 }
 
 .sidebar {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .sidebar > ul {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 32px;
   list-style: none;
   padding: 0;
   margin: 0;
