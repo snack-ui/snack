@@ -27,7 +27,6 @@ textarea {
 
 label {
   display: inline-block;
-  font-weight: bold;
   margin-bottom: 5px;
 }
 
@@ -50,12 +49,18 @@ label {
   &[disabled] {
     cursor: not-allowed;
   }
+  
+  &:disabled,
+  &[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+  }
 }
 
 .form-label {
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-bottom: 0;
-  padding-top: 3px;
-  text-align: right;
 }
 
 // label+input

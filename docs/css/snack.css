@@ -1009,7 +1009,6 @@ textarea {
 
 label {
   display: inline-block;
-  font-weight: bold;
   margin-bottom: 5px;
 }
 
@@ -1034,10 +1033,15 @@ label {
   cursor: not-allowed;
 }
 
+.form-control:disabled, .form-control[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
 .form-label {
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-bottom: 0;
-  padding-top: 3px;
-  text-align: right;
 }
 
 .form-group {

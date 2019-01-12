@@ -108,11 +108,11 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
 
   .boxes {
     > .box {
-      &.headed {
+      &.box-header {
         background-color: $box-heading-bg-color;
       }
 
-      &.footed {
+      &.box-footer {
         background-color: $box-footer-bg-color;
       }
     }
@@ -132,11 +132,11 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
 
     &.secondary {
       > .box {
-        &.headed {
+        &.box-header {
           background-color: transparent;
         }
 
-        &.footed {
+        &.box-footer {
           background-color: transparent;
         }
       }

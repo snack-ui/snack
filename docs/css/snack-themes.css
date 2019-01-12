@@ -59,13 +59,13 @@
   background-color: #242424;
 }
 
-.theme-dark .form-field {
+.theme-dark .form-control {
   border-color: #404040;
   background-color: #353535;
   color: #fff;
 }
 
-.theme-dark .form-field:focus {
+.theme-dark .form-control:focus {
   background-color: #282828;
   border-color: #333333;
 }
@@ -75,11 +75,11 @@
   background-color: #1a1a1a;
 }
 
-.theme-dark .boxes > .box.headed {
+.theme-dark .boxes > .box.box-header {
   background-color: #242424;
 }
 
-.theme-dark .boxes > .box.footed {
+.theme-dark .boxes > .box.box-footer {
   background-color: #242424;
 }
 
@@ -97,11 +97,11 @@
   border-color: #fff;
 }
 
-.theme-dark .boxes.secondary > .box.headed {
+.theme-dark .boxes.secondary > .box.box-header {
   background-color: transparent;
 }
 
-.theme-dark .boxes.secondary > .box.footed {
+.theme-dark .boxes.secondary > .box.box-footer {
   background-color: transparent;
 }
 
