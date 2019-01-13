@@ -5,22 +5,22 @@ table {
   background: transparent;
   border-spacing: 0;
   border-collapse: collapse;
-  text-align: left;
-  line-height: $line-height-base;
-
-  th{
-    padding: 12px 8px;
-  }
-
-  td {
-    padding: 8px;
-  }
 }
 
 .table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 15px;
+  text-align: left;
+  line-height: $line-height-base;
+
+  th {
+    padding: 12px 8px;
+  }
+  
+  td {
+    padding: 8px;
+  }
   
   > thead {
     background-color: $table-head-bg-color;

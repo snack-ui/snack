@@ -53,13 +53,16 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
     > tbody,
     > tfoot {
       > tr {
-        border-bottom-color: $table-border-color;
+        > th,
+        > td {
+          border-color: $table-border-color;
+        }
       }
     }
 
-    > thead {
+    > thead,
+    > tfoot {
       background-color: $table-head-bg-color;
-      border-bottom-color: $table-border-color;
     }
 
     &.bordered {

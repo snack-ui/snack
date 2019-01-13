@@ -33,9 +33,9 @@ $btn-line-height:          $line-height-base;
 
 // table
 $table-border-color:       #ddd;
-$table-head-bg-color:      rgba(100, 100, 150, 0.05);
-$table-striped-bg-color:   rgba(100, 100, 150, 0.05);
-$table-hover-bg-color:     rgba(100, 100, 150, 0.05);
+$table-head-bg-color:      rgba(100, 100, 150, 0.04);
+$table-striped-bg-color:   rgba(100, 100, 150, 0.04);
+$table-hover-bg-color:     rgba(100, 100, 150, 0.04);
 $table-border-radius:      5px;
 $table-border-width:       2px;
 
@@ -58,4 +58,4 @@ $box-border-radius:        4px;
 $boxes-border-radius:      5px;
 $boxes-border-width:       2px;
 $boxes-box-border-radius:  $boxes-border-radius - $boxes-border-width;
-$boxes-rasied-shadow:      rgba(34, 36, 38, .12);
+$boxes-rasied-shadow:      rgba(50, 50, 100, .1);
