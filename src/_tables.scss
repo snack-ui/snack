@@ -5,48 +5,67 @@ table {
   background: transparent;
   border-spacing: 0;
   border-collapse: collapse;
+  text-align: left;
+  line-height: $line-height-base;
+
+  th{
+    padding: 12px 8px;
+  }
+
+  td {
+    padding: 8px;
+  }
 }
 
 .table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 15px;
-
-  > thead,
-  > tbody,
-  > tfoot {
+  
+  > thead {
+    background-color: $table-head-bg-color;
     > tr {
-      border-bottom: 1px solid $table-border-color;
-
       > th,
       > td {
-        padding: 8px;
-        line-height: 1.428;
-        vertical-align: middle;
-        text-align: left;
-      }
-
-      &:last-child {
-        border: none;
+        border-bottom: 1px solid $table-border-color;
       }
     }
   }
 
-  > thead {
+  > tbody {
+    > tr + tr {
+      > th,
+      > td {
+        border-top: 1px solid $table-border-color;
+      }
+    }
+  }
+
+  > tfoot {
     background-color: $table-head-bg-color;
-    border-bottom: 1px solid $table-border-color;
+    > tr {
+      > th,
+      > td {
+        border-top: 1px solid $table-border-color;
+      }
+    }
+  }
+
+  &.rounded {
+    border-collapse: separate;
+    border-radius: $table-border-radius;
   }
 
   &.bordered {
-    border: 1px solid $table-border-color;
+    border: $table-border-width solid $table-border-color;
 
     > thead,
     > tbody,
     > tfoot {
       > tr {
-        > th,
-        > td {
-          border: 1px solid $table-border-color;
+        > th + th,
+        > td + td {
+          border-left: 1px solid $table-border-color;
         }
       }
     }
