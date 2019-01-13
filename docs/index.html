@@ -46,7 +46,7 @@
             components.</p>
           <p>Browser Support</p>
           <div class="table-overflow">
-            <table class="table bordered">
+            <table class="table rounded bordered">
               <thead>
                 <tr>
                   <th>IE</th>
@@ -59,12 +59,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>10</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
-                  <td>✓</td>
+                  <td>10+</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
                 </tr>
               </tbody>
             </table>
@@ -835,10 +835,50 @@
 ...
 &lt;/table&gt;
 </pre>
+          <p>Rounded</p>
+          <div class="example">
+            <div class="table-overflow">
+              <table class="table bordered rounded">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Registration Date</th>
+                    <th>E-mail address</th>
+                    <th>Premium Plan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nicky Almera</td>
+                    <td>September 14, 2013</td>
+                    <td>nicky@hotmail.com</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Edmund Wong</td>
+                    <td>January 11, 2014</td>
+                    <td>edmund@yahoo.com</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Harvinder Singh</td>
+                    <td>May 11, 2014</td>
+                    <td>harvinder@gmail.com</td>
+                    <td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+<pre class="prettyprint linenums">
+&lt;table class="table bordered rounded"&gt;
+...
+&lt;/table&gt;
+</pre>
           <p>Striped</p>
           <div class="example">
             <div class="table-overflow">
-              <table class="table bordered striped">
+              <table class="table bordered rounded striped hover">
                 <thead>
                   <tr>
                     <th>Name</th>
@@ -889,7 +929,7 @@
             </div>
           </div>
           <pre class="prettyprint linenums">
-&lt;table class="table bordered striped"&gt;
+&lt;table class="table bordered rounded striped hover"&gt;
 ...
 &lt;/table&gt;
 </pre>

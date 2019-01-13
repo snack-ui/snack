@@ -1,6 +1,6 @@
 
 /*!
- * snack.css - v2.0.1
+ * snack.css - v2.1.0
  * A minimal CSS framework for web.
  * https://nzbin.github.io/snack/
  *
@@ -1158,56 +1158,65 @@ table {
   width: 100%;
   max-width: 100%;
   margin-bottom: 15px;
-}
-
-.table > thead > tr,
-.table > tbody > tr,
-.table > tfoot > tr {
-  border-bottom: 1px solid #ddd;
-}
-
-.table > thead > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > th,
-.table > tbody > tr > td,
-.table > tfoot > tr > th,
-.table > tfoot > tr > td {
-  padding: 8px;
-  line-height: 1.428;
-  vertical-align: middle;
   text-align: left;
+  line-height: 1.42858;
 }
 
-.table > thead > tr:last-child,
-.table > tbody > tr:last-child,
-.table > tfoot > tr:last-child {
-  border: none;
+.table th {
+  padding: 12px 8px;
+}
+
+.table td {
+  padding: 8px;
 }
 
 .table > thead {
-  background-color: #f5f5f5;
+  background-color: rgba(100, 100, 150, 0.04);
+}
+
+.table > thead > tr > th,
+.table > thead > tr > td {
   border-bottom: 1px solid #ddd;
 }
 
-.table.bordered {
-  border: 1px solid #ddd;
+.table > tbody > tr + tr > th,
+.table > tbody > tr + tr > td {
+  border-top: 1px solid #ddd;
 }
 
-.table.bordered > thead > tr > th,
-.table.bordered > thead > tr > td,
-.table.bordered > tbody > tr > th,
-.table.bordered > tbody > tr > td,
-.table.bordered > tfoot > tr > th,
-.table.bordered > tfoot > tr > td {
-  border: 1px solid #ddd;
+.table > tfoot {
+  background-color: rgba(100, 100, 150, 0.04);
+}
+
+.table > tfoot > tr > th,
+.table > tfoot > tr > td {
+  border-top: 1px solid #ddd;
+}
+
+.table.rounded {
+  border-collapse: separate;
+  border-radius: 5px;
+}
+
+.table.bordered {
+  border: 2px solid #ddd;
+}
+
+.table.bordered > thead > tr > th + th,
+.table.bordered > thead > tr > td + td,
+.table.bordered > tbody > tr > th + th,
+.table.bordered > tbody > tr > td + td,
+.table.bordered > tfoot > tr > th + th,
+.table.bordered > tfoot > tr > td + td {
+  border-left: 1px solid #ddd;
 }
 
 .table.striped > tbody > tr:nth-of-type(2n+2) {
-  background-color: #f5f5f5;
+  background-color: rgba(100, 100, 150, 0.04);
 }
 
 .table.hover > tbody > tr:hover {
-  background-color: #f5f5f5;
+  background-color: rgba(100, 100, 150, 0.04);
 }
 
 .table-overflow {
@@ -1304,9 +1313,12 @@ table {
 }
 
 .boxes.raised {
-  border-color: #ddd;
-  -webkit-box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
-  box-shadow: 0 2px 10px 3px rgba(34, 36, 38, 0.12);
+  -webkit-box-shadow: 0 5px 30px 2px rgba(50, 50, 100, 0.1);
+  box-shadow: 0 5px 30px 2px rgba(50, 50, 100, 0.1);
+}
+
+.boxes.raised .box {
+  border-color: #f7f7f7;
 }
 
 .boxes.secondary {
