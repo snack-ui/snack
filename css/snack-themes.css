@@ -1,6 +1,6 @@
 
 /*!
- * snack.css - v2.0.1
+ * snack.css - v2.1.0
  * A minimal CSS framework for web.
  * https://nzbin.github.io/snack/
  *
@@ -27,15 +27,18 @@
   color: #fff;
 }
 
-.theme-dark .table > thead > tr,
-.theme-dark .table > tbody > tr,
-.theme-dark .table > tfoot > tr {
-  border-bottom-color: #2d2d2d;
+.theme-dark .table > thead > tr > th,
+.theme-dark .table > thead > tr > td,
+.theme-dark .table > tbody > tr > th,
+.theme-dark .table > tbody > tr > td,
+.theme-dark .table > tfoot > tr > th,
+.theme-dark .table > tfoot > tr > td {
+  border-color: #2d2d2d;
 }
 
-.theme-dark .table > thead {
+.theme-dark .table > thead,
+.theme-dark .table > tfoot {
   background-color: #242424;
-  border-bottom-color: #2d2d2d;
 }
 
 .theme-dark .table.bordered {
@@ -84,9 +87,13 @@
 }
 
 .theme-dark .boxes.raised {
-  border-color: #2d2d2d;
-  -webkit-box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.175);
+  border-color: #1a1a1a;
+  -webkit-box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.175);
+}
+
+.theme-dark .boxes.raised > .box {
+  border-color: #202020;
 }
 
 .theme-dark .boxes.default {
