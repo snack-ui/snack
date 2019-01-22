@@ -92,7 +92,7 @@
   }
 
   &.raised {
-    box-shadow: 0 5px 30px 2px $boxes-rasied-shadow;
+    box-shadow: 0 3px 30px 3px $boxes-rasied-shadow;
 
     .box {
       border-color: lighten($box-border-color, 10%);
