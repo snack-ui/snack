@@ -52,6 +52,7 @@ table {
   }
 
   &.rounded {
+    max-width: none; // fix border-collapse issue
     border-collapse: separate;
     border-radius: $table-border-radius;
   }
