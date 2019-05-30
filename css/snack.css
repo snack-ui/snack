@@ -1,6 +1,6 @@
 
 /*!
- * snack.css - v2.1.1
+ * snack.css - v2.1.2
  * A minimal CSS framework for web.
  * https://nzbin.github.io/snack/
  *
@@ -1195,6 +1195,7 @@ table {
 }
 
 .table.rounded {
+  max-width: none;
   border-collapse: separate;
   border-radius: 5px;
 }
@@ -1421,54 +1422,6 @@ table {
 
 .clearfix::after {
   clear: both;
-}
-
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.align-top {
-  vertical-align: top;
-}
-
-.align-middle {
-  vertical-align: middle;
-}
-
-.align-bottom {
-  vertical-align: bottom;
-}
-
-.text-ellipsis {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-.text-middle::before {
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 100%;
-  vertical-align: middle;
 }
 
 /*# sourceMappingURL=snack.css.map */
