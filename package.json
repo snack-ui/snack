@@ -3,7 +3,7 @@
   "version": "2.1.2",
   "description": "A minimal CSS framework for web.",
   "main": "dist/snack.css",
-  "files":[
+  "files": [
     "dist",
     "src"
   ],
