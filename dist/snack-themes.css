@@ -88,7 +88,6 @@
 
 .theme-dark .boxes.raised {
   border-color: #1a1a1a;
-  -webkit-box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.175);
   box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.175);
 }
 
