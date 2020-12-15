@@ -17,13 +17,14 @@ table {
   th {
     padding: 12px 8px;
   }
-  
+
   td {
     padding: 8px;
   }
-  
+
   > thead {
     background-color: $table-head-bg-color;
+
     > tr {
       > th,
       > td {
@@ -32,8 +33,10 @@ table {
     }
   }
 
-  > tbody {
-    > tr + tr {
+  > tfoot {
+    background-color: $table-head-bg-color;
+
+    > tr {
       > th,
       > td {
         border-top: 1px solid $table-border-color;
@@ -41,9 +44,8 @@ table {
     }
   }
 
-  > tfoot {
-    background-color: $table-head-bg-color;
-    > tr {
+  > tbody {
+    > tr + tr {
       > th,
       > td {
         border-top: 1px solid $table-border-color;
@@ -73,7 +75,7 @@ table {
   }
 
   &.striped {
-    > tbody > tr:nth-of-type(2n+2) {
+    > tbody > tr:nth-of-type(2n + 2) {
       background-color: $table-striped-bg-color;
     }
   }

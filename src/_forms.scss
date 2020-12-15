@@ -50,7 +50,7 @@ label {
   &[disabled] {
     cursor: not-allowed;
   }
-  
+
   &:disabled,
   &[readonly] {
     background-color: #e9ecef;
@@ -73,7 +73,7 @@ label {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  
+
   input[type="file"],
   .form-group {
     display: flex;
