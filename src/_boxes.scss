@@ -4,10 +4,10 @@
 
 // basic box
 .box {
-  padding: 10px 16px;
+  padding: 8px 16px;
   margin-bottom: 16px;
   border: 1px solid $box-border-color;
-  border-radius: 4px;
+  border-radius: $box-border-radius;
   background-color: $box-bg-color;
 }
 
@@ -80,7 +80,7 @@
 
   > .box {
     border-width: 1px;
-    border-radius: 4px;
+    border-radius: $box-border-radius;
 
     &.box-header {
       background-color: transparent;

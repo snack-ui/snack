@@ -3,11 +3,11 @@
 // --------------------------------------------------
 
 $white:                    #fff !default;
-$grey-lighter:             #eee !default;
-$grey-light:               #777 !default;
-$grey:                     #555 !default;
-$grey-dark:                #333 !default;
-$grey-darker:              #111 !default;
+$gray-lighter:             #eee !default;
+$gray-light:               #777 !default;
+$gray:                     #555 !default;
+$gray-dark:                #333 !default;
+$gray-darker:              #111 !default;
 $black:                    #000 !default;
 
 $color-default:            #b6c2c9 !default;
@@ -31,7 +31,7 @@ $color-map: (
 // typography
 $line-height-base:         1.5 !default;
 $font-size-base:           16px !default;
-$text-color:               $grey-dark !default;
+$text-color:               $gray-dark !default;
 
 // grid
 $grid-columns:             12 !default;
@@ -60,6 +60,7 @@ $input-border-radius:      6px !default;
 $input-text-color:         $text-color !default;
 $input-font-size:          $font-size-base !default;
 $input-line-height:        $line-height-base !default;
+$form-text-color:          $gray-light !default;
 
 // boxes
 $box-bg-color:             $white !default;

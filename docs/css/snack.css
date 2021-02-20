@@ -256,7 +256,6 @@ html {
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
   color: #333;
   line-height: 1.5;
 }
@@ -321,33 +320,39 @@ small,
   font-size: 65%;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 36px;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 30px;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 24px;
 }
 
-h4 {
-  font-size: 18px;
+h4,
+.h4 {
+  font-size: 20px;
 }
 
-h5 {
+h5,
+.h5 {
+  font-size: 16px;
+}
+
+h6,
+.h6 {
   font-size: 14px;
 }
 
-h6 {
-  font-size: 12px;
-}
-
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   border: 0;
   border-top: 1px solid #eee;
 }
@@ -905,89 +910,89 @@ hr {
   margin-right: 0 !important;
 }
 
-.row.g-0 > [class*="col-"] {
+.row.g-0 > [class*="col"] {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
 .row.g-4 {
-  margin-left: -1px !important;
-  margin-right: -1px !important;
-}
-
-.row.g-4 > [class*="col-"] {
-  padding-left: 1px !important;
-  padding-right: 1px !important;
-}
-
-.row.g-8 {
   margin-left: -2px !important;
   margin-right: -2px !important;
 }
 
-.row.g-8 > [class*="col-"] {
+.row.g-4 > [class*="col"] {
   padding-left: 2px !important;
   padding-right: 2px !important;
 }
 
-.row.g-12 {
-  margin-left: -3px !important;
-  margin-right: -3px !important;
-}
-
-.row.g-12 > [class*="col-"] {
-  padding-left: 3px !important;
-  padding-right: 3px !important;
-}
-
-.row.g-16 {
+.row.g-8 {
   margin-left: -4px !important;
   margin-right: -4px !important;
 }
 
-.row.g-16 > [class*="col-"] {
+.row.g-8 > [class*="col"] {
   padding-left: 4px !important;
   padding-right: 4px !important;
 }
 
-.row.g-20 {
-  margin-left: -5px !important;
-  margin-right: -5px !important;
-}
-
-.row.g-20 > [class*="col-"] {
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-}
-
-.row.g-24 {
+.row.g-12 {
   margin-left: -6px !important;
   margin-right: -6px !important;
 }
 
-.row.g-24 > [class*="col-"] {
+.row.g-12 > [class*="col"] {
   padding-left: 6px !important;
   padding-right: 6px !important;
 }
 
-.row.g-28 {
-  margin-left: -7px !important;
-  margin-right: -7px !important;
-}
-
-.row.g-28 > [class*="col-"] {
-  padding-left: 7px !important;
-  padding-right: 7px !important;
-}
-
-.row.g-32 {
+.row.g-16 {
   margin-left: -8px !important;
   margin-right: -8px !important;
 }
 
-.row.g-32 > [class*="col-"] {
+.row.g-16 > [class*="col"] {
   padding-left: 8px !important;
   padding-right: 8px !important;
+}
+
+.row.g-20 {
+  margin-left: -10px !important;
+  margin-right: -10px !important;
+}
+
+.row.g-20 > [class*="col"] {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.row.g-24 {
+  margin-left: -12px !important;
+  margin-right: -12px !important;
+}
+
+.row.g-24 > [class*="col"] {
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.row.g-28 {
+  margin-left: -14px !important;
+  margin-right: -14px !important;
+}
+
+.row.g-28 > [class*="col"] {
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+.row.g-32 {
+  margin-left: -16px !important;
+  margin-right: -16px !important;
+}
+
+.row.g-32 > [class*="col"] {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
 }
 
 .media {
@@ -1100,16 +1105,16 @@ label {
 .radio {
   position: relative;
   display: block;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding-left: 20px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 24px;
 }
 
 .checkbox label,
 .radio label {
   position: relative;
   display: inline-block;
-  min-height: 20px;
+  min-height: 24px;
   margin-bottom: 0;
   font-weight: 400;
   cursor: pointer;
@@ -1125,26 +1130,16 @@ label {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 16px;
   vertical-align: middle;
   font-weight: 400;
-}
-
-.checkbox + .checkbox,
-.radio + .radio {
-  margin-top: -4px;
-}
-
-.checkbox.inline + .checkbox.inline,
-.radio.inline + .radio.inline {
-  margin-top: 0;
-  margin-left: 10px;
 }
 
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
   position: absolute;
   margin-top: 4px;
-  margin-left: -20px;
+  margin-left: -24px;
 }
 
 fieldset[disabled] .form-control,
@@ -1153,11 +1148,10 @@ fieldset[disabled] .radio label {
   cursor: not-allowed;
 }
 
-.help-block {
-  display: block;
+.form-text {
   margin-top: 4px;
-  margin-bottom: 10px;
-  color: #737373;
+  font-size: .875em;
+  color: #777;
 }
 
 table {
@@ -1239,7 +1233,7 @@ table {
 }
 
 .box {
-  padding: 10px 16px;
+  padding: 8px 16px;
   margin-bottom: 16px;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;

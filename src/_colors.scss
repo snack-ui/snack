@@ -12,4 +12,4 @@
 
 // text colors
 
-@include generate-colors('text', 'color', map-merge($color-map, (white: $white, muted: $grey)));
+@include generate-colors('text', 'color', map-merge($color-map, (white: $white, muted: $gray)));

@@ -17,37 +17,43 @@ small,
 .small {
   font-weight: 400;
   line-height: 1;
-  color: #777;
+  color: $gray-light;
   font-size: 65%;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 36px;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 30px;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 24px;
 }
 
-h4 {
-  font-size: 18px;
+h4,
+.h4 {
+  font-size: 20px;
 }
 
-h5 {
+h5,
+.h5 {
+  font-size: 16px;
+}
+
+h6,
+.h6 {
   font-size: 14px;
 }
 
-h6 {
-  font-size: 12px;
-}
-
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid $gray-lighter;
 }
