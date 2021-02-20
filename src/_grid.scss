@@ -37,15 +37,16 @@
 
 // Gutters
 @for $counter from 0 through 8 {
-  $name-counter: (4 * $counter);
+  $gutter-num: (4 * $counter);
+  $gutter: 1px * $gutter-num;
 
-  .row.g-#{$name-counter} {
-    margin-left: if($counter == 0, 0, -(1px * $name-counter)) !important;
-    margin-right: if($counter == 0, 0, -(1px * $name-counter)) !important;
+  .row.g-#{$gutter-num} {
+    margin-left: if($counter == 0, 0, -$gutter/2) !important;
+    margin-right: if($counter == 0, 0, -$gutter/2) !important;
 
-    & > [class*="col-"] {
-      padding-left: if($counter == 0, 0, (1px * $name-counter)) !important;
-      padding-right: if($counter == 0, 0, (1px * $name-counter)) !important;
+    > [class*="col"] {
+      padding-left: if($counter == 0, 0, $gutter/2) !important;
+      padding-right: if($counter == 0, 0, $gutter/2) !important;
     }
   }
 }
