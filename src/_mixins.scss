@@ -79,3 +79,15 @@
     clear: both;
   }
 }
+
+//
+// Colors
+//
+
+@mixin generate-colors($class-prefix, $property, $colors: $color-map) {
+  @each $name, $color in $colors {
+    .#{$class-prefix + '-' + $name} {
+      #{$property}: $color !important;
+    }
+  }
+}

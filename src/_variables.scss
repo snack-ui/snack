@@ -2,11 +2,14 @@
 // Variables
 // --------------------------------------------------
 
-$grey-darker:              #222 !default;
-$grey-dark:                #333 !default;
-$grey:                     #555 !default;
-$grey-light:               #777 !default;
+$white:                    #fff !default;
 $grey-lighter:             #eee !default;
+$grey-light:               #777 !default;
+$grey:                     #555 !default;
+$grey-dark:                #333 !default;
+$grey-darker:              #111 !default;
+$black:                    #000 !default;
+
 $color-default:            #b6c2c9 !default;
 $color-primary:            #348fe2 !default;
 $color-info:               #49b6d6 !default;
@@ -14,12 +17,21 @@ $color-success:            #84b547 !default;
 $color-danger:             #ff5b57 !default;
 $color-warning:            #f59c1a !default;
 $color-inverted:           #2d353c !default;
-$color-white:              #fff !default;
+
+$color-map: (
+  default:  $color-default,
+  primary:  $color-primary,
+  info:     $color-info,
+  success:  $color-success,
+  danger:   $color-danger,
+  warning:  $color-warning,
+  inverted: $color-inverted
+);
 
 // typography
 $line-height-base:         1.5 !default;
 $font-size-base:           16px !default;
-$text-color:               #333 !default;
+$text-color:               $grey-dark !default;
 
 // grid
 $grid-columns:             12 !default;
@@ -27,12 +39,12 @@ $grid-gutter:              24px !default;
 
 // button
 $btn-border-width:         2px !default;
-$btn-border-radius:        4px !default;
+$btn-border-radius:        6px !default;
 $btn-font-size:            $font-size-base !default;
 $btn-line-height:          $line-height-base !default;
 
 // table
-$table-border-color:       #ddd !default;
+$table-border-color:       rgba(0, 0, 0, .12) !default;
 $table-head-bg-color:      rgba(100, 100, 150, .04) !default;
 $table-striped-bg-color:   rgba(100, 100, 150, .04) !default;
 $table-hover-bg-color:     rgba(100, 100, 150, .04) !default;
@@ -40,22 +52,22 @@ $table-border-radius:      6px !default;
 $table-border-width:       2px !default;
 
 // form
-$input-bg-color:           #fff !default;
-$input-border-color:       #ddd !default;
+$input-bg-color:           $white !default;
+$input-border-color:       rgba(0, 0, 0, .12) !default;
 $input-border-color-focus: $color-primary !default;
 $input-border-width:       2px !default;
-$input-border-radius:      4px !default;
-$input-text-color:         #333 !default;
+$input-border-radius:      6px !default;
+$input-text-color:         $text-color !default;
 $input-font-size:          $font-size-base !default;
 $input-line-height:        $line-height-base !default;
 
 // boxes
-$box-bg-color:             #fff !default;
-$box-border-color:         #ddd !default;
-$box-heading-bg-color:     #f5f5f5 !default;
-$box-footer-bg-color:      #f5f5f5 !default;
+$box-bg-color:             $white !default;
+$box-border-color:         rgba(0, 0, 0, .12) !default;
+$box-border-inverted-color:rgba(0, 0, 0, .88) !default;
+$box-heading-bg-color:     rgba(100, 100, 150, .04) !default;
+$box-footer-bg-color:      rgba(100, 100, 150, .04) !default;
 $box-border-radius:        4px !default;
 $boxes-border-radius:      6px !default;
 $boxes-border-width:       2px !default;
 $boxes-box-border-radius:  $boxes-border-radius - $boxes-border-width !default;
-$boxes-rasied-shadow:      rgba(50, 50, 100, .1) !default;

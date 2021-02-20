@@ -2,16 +2,6 @@
 // Buttons
 // --------------------------------------------------
 
-$btn-colors: (
-  default: $color-default,
-  primary: $color-primary,
-  info: $color-info,
-  success: $color-success,
-  danger: $color-danger,
-  warning: $color-warning,
-  inverted: $color-inverted,
-);
-
 .btn {
   display: inline-block;
   padding: 4px 12px;
@@ -24,9 +14,9 @@ $btn-colors: (
   cursor: pointer;
   outline: none;
 
-  @each $name, $color in $btn-colors {
+  @each $name, $color in $color-map {
     &.#{$name} {
-      color: $color-white;
+      color: $white;
       background-color: $color;
 
       &:hover {
@@ -70,23 +60,23 @@ $btn-colors: (
   &.outline {
     background-color: transparent;
 
-    @each $name, $color in $btn-colors {
+    @each $name, $color in $color-map {
       &.#{$name} {
         color: $color;
         border-color: $color;
 
         &:hover {
-          color: $color-white;
+          color: $white;
           background-color: $color;
         }
 
         &:focus {
-          color: $color-white;
+          color: $white;
           background-color: $color;
         }
 
         &:active {
-          color: $color-white;
+          color: $white;
           background-color: $color;
         }
       }

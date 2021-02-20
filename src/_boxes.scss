@@ -13,7 +13,7 @@
 
 // boxes/box group
 .boxes {
-  border: $boxes-border-width solid transparent;
+  border: $boxes-border-width solid $box-border-color;
   border-radius: $boxes-border-radius;
   margin-bottom: 16px;
 
@@ -54,35 +54,6 @@
     margin-bottom: 0; // eliminate nested boxes margin-bottom
   }
 
-  // boxes color option
-  &.default {
-    border-color: $box-border-color;
-  }
-
-  &.primary {
-    border-color: $color-primary;
-  }
-
-  &.info {
-    border-color: $color-info;
-  }
-
-  &.success {
-    border-color: $color-success;
-  }
-
-  &.danger {
-    border-color: $color-danger;
-  }
-
-  &.warning {
-    border-color: $color-warning;
-  }
-
-  &.inverted {
-    border-color: $color-inverted;
-  }
-
   &.transparent {
     background-color: transparent;
 
@@ -91,11 +62,14 @@
     }
   }
 
-  &.raised {
-    box-shadow: 0 3px 30px 3px $boxes-rasied-shadow;
+  &.inverted {
+    color: $white;
+    background-color: $color-inverted;
+    border-color: $box-border-inverted-color;
 
     .box {
-      border-color: lighten($box-border-color, 10%);
+      background-color: $color-inverted;
+      border-color: $box-border-inverted-color;
     }
   }
 }

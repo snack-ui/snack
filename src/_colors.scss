@@ -1,63 +1,15 @@
-// -------------------------------------------------------------
+// --------------------------------------------------
 // Colors
-// -------------------------------------------------------------
+// --------------------------------------------------
 
-// background color
+// background colors
 
-.bg-primary {
-  background-color: $color-primary;
-}
+@include generate-colors('bg', 'background-color', map-merge($color-map, (transparent: transparent)));
 
-.bg-info {
-  background-color: $color-info;
-}
+// border colors
 
-.bg-success {
-  background-color: $color-success;
-}
+@include generate-colors('border', 'border-color', map-merge($color-map, (transparent: transparent)));
 
-.bg-danger {
-  background-color: $color-danger;
-}
+// text colors
 
-.bg-warning {
-  background-color: $color-warning;
-}
-
-.bg-inverted {
-  background-color: $color-inverted;
-}
-
-// text color
-
-.text-muted {
-  color: $grey;
-}
-
-.text-white {
-  color: $color-white;
-}
-
-.text-primary {
-  color: $color-primary;
-}
-
-.text-info {
-  color: $color-info;
-}
-
-.text-success {
-  color: $color-success;
-}
-
-.text-danger {
-  color: $color-danger;
-}
-
-.text-warning {
-  color: $color-warning;
-}
-
-.text-inverted {
-  color: $color-inverted;
-}
+@include generate-colors('text', 'color', map-merge($color-map, (white: $white, muted: $grey)));

@@ -1,6 +1,6 @@
-// --------------------------------------------------
+//
 // variables
-// --------------------------------------------------
+//
 
 // color
 $grey-darker: #262626;
@@ -23,15 +23,15 @@ $input-border-color: #404040;
 $input-border-color-focus: darken($input-border-color, 5%);
 $input-text-color: #fff;
 // boxes
+$boxes-border-width: 2px;
 $box-bg-color: #1a1a1a;
-$box-border-color: $grey-dark;
+$box-border-color: rgba(255, 255, 255, .12);
 $box-heading-bg-color: #242424;
 $box-footer-bg-color: #242424;
-$boxes-rasied-shadow: rgba(0, 0, 0, .175);
 
-// --------------------------
+//
 // Theme-dark
-// --------------------------
+//
 
 .theme-dark {
   background-color: #212121;
@@ -96,6 +96,10 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
     }
   }
 
+  .btn.inverted {
+    color: $color-inverted;
+  }
+
   .form-control {
     border-color: $input-border-color;
     background-color: $input-bg-color;
@@ -113,6 +117,8 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
   }
 
   .boxes {
+    border: $boxes-border-width solid $box-border-color;
+
     > .box {
       &.box-header {
         background-color: $box-heading-bg-color;
@@ -120,15 +126,6 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
 
       &.box-footer {
         background-color: $box-footer-bg-color;
-      }
-    }
-
-    &.raised {
-      border-color: $box-bg-color;
-      box-shadow: 0 5px 30px 2px $boxes-rasied-shadow;
-
-      > .box {
-        border-color: darken($box-border-color, 5%);
       }
     }
 
@@ -141,6 +138,8 @@ $boxes-rasied-shadow: rgba(0, 0, 0, .175);
     }
 
     &.secondary {
+      border-width: 0;
+
       > .box {
         &.box-header {
           background-color: transparent;

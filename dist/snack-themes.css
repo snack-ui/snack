@@ -62,6 +62,10 @@
   background-color: #242424;
 }
 
+.theme-dark .btn.inverted {
+  color: #fff;
+}
+
 .theme-dark .form-control {
   border-color: #404040;
   background-color: #353535;
@@ -74,8 +78,12 @@
 }
 
 .theme-dark .box {
-  border-color: #2d2d2d;
+  border-color: rgba(255, 255, 255, 0.12);
   background-color: #1a1a1a;
+}
+
+.theme-dark .boxes {
+  border: 2px solid rgba(255, 255, 255, 0.12);
 }
 
 .theme-dark .boxes > .box.box-header {
@@ -86,21 +94,16 @@
   background-color: #242424;
 }
 
-.theme-dark .boxes.raised {
-  border-color: #1a1a1a;
-  box-shadow: 0 5px 30px 2px rgba(0, 0, 0, 0.175);
-}
-
-.theme-dark .boxes.raised > .box {
-  border-color: #202020;
-}
-
 .theme-dark .boxes.default {
-  border-color: #2d2d2d;
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .theme-dark .boxes.inverted {
   border-color: #fff;
+}
+
+.theme-dark .boxes.secondary {
+  border-width: 0;
 }
 
 .theme-dark .boxes.secondary > .box.box-header {
