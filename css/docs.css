@@ -84,7 +84,6 @@ footer {
 
 .sidebar > ul {
   position: sticky;
-  position: -webkit-sticky;
   top: 32px;
   list-style: none;
   padding: 0;
@@ -115,10 +114,10 @@ footer {
 }
 
 .content > section {
-  padding: 15px;
-  margin: 15px 0;
+  padding: 16px;
+  margin: 16px 0;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 16px;
   box-shadow: 0 5px 10px -7px rgba(87, 53, 117, 0.13), 0 10px 30px -6px rgba(0, 60, 170, 0.1);
 }
 
