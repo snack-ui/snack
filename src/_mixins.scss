@@ -1,20 +1,11 @@
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
-// clearfix
-@mixin clearfix() {
-  &::before,
-  &::after {
-    content: " "; // 1
-    display: table; // 2
-  }
 
-  &::after {
-    clear: both;
-  }
-}
+//
+// Grid
+//
 
-// grid
 @mixin make-grid-columns($i: 1, $list: ".col-#{$i}") {
   @for $i from (1 + 1) through $grid-columns {
     $list: "#{$list}, .col-#{$i}";
@@ -70,5 +61,21 @@
     flex-basis: 0;
     flex-grow: 1;
     max-width: 100%;
+  }
+}
+
+//
+// Clearfix
+//
+
+@mixin clearfix() {
+  &::before,
+  &::after {
+    content: " "; // 1
+    display: table; // 2
+  }
+
+  &::after {
+    clear: both;
   }
 }

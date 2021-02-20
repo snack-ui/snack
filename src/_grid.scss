@@ -1,18 +1,19 @@
 // --------------------------------------------------
 // Grid
 // --------------------------------------------------
+
 .container {
-  max-width: 1170px;
+  max-width: 1200px - $grid-gutter;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: $grid-gutter/2;
+  padding-right: $grid-gutter/2;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: $grid-gutter / -2;
-  margin-right: $grid-gutter / -2;
+  margin-left: $grid-gutter/-2;
+  margin-right: $grid-gutter/-2;
 
   &.no-gutter {
     margin-left: 0;
@@ -32,4 +33,19 @@
   @include loop-grid-columns(10);
   // equal grid
   @include make-grid-columns-equal();
+}
+
+// Gutters
+@for $counter from 0 through 8 {
+  $name-counter: (4 * $counter);
+
+  .row.g-#{$name-counter} {
+    margin-left: if($counter == 0, 0, -(1px * $counter)) !important;
+    margin-right: if($counter == 0, 0, -(1px * $counter)) !important;
+
+    & > [class*="col-"] {
+      padding-left: if($counter == 0, 0, (1px * $counter)) !important;
+      padding-right: if($counter == 0, 0, (1px * $counter)) !important;
+    }
+  }
 }

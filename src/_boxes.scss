@@ -1,6 +1,7 @@
 // --------------------------------------------------
 // Boxes
 // --------------------------------------------------
+
 // basic box
 .box {
   padding: 10px 15px;
@@ -50,8 +51,7 @@
   }
 
   .boxes {
-    // eliminate nested boxes margin-bottom
-    margin-bottom: 0;
+    margin-bottom: 0; // eliminate nested boxes margin-bottom
   }
 
   // boxes color option
@@ -102,8 +102,7 @@
 
 // another boxes style
 .boxes.secondary {
-  // boxes with no border, you can custom you like
-  border-width: 0;
+  border-width: 0; // boxes with no border, you can custom you like
 
   > .box {
     border-width: 1px;
