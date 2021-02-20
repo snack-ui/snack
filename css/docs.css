@@ -37,7 +37,6 @@ footer {
 }
 
 .logo-wrap {
-  display: inline-block;
   position: relative;
   float: left;
   width: 42px;
@@ -63,7 +62,7 @@ footer {
   transform: rotateZ(45deg);
 }
 
-.logo:before, .logo:after {
+.logo::before, .logo::after {
   content: '';
   display: block;
   position: absolute;
@@ -74,7 +73,7 @@ footer {
   background: #ffa200;
 }
 
-.logo:after {
+.logo::after {
   top: 10px;
 }
 
@@ -92,13 +91,13 @@ footer {
   margin: 0;
 }
 
-.sidebar > ul > li + li {
-  margin-top: 2px;
-}
-
 .sidebar > ul > li {
   position: relative;
   display: block;
+}
+
+.sidebar > ul > li + li {
+  margin-top: 2px;
 }
 
 .sidebar > ul > li > a {
@@ -107,7 +106,7 @@ footer {
   padding: 8px 12px;
   border-radius: 4px;
   font-size: 16px;
-  color: #555;
+  color: #656565;
 }
 
 .sidebar > ul > li > a:hover, .sidebar > ul > li > a:focus, .sidebar > ul > li > a:active {
@@ -181,7 +180,7 @@ footer {
 
 .str,
 .atv {
-  color: #D14;
+  color: #d14;
 }
 
 .kwd,

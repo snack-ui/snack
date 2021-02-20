@@ -1,6 +1,7 @@
-// --------------------------------------------------
+//
 // Documentation
-// --------------------------------------------------
+//
+
 html,
 body {
   height: 100%;
@@ -43,7 +44,6 @@ footer {
 
 // logo
 .logo-wrap {
-  display: inline-block;
   position: relative;
   float: left;
   width: 42px;
@@ -72,7 +72,8 @@ $logo-line-height: 4px;
   background: $logo-color;
   transform: rotateZ(45deg);
 
-  &:before,&:after {
+  &::before,
+  &::after {
     content: '';
     display: block;
     position: absolute;
@@ -83,10 +84,9 @@ $logo-line-height: 4px;
     background: $logo-color;
   }
 
-  &:after {
+  &::after {
     top: 10px;
   }
-
 }
 
 .sidebar {
@@ -101,13 +101,13 @@ $logo-line-height: 4px;
     padding: 0;
     margin: 0;
 
-    > li + li {
-      margin-top: 2px;
-    }
-
     > li {
       position: relative;
       display: block;
+
+      + li {
+        margin-top: 2px;
+      }
 
       > a {
         position: relative;
@@ -115,7 +115,7 @@ $logo-line-height: 4px;
         padding: 8px 12px;
         border-radius: 4px;
         font-size: 16px;
-        color: #555;
+        color: #656565;
 
         &:hover,
         &:focus,
@@ -134,7 +134,7 @@ $logo-line-height: 4px;
     margin: 15px 0;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 5px 10px -7px rgba(87, 53, 117, 0.13), 0 10px 30px -6px rgba(0, 60, 170, 0.1);
+    box-shadow: 0 5px 10px -7px rgba(87, 53, 117, .13), 0 10px 30px -6px rgba(0, 60, 170, .1);
 
     > h2 {
       padding-bottom: 20px;
@@ -201,7 +201,7 @@ $logo-line-height: 4px;
 
 .str,
 .atv {
-  color: #D14;
+  color: #d14;
 }
 
 .kwd,
@@ -232,7 +232,7 @@ $logo-line-height: 4px;
 
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
-  margin: 0 0 0 33px;/* IE indents via margin-left */
+  margin: 0 0 0 33px; /* IE indents via margin-left */
 }
 
 ol.linenums li {
@@ -242,9 +242,10 @@ ol.linenums li {
   text-shadow: 0 1px 0 #fff;
 }
 
-// --------------------------------------------------
+//
 // Theme-dark
-// --------------------------------------------------
+//
+
 .theme-dark {
   header {
     background-color: #262626;
