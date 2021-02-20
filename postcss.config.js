@@ -17,9 +17,5 @@ module.exports = ctx => ({
     'postcss-header': {
       header: banner,
     },
-    'autoprefixer': {
-      cascade: false
-    },
-    cssnano: ctx.env === 'production' ? {} : false
   }
 })
