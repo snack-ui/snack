@@ -40,12 +40,12 @@
   $name-counter: (4 * $counter);
 
   .row.g-#{$name-counter} {
-    margin-left: if($counter == 0, 0, -(1px * $counter)) !important;
-    margin-right: if($counter == 0, 0, -(1px * $counter)) !important;
+    margin-left: if($counter == 0, 0, -(1px * $name-counter)) !important;
+    margin-right: if($counter == 0, 0, -(1px * $name-counter)) !important;
 
     & > [class*="col-"] {
-      padding-left: if($counter == 0, 0, (1px * $counter)) !important;
-      padding-right: if($counter == 0, 0, (1px * $counter)) !important;
+      padding-left: if($counter == 0, 0, (1px * $name-counter)) !important;
+      padding-right: if($counter == 0, 0, (1px * $name-counter)) !important;
     }
   }
 }
