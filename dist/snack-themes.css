@@ -83,7 +83,7 @@
 }
 
 .theme-dark .boxes {
-  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.12);
 }
 
 .theme-dark .boxes > .box.box-header {

@@ -23,7 +23,6 @@ $input-border-color: #404040;
 $input-border-color-focus: darken($input-border-color, 5%);
 $input-text-color: #fff;
 // boxes
-$boxes-border-width: 2px;
 $box-bg-color: #1a1a1a;
 $box-border-color: rgba(255, 255, 255, .12);
 $box-heading-bg-color: #242424;
@@ -117,7 +116,7 @@ $box-footer-bg-color: #242424;
   }
 
   .boxes {
-    border: $boxes-border-width solid $box-border-color;
+    border-color: $box-border-color;
 
     > .box {
       &.box-header {
