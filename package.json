@@ -7,34 +7,22 @@
     "dist",
     "src"
   ],
-  "homepage": "https://nzbin.github.io/snack/",
-  "repository": "nzbin/snack",
   "license": "MIT",
   "author": "nzbin",
   "keywords": [
     "snack",
-    "minimal",
     "css-framework",
-    "grid-layout",
-    "css3",
-    "sass"
+    "css-grid",
+    "sass",
+    "scss"
   ],
-  "devDependencies": {
-    "autoprefixer": "^9.7.6",
-    "cpy-cli": "^3.1.1",
-    "node-sass": "^4.14.1",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^7.0.2",
-    "postcss-cli": "^7.1.1",
-    "postcss-header": "^2.0.0",
-    "rimraf": "^3.0.2",
-    "stylelint": "^13.3.3",
-    "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-scss": "^3.17.1"
+  "homepage": "https://snack-ui.github.io/snack/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snack-ui/snack.git"
   },
-  "engines": {
-    "node": ">=4"
+  "bugs": {
+    "url": "https://github.com/snack-ui/snack/issues"
   },
   "scripts": {
     "start": "run-p build:dev watch",
@@ -51,5 +39,23 @@
     "postcss": "postcss -r dist/*.css --map",
     "watch": "onchange src -- run-p build:dev",
     "lint": "stylelint --syntax scss \"src/**/*.scss\" --fix"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "cpy-cli": "^3.1.1",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-header": "^3.0.1",
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.10.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.19.0"
+  },
+  "engines": {
+    "node": ">=4"
   }
 }
