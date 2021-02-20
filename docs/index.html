@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="description" content="snack,minimal CSS framework,轻量级 CSS 框架">
   <title>Snack-v2</title>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -26,13 +27,17 @@
   <![endif]-->
   <header class="header">
     <div class="container">
-      <div class="navbar-brand pull-left">
+      <div class="navbar-brand float-left">
         <div class="logo-wrap"><span class="logo"></span></div> Snack
       </div>
-      <div class="navbar-right pull-right">
-        <button class="btn danger" id="changeTheme"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
-        <a class="btn primary" href="https://github.com/nzbin/snack"><i class="fa fa-github-alt" aria-hidden="true"></i>
-          Github</a>
+      <div class="navbar-right float-right">
+        <button class="btn danger" id="changeTheme">
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+        </button>
+        <a class="btn primary" href="https://github.com/nzbin/snack">
+          <i class="fa fa-github-alt" aria-hidden="true"></i>
+          Github
+        </a>
       </div>
     </div>
   </header>
@@ -41,8 +46,10 @@
       <div class="content col-9">
         <section>
           <h2 id="introduction">Introduction</h2>
-          <p>Snack is a minimal CSS framework for web. But the main purpose of this framework is not mini size. For
-            more reason,I hope the framework can simplified the class name which we used and provide a more generally
+          <p>Snack is a minimal CSS framework for web. But the main purpose of this framework is not
+            mini size. For
+            more reason,I hope the framework can simplified the class name which we used and provide
+            a more generally
             components.</p>
           <p>Browser Support</p>
           <div class="table-overflow">
@@ -200,9 +207,10 @@
   ...
 &lt;/div&gt;
 </pre>
-          <p class="bg-red-lightest p-10 m-b-25 r-4">
-            <span class="text-red-darker">You can use <a href="https://nzbin.github.io/snack-helper/#gutters"
-                target="_blank">gutter
+          <p class="bg-red-lightest p-x-12 p-y-8 m-b-25 r-4">
+            <span class="text-red-darker">You can use <a
+                 href="https://nzbin.github.io/snack-helper/#gutters"
+                 target="_blank">gutter
                 helpers</a> in snack-helper to change row spacing.</span>
           </p>
           <p>Equal</p>
@@ -287,24 +295,29 @@
         </section>
         <section>
           <h2 id="media">Media <span class="small">( Bootstrap )</span></h2>
-          <p class="bg-red-lightest p-10 m-b-25 r-4">
-            <span class="text-red-darker">The media component is important, but there is no room for improvment, so I
-              use the media of Bootstrap. In addition, I add a <code>avatar</code> class, we can use it as
+          <p class="bg-red-lightest p-x-12 p-y-8 m-b-25 r-4">
+            <span class="text-red-darker">The media component is important, but there is no room for
+              improvment, so I
+              use the media of Bootstrap. In addition, I add a <code>avatar</code> class, we can use
+              it as
               needed.</span>
           </p>
           <div class="example">
             <div class="media">
               <div class="media-left">
                 <a href="#" class="avatar">
-                  <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"
-                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-                    data-holder-rendered="true">
+                  <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+                       style="width: 64px; height: 64px;"
+                       src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                       data-holder-rendered="true">
                 </a>
               </div>
               <div class="media-body">
                 <h4 class="media-heading">Media heading</h4>
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-                  Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                  sollicitudin commodo.
+                  Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi
                   vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
               </div>
             </div>
@@ -326,44 +339,52 @@
             <div class="media">
               <div class="media-body">
                 <h4 class="media-heading">Media heading</h4>
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-                  Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                  sollicitudin commodo.
+                  Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi
                   vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
               </div>
               <div class="media-right">
                 <a href="#" class="avatar">
-                  <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"
-                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-                    data-holder-rendered="true">
+                  <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+                       style="width: 64px; height: 64px;"
+                       src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                       data-holder-rendered="true">
                 </a>
               </div>
             </div>
             <div class="media">
               <div class="media-left">
                 <a href="#" class="avatar">
-                  <img class="media-object" data-src="holder.js/64x64" alt="64x64" style="width: 64px; height: 64px;"
-                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-                    data-holder-rendered="true">
+                  <img class="media-object" data-src="holder.js/64x64" alt="64x64"
+                       style="width: 64px; height: 64px;"
+                       src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                       data-holder-rendered="true">
                 </a>
               </div>
               <div class="media-body">
                 <h4 class="media-heading">Media heading</h4>
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
-                  Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                  sollicitudin commodo.
+                  Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                  condimentum nunc ac nisi
                   vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                 <div class="media">
                   <div class="media-left">
                     <a href="#" class="avatar">
                       <img class="media-object" data-src="holder.js/64x64" alt="64x64"
-                        style="width: 64px; height: 64px;"
-                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
-                        data-holder-rendered="true">
+                           style="width: 64px; height: 64px;"
+                           src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PCEtLQpTb3VyY2UgVVJMOiBob2xkZXIuanMvNjR4NjQKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNWQzMTFjODY5MiB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE1ZDMxMWM4NjkyIj48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSIxMi41IiB5PSIzNi44Ij42NHg2NDwvdGV4dD48L2c+PC9nPjwvc3ZnPg=="
+                           data-holder-rendered="true">
                     </a>
                   </div>
                   <div class="media-body">
                     <h4 class="media-heading">Media heading</h4>
-                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin
-                      commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                      sollicitudin
+                      commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                      Fusce condimentum
                       nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                   </div>
                 </div>
@@ -432,14 +453,14 @@
           <h2 id="buttons">Buttons</h2>
           <p>Colors Options</p>
           <div class="example">
-            <button class="btn default">default</button>
-            <button class="btn primary">primary</button>
-            <button class="btn info">info</button>
-            <button class="btn success">success</button>
-            <button class="btn danger">danger</button>
-            <button class="btn warning">warning</button>
-            <button class="btn inverted">inverted</button>
-            <button class="btn link">link</button>
+            <button class="btn default">Default</button>
+            <button class="btn primary">Primary</button>
+            <button class="btn info">Info</button>
+            <button class="btn success">Success</button>
+            <button class="btn danger">Danger</button>
+            <button class="btn warning">Warning</button>
+            <button class="btn inverted">Inverted</button>
+            <button class="btn link">Link</button>
             <pre class="prettyprint linenums">
 &lt;button class="btn default"&gt;default&lt;/button&gt;
 &lt;button class="btn primary"&gt;primary&lt;/button&gt;
@@ -449,13 +470,13 @@
           </div>
           <p>Colors Outline Options</p>
           <div class="example">
-            <button class="btn outline default">default</button>
+            <button class="btn outline default">Default</button>
             <button class="btn outline primary">primary</button>
-            <button class="btn outline info">info</button>
-            <button class="btn outline success">success</button>
-            <button class="btn outline danger">danger</button>
-            <button class="btn outline warning">warning</button>
-            <button class="btn outline inverted">inverted</button>
+            <button class="btn outline info">Info</button>
+            <button class="btn outline success">Success</button>
+            <button class="btn outline danger">Danger</button>
+            <button class="btn outline warning">Warning</button>
+            <button class="btn outline inverted">Inverted</button>
           </div>
           <pre class="prettyprint linenums">
 &lt;button class="btn outline default"&gt;default&lt;/button&gt;
@@ -464,22 +485,22 @@
 </pre>
           <p>Pill Button</p>
           <div class="example">
-            <button class="btn pill default">default</button>
-            <button class="btn pill primary">primary</button>
-            <button class="btn pill info">info</button>
-            <button class="btn pill success">success</button>
-            <button class="btn pill danger">danger</button>
-            <button class="btn pill warning">warning</button>
-            <button class="btn pill inverted">inverted</button>
+            <button class="btn pill default">Default</button>
+            <button class="btn pill primary">Primary</button>
+            <button class="btn pill info">Info</button>
+            <button class="btn pill success">Success</button>
+            <button class="btn pill danger">Danger</button>
+            <button class="btn pill warning">Warning</button>
+            <button class="btn pill inverted">Inverted</button>
           </div>
           <div class="example">
-            <button class="btn pill outline default">default</button>
-            <button class="btn pill outline primary">primary</button>
-            <button class="btn pill outline info">info</button>
-            <button class="btn pill outline success">success</button>
-            <button class="btn pill outline danger">danger</button>
-            <button class="btn pill outline warning">warning</button>
-            <button class="btn pill outline inverted">inverted</button>
+            <button class="btn pill outline default">Default</button>
+            <button class="btn pill outline primary">Primary</button>
+            <button class="btn pill outline info">Info</button>
+            <button class="btn pill outline success">Success</button>
+            <button class="btn pill outline danger">Danger</button>
+            <button class="btn pill outline warning">Warning</button>
+            <button class="btn pill outline inverted">Inverted</button>
           </div>
           <pre class="prettyprint linenums">
 &lt;button class="btn pill default"&gt;default&lt;/button&gt;
@@ -489,14 +510,14 @@
           <p>Button Group</p>
           <div class="example">
             <div class="btns">
-              <button class="btn default">default</button>
-              <button class="btn default">default</button>
-              <button class="btn default">default</button>
+              <button class="btn default">Default</button>
+              <button class="btn default">Default</button>
+              <button class="btn default">Default</button>
             </div>
             <div class="btns">
-              <button class="btn primary">primary</button>
-              <button class="btn primary">primary</button>
-              <button class="btn primary">primary</button>
+              <button class="btn primary">Primary</button>
+              <button class="btn primary">Primary</button>
+              <button class="btn primary">Primary</button>
             </div>
           </div>
           <pre class="prettyprint linenums">
@@ -510,14 +531,14 @@
           <p>Button Group Vertical</p>
           <div class="example">
             <div class="btns vertical">
-              <button class="btn default">default</button>
-              <button class="btn default">default</button>
-              <button class="btn default">default</button>
+              <button class="btn default">Default</button>
+              <button class="btn default">Default</button>
+              <button class="btn default">Default</button>
             </div>
             <div class="btns vertical">
-              <button class="btn primary">primary</button>
-              <button class="btn primary">primary</button>
-              <button class="btn primary">primary</button>
+              <button class="btn primary">Primary</button>
+              <button class="btn primary">Primary</button>
+              <button class="btn primary">Primary</button>
             </div>
           </div>
           <pre class="prettyprint linenums">
@@ -531,14 +552,14 @@
           <p>Button Group Outline</p>
           <div class="example">
             <div class="btns">
-              <button class="btn outline default">default</button>
-              <button class="btn outline default">default</button>
-              <button class="btn outline default">default</button>
+              <button class="btn outline default">Default</button>
+              <button class="btn outline default">Default</button>
+              <button class="btn outline default">Default</button>
             </div>
             <div class="btns">
-              <button class="btn outline primary">primary</button>
-              <button class="btn outline primary">primary</button>
-              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">Primary</button>
+              <button class="btn outline primary">Primary</button>
+              <button class="btn outline primary">Primary</button>
             </div>
           </div>
           <pre class="prettyprint linenums">
@@ -552,14 +573,14 @@
           <p>Button Group Outline Vertical</p>
           <div class="example">
             <div class="btns vertical">
-              <button class="btn outline default">default</button>
-              <button class="btn outline default">default</button>
-              <button class="btn outline default">default</button>
+              <button class="btn outline default">Default</button>
+              <button class="btn outline default">Default</button>
+              <button class="btn outline default">Default</button>
             </div>
             <div class="btns vertical">
-              <button class="btn outline primary">primary</button>
-              <button class="btn outline primary">primary</button>
-              <button class="btn outline primary">primary</button>
+              <button class="btn outline primary">Primary</button>
+              <button class="btn outline primary">Primary</button>
+              <button class="btn outline primary">Primary</button>
             </div>
           </div>
           <pre class="prettyprint linenums">
@@ -586,7 +607,8 @@
                 <label for="" class="col-2 form-label">Help Text</label>
                 <div class="col-10">
                   <input class="form-control" type="text" />
-                  <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one
+                  <span class="help-block">A block of help text that breaks onto a new line and may
+                    extend beyond one
                     line.</span>
                 </div>
               </div>
@@ -622,9 +644,11 @@
 &lt;/div&gt;
 </pre>
           <p>Checkbox & Radio</p>
-          <p class="bg-red-lightest p-10 r-4">
-            <span class="text-red-darker">The structures of checkbox/radio in snack allow you customize its styles. <a
-                href="https://codepen.io/nzbin/pen/XaMMzQ" target="_blank">Demo on CodePen</a>.</span>
+          <p class="bg-red-lightest p-x-12 p-y-8 r-4">
+            <span class="text-red-darker">The structures of checkbox/radio in snack allow you
+              customize its styles. <a
+                 href="https://codepen.io/nzbin/pen/XaMMzQ" target="_blank">Demo on
+                CodePen</a>.</span>
           </p>
           <div class="example">
             <form action="" class="form-horizontal">
@@ -633,7 +657,8 @@
                 <div class="col-10">
                   <div class="checkbox">
                     <input type="checkbox" id="checkbox1" value="">
-                    <label for="checkbox1">Option one is this and that—be sure to include why it's great</label>
+                    <label for="checkbox1">Option one is this and that—be sure to include why it's
+                      great</label>
                   </div>
                   <div class="checkbox disabled">
                     <input type="checkbox" id="checkbox2" value="" disabled="">
@@ -641,11 +666,13 @@
                   </div>
                   <div class="radio">
                     <input type="radio" name="optionsRadios" id="optionsRadios1" checked="">
-                    <label for="optionsRadios1">Option one is this and that—be sure to include why it's great</label>
+                    <label for="optionsRadios1">Option one is this and that—be sure to include why
+                      it's great</label>
                   </div>
                   <div class="radio">
                     <input type="radio" name="optionsRadios" id="optionsRadios2">
-                    <label for="optionsRadios2">Option two can be something else and selecting it will deselect option
+                    <label for="optionsRadios2">Option two can be something else and selecting it
+                      will deselect option
                       one</label>
                   </div>
                   <div class="radio disabled">
@@ -687,15 +714,18 @@
                   </div>
                   <div>
                     <div class="radio inline">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions1" value="option1">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions1"
+                             value="option1">
                       <label for="inlineRadioOptions1">One</label>
                     </div>
                     <div class="radio inline">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions2" value="option2">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions2"
+                             value="option2">
                       <label for="inlineRadioOptions2">Two</label>
                     </div>
                     <div class="radio inline">
-                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions3" value="option3">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadioOptions3"
+                             value="option3">
                       <label for="inlineRadioOptions3">Three</label>
                     </div>
                   </div>
@@ -1123,45 +1153,11 @@
         </section>
         <section>
           <h2 id="utilities">Utilities</h2>
-          <div class="example">
-            <div class="table-overflow">
-              <table class="table rounded bordered">
-                <thead>
-                  <tr>
-                    <th class="text-uppercase"><strong>name</strong></th>
-                    <th class="text-uppercase"><strong>where i can use</strong></th>
-                    <th class="text-uppercase"><strong>description</strong></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <kbd>.pull-left</kbd>
-                    </td>
-                    <td><i>Layout</i></td>
-                    <td>Make Element float left</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <kbd>.pull-right</kbd>
-                    </td>
-                    <td><i>Layout</i></td>
-                    <td>Make Element float right</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <kbd>.clearfix</kbd>
-                    </td>
-                    <td><i>Layout</i></td>
-                    <td>Clear element floats</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p class="bg-red-lightest p-10 r-4">
-            <span class="text-red-darker">The Snack had already removed most css helper classes. Please Try <a
-                href="https://github.com/nzbin/snack-helper" target="_blank">Snack-helper</a> if you need it.</span>
+          <p class="bg-red-lightest p-x-12 p-y-8 r-4">
+            <span class="text-red-darker">The Snack had already removed most css helper classes.
+              Please Try <a
+                 href="https://github.com/nzbin/snack-helper" target="_blank">Snack-helper</a> if
+              you need it.</span>
           </p>
         </section>
       </div>
@@ -1220,7 +1216,6 @@
       });
 
     });
-
   </script>
 </body>
 

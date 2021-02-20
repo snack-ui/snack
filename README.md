@@ -6,6 +6,12 @@
 
 Snack is a minimal CSS framework for web. But the main purpose of this framework is not mini size. For more reason,I hope the framework can simplified the class name which we used and provide a more generally components.
 
+## Installation
+
+```bash
+$ npm install snack.css --save
+```
+
 ## Overview
 
 - [Grids](https://snack-ui.github.io/snack/#grid)
