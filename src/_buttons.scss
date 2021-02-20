@@ -2,6 +2,16 @@
 // Buttons
 // --------------------------------------------------
 
+$btn-colors: (
+  default: $color-default,
+  primary: $color-primary,
+  info: $color-info,
+  success: $color-success,
+  danger: $color-danger,
+  warning: $color-warning,
+  inverted: $color-inverted,
+);
+
 .btn {
   display: inline-block;
   padding: 4px 12px;
@@ -14,122 +24,22 @@
   cursor: pointer;
   outline: none;
 
-  &.default {
-    color: #fff;
-    background-color: $color-default;
+  @each $name, $color in $btn-colors {
+    &.#{$name} {
+      color: $color-white;
+      background-color: $color;
 
-    &:hover {
-      background-color: darken($color-default, 5%);
-    }
+      &:hover {
+        background-color: darken($color, 5%);
+      }
 
-    &:focus {
-      background-color: darken($color-default, 5%);
-    }
+      &:focus {
+        background-color: darken($color, 5%);
+      }
 
-    &:active {
-      background-color: darken($color-default, 5%);
-    }
-  }
-
-  &.primary {
-    color: #fff;
-    background-color: $color-primary;
-
-    &:hover {
-      background-color: darken($color-primary, 5%);
-    }
-
-    &:focus {
-      background-color: darken($color-primary, 5%);
-    }
-
-    &:active {
-      background-color: darken($color-primary, 5%);
-    }
-  }
-
-  &.info {
-    color: #fff;
-    background-color: $color-info;
-
-    &:hover {
-      background-color: darken($color-info, 5%);
-    }
-
-    &:focus {
-      background-color: darken($color-info, 5%);
-    }
-
-    &:active {
-      background-color: darken($color-info, 5%);
-    }
-  }
-
-  &.success {
-    color: #fff;
-    background-color: $color-success;
-
-    &:hover {
-      background-color: darken($color-success, 5%);
-    }
-
-    &:focus {
-      background-color: darken($color-success, 5%);
-    }
-
-    &:active {
-      background-color: darken($color-success, 5%);
-    }
-  }
-
-  &.danger {
-    color: #fff;
-    background-color: $color-danger;
-
-    &:hover {
-      background-color: darken($color-danger, 5%);
-    }
-
-    &:focus {
-      background-color: darken($color-danger, 5%);
-    }
-
-    &:active {
-      background-color: darken($color-danger, 5%);
-    }
-  }
-
-  &.warning {
-    color: #fff;
-    background-color: $color-warning;
-
-    &:hover {
-      background-color: darken($color-warning, 5%);
-    }
-
-    &:focus {
-      background-color: darken($color-warning, 5%);
-    }
-
-    &:active {
-      background-color: darken($color-warning, 5%);
-    }
-  }
-
-  &.inverted {
-    color: #fff;
-    background-color: $color-inverted;
-
-    &:hover {
-      background-color: lighten($color-inverted, 10%);
-    }
-
-    &:focus {
-      background-color: lighten($color-inverted, 10%);
-    }
-
-    &:active {
-      background-color: lighten($color-inverted, 10%);
+      &:active {
+        background-color: darken($color, 5%);
+      }
     }
   }
 
@@ -157,158 +67,37 @@
     }
   }
 
-  // outline button
   &.outline {
     background-color: transparent;
 
-    &.default {
-      color: $color-default;
-      border-color: $color-default;
+    @each $name, $color in $btn-colors {
+      &.#{$name} {
+        color: $color;
+        border-color: $color;
 
-      &:hover {
-        color: #fff;
-        background-color: $color-default;
-      }
+        &:hover {
+          color: $color-white;
+          background-color: $color;
+        }
 
-      &:focus {
-        color: #fff;
-        background-color: $color-default;
-      }
+        &:focus {
+          color: $color-white;
+          background-color: $color;
+        }
 
-      &:active {
-        color: #fff;
-        background-color: $color-default;
-      }
-    }
-
-    &.primary {
-      color: $color-primary;
-      border-color: $color-primary;
-
-      &:hover {
-        color: #fff;
-        background-color: $color-primary;
-      }
-
-      &:focus {
-        color: #fff;
-        background-color: $color-primary;
-      }
-
-      &:active {
-        color: #fff;
-        background-color: $color-primary;
-      }
-    }
-
-    &.info {
-      color: $color-info;
-      border-color: $color-info;
-
-      &:hover {
-        color: #fff;
-        background-color: $color-info;
-      }
-
-      &:focus {
-        color: #fff;
-        background-color: $color-info;
-      }
-
-      &:active {
-        color: #fff;
-        background-color: $color-info;
-      }
-    }
-
-    &.success {
-      color: $color-success;
-      border-color: $color-success;
-
-      &:hover {
-        color: #fff;
-        background-color: $color-success;
-      }
-
-      &:focus {
-        color: #fff;
-        background-color: $color-success;
-      }
-
-      &:active {
-        color: #fff;
-        background-color: $color-success;
-      }
-    }
-
-    &.danger {
-      color: $color-danger;
-      border-color: $color-danger;
-
-      &:hover {
-        color: #fff;
-        background-color: $color-danger;
-      }
-
-      &:focus {
-        color: #fff;
-        background-color: $color-danger;
-      }
-
-      &:active {
-        color: #fff;
-        background-color: $color-danger;
-      }
-    }
-
-    &.warning {
-      color: $color-warning;
-      border-color: $color-warning;
-
-      &:hover {
-        color: #fff;
-        background-color: $color-warning;
-      }
-
-      &:focus {
-        color: #fff;
-        background-color: $color-warning;
-      }
-
-      &:active {
-        color: #fff;
-        background-color: $color-warning;
-      }
-    }
-
-    &.inverted {
-      color: $color-inverted;
-      border-color: $color-inverted;
-
-      &:hover {
-        color: #fff;
-        background-color: $color-inverted;
-      }
-
-      &:focus {
-        color: #fff;
-        background-color: $color-inverted;
-      }
-
-      &:active {
-        color: #fff;
-        background-color: $color-inverted;
+        &:active {
+          color: $color-white;
+          background-color: $color;
+        }
       }
     }
   }
 
-  // fluid button
   &.fluid {
     display: block;
     width: 100%;
   }
 
-  // pill button
   &.pill {
     border-radius: 16px;
   }

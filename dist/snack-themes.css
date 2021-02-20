@@ -2,7 +2,7 @@
 /*!
  * snack.css - v2.1.2
  * A minimal CSS framework for web.
- * https://nzbin.github.io/snack/
+ * https://snack-ui.github.io/snack/
  *
  * Copyright (c) 2017 nzbin
  * Released under MIT License
@@ -10,12 +10,12 @@
 
 .theme-dark {
   background-color: #212121;
-  color: #5c5c5c;
+  color: #7f7f7f;
 }
 
 .theme-dark body {
   background-color: #212121;
-  color: #5c5c5c;
+  color: #7f7f7f;
 }
 
 .theme-dark h1,
