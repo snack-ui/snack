@@ -1,6 +1,6 @@
 {
   "name": "snack.css",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "A minimal CSS framework for web.",
   "main": "dist/snack.css",
   "files": [
@@ -39,7 +39,7 @@
     "postcss": "postcss -r dist/*.css --map",
     "watch": "onchange src -- run-p build:dev",
     "lint": "stylelint --syntax scss \"src/**/*.scss\" --fix",
-    "publish": "npm run build && npm publish"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
