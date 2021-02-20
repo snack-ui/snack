@@ -38,7 +38,8 @@
     "copy": "cpy dist/*.css !dist/*.min.css docs/css",
     "postcss": "postcss -r dist/*.css --map",
     "watch": "onchange src -- run-p build:dev",
-    "lint": "stylelint --syntax scss \"src/**/*.scss\" --fix"
+    "lint": "stylelint --syntax scss \"src/**/*.scss\" --fix",
+    "publish": "npm run build && npm publish"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
