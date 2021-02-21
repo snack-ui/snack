@@ -1,6 +1,6 @@
 {
   "name": "snack.css",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "description": "A minimal CSS framework for web.",
   "main": "dist/snack.css",
   "files": [
