@@ -1,5 +1,5 @@
 // --------------------------------------------------
-// Base
+// Reboot
 // --------------------------------------------------
 
 *,
@@ -19,8 +19,13 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: $color-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
 }
 
 code,
@@ -33,12 +38,8 @@ samp {
 pre {
   display: block;
   font-size: 12px;
-  line-height: $line-height-base;
-  color: #333;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
   border-radius: 4px;
   overflow: auto;
 }
@@ -46,15 +47,15 @@ pre {
 code {
   padding: 2px 4px;
   font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 3px;
+  color: darken($color-danger, 30%);
+  background-color: lighten($color-danger, 30%);
+  border-radius: 2px;
 }
 
 kbd {
   padding: 2px 4px;
   font-size: 90%;
-  color: #fff;
-  background-color: #333;
+  color: $white;
+  background-color: $gray-dark;
   border-radius: 3px;
 }
