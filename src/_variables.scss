@@ -30,12 +30,12 @@ $color-map: (
 
 // typography
 $line-height-base:         1.5 !default;
-$font-size-base:           16px !default;
+$font-size-base:           1rem !default;
 $text-color:               $gray-dark !default;
 
 // grid
 $grid-columns:             12 !default;
-$grid-gutter:              24px !default;
+$grid-gutter:              1.5rem !default;
 
 // button
 $btn-border-width:         2px !default;
@@ -68,7 +68,7 @@ $box-border-color:         rgba(0, 0, 0, .12) !default;
 $box-border-inverted-color:rgba(0, 0, 0, .88) !default;
 $box-heading-bg-color:     rgba(100, 100, 150, .04) !default;
 $box-footer-bg-color:      rgba(100, 100, 150, .04) !default;
-$box-border-radius:        4px !default;
+$box-border-radius:        .25rem !default;
 $boxes-border-radius:      6px !default;
 $boxes-border-width:       2px !default;
 $boxes-box-border-radius:  $boxes-border-radius - $boxes-border-width !default;

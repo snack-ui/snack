@@ -14,28 +14,23 @@
   flex-wrap: wrap;
   margin-left: $grid-gutter/-2;
   margin-right: $grid-gutter/-2;
-
-  &.no-gutter {
-    margin-left: 0;
-    margin-right: 0;
-
-    @include make-grid-columns-without-gutter();
-  }
 }
 
 @include make-grid-columns();
 
-// breakpoint 768
 @media (min-width: 576px) {
+  // equal grid
+  @include make-grid-columns-equal();
   // looping 12-grids default
   @include loop-grid-columns(12);
   // looping 10-grids
   @include loop-grid-columns(10);
-  // equal grid
-  @include make-grid-columns-equal();
 }
 
+//
 // Gutters
+//
+
 @for $counter from 0 through 8 {
   $gutter-num: (4 * $counter);
   $gutter: 1px * $gutter-num;

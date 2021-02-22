@@ -4,7 +4,7 @@
 
 .btn {
   display: inline-block;
-  padding: 4px 12px;
+  padding: .25rem .75rem;
   text-align: center;
   vertical-align: middle;
   line-height: $btn-line-height;
@@ -89,11 +89,11 @@
   }
 
   &.pill {
-    border-radius: 36px;
+    border-radius: 9999px;
   }
 }
 
-// button group
+// Button group
 .btns {
   position: relative;
   display: inline-block;

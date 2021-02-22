@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   color: $text-color;
   line-height: $line-height-base;
@@ -37,25 +38,73 @@ samp {
 
 pre {
   display: block;
-  font-size: 12px;
-  word-break: break-all;
-  word-wrap: break-word;
-  border-radius: 4px;
+  font-size: .875em;
+  border-radius: .2rem;
   overflow: auto;
 }
 
 code {
-  padding: 2px 4px;
-  font-size: 90%;
+  padding: .2rem .4rem;
+  font-size: .875em;
   color: darken($color-danger, 30%);
   background-color: lighten($color-danger, 30%);
-  border-radius: 2px;
+  border-radius: .2rem;
 }
 
 kbd {
-  padding: 2px 4px;
-  font-size: 90%;
+  padding: .2rem .4rem;
+  font-size: .875em;
   color: $white;
   background-color: $gray-dark;
-  border-radius: 3px;
+  border-radius: .2rem;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: .25;
+
+  &:not([size]) {
+    height: 1px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.125;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+small {
+  font-size: .875em;
 }

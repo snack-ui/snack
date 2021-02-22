@@ -11,16 +11,16 @@ table {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   text-align: left;
   line-height: $line-height-base;
 
   th {
-    padding: 12px 8px;
+    padding: .75rem .5rem;
   }
 
   td {
-    padding: 8px;
+    padding: .5rem;
   }
 
   > thead {

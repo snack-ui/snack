@@ -5,3 +5,27 @@
 .clearfix {
   @include clearfix;
 }
+
+// Background colors
+
+@include generate-colors(
+  bg,
+  background-color,
+  map-merge($color-map, (white: $white, transparent: transparent))
+);
+
+// Border colors
+
+@include generate-colors(
+  border,
+  border-color,
+  map-merge($color-map, (transparent: transparent))
+);
+
+// Text colors
+
+@include generate-colors(
+  text,
+  color,
+  map-merge($color-map, (white: $white, muted: $gray))
+);

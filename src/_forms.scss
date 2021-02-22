@@ -29,13 +29,13 @@ textarea {
 
 label {
   display: inline-block;
-  margin-bottom: 4px;
+  margin-bottom: .25rem;
 }
 
 .form-control {
   display: block;
   width: 100%;
-  padding: 4px 8px;
+  padding: .25rem .5rem;
   border: $input-border-width solid $input-border-color;
   border-radius: $input-border-radius;
   background-color: $input-bg-color;
@@ -61,14 +61,14 @@ label {
 }
 
 .form-label {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
   margin-bottom: 0;
 }
 
-// label+input
+// label + input
 .form-group {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .form-inline {
@@ -96,14 +96,14 @@ label {
 .radio {
   position: relative;
   display: block;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  padding-left: 24px;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+  padding-left: 1.5rem;
 
   label {
     position: relative;
     display: inline-block;
-    min-height: 24px;
+    min-height: 1.5rem;
     margin-bottom: 0;
     font-weight: 400;
     cursor: pointer;
@@ -117,7 +117,7 @@ label {
     display: inline-block;
     margin-top: 0;
     margin-bottom: 0;
-    margin-right: 16px;
+    margin-right: 1rem;
     vertical-align: middle;
     font-weight: 400;
   }
@@ -126,8 +126,8 @@ label {
 .checkbox input[type="checkbox"],
 .radio input[type="radio"] {
   position: absolute;
-  margin-top: 4px;
-  margin-left: -24px;
+  margin-top: .25rem;
+  margin-left: -1.5rem;
 }
 
 // fieldset disabled
@@ -140,7 +140,7 @@ fieldset[disabled] {
 }
 
 .form-text {
-  margin-top: 4px;
+  margin-top: .25rem;
   font-size: .875em;
   color: $form-text-color;
 }

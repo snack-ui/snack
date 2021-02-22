@@ -2,58 +2,30 @@
 // Typography
 // --------------------------------------------------
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.125;
-}
-
-small,
 .small {
-  font-weight: 400;
-  line-height: 1;
-  color: $gray-light;
-  font-size: 65%;
+  @extend small;
 }
 
-h1,
 .h1 {
-  font-size: 36px;
+  @extend h1;
 }
 
-h2,
 .h2 {
-  font-size: 30px;
+  @extend h2;
 }
 
-h3,
 .h3 {
-  font-size: 24px;
+  @extend h3;
 }
 
-h4,
 .h4 {
-  font-size: 20px;
+  @extend h4;
 }
 
-h5,
 .h5 {
-  font-size: 16px;
+  @extend h5;
 }
 
-h6,
 .h6 {
-  font-size: 14px;
-}
-
-hr {
-  margin-top: 16px;
-  margin-bottom: 16px;
-  border: 0;
-  border-top: 1px solid $gray-lighter;
+  @extend h6;
 }
