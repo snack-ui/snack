@@ -78,6 +78,43 @@
           </div>
         </section>
         <section>
+          <h2 id="colors">Colors</h2>
+          <div class="example">
+            <div class="row">
+              <div class="col-3">
+                <div class="palette bg-primary">
+                  <div class="palette-info">Primary <small>#348fe2</small></div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-info">
+                  <div class="palette-info">Info <small>#49b6d6</small></div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-success">
+                  <div class="palette-info">Success <small>#84b547</small></div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-danger">
+                  <div class="palette-info">Danger <small>#ff5b57</small></div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-warning">
+                  <div class="palette-info">Warning <small>#f59c1a</small></div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="palette bg-inverted">
+                  <div class="palette-info">Inverted <small>#2d353c</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
           <h2 id="grid">Grids</h2>
           <h3>Basic 12 Grid</h3>
           <div class="example">
@@ -177,7 +214,7 @@
 </pre>
           <h3>No Gutters</h3>
           <div class="example">
-            <div class="row no-gutter">
+            <div class="row g-0">
               <div class="col-4">
                 <div class="grid-box">4/12</div>
               </div>
@@ -188,7 +225,7 @@
                 <div class="grid-box">4/12</div>
               </div>
             </div>
-            <div class="row no-gutter cols-10">
+            <div class="row g-0 cols-10">
               <div class="col-2">
                 <div class="grid-box">2/10</div>
               </div>
@@ -201,7 +238,7 @@
             </div>
           </div>
           <pre class="prettyprint linenums">
-&lt;div class="row no-gutter"&gt;
+&lt;div class="row g-0"&gt;
   &lt;div class="col-4"&gt;4/12&lt;/div&gt;
   &lt;div class="col-4"&gt;4/12&lt;/div&gt;
   ...
@@ -391,52 +428,15 @@
           </div>
         </section>
         <section>
-          <h2 id="colors">Colors</h2>
-          <div class="example">
-            <div class="row">
-              <div class="col-3">
-                <div class="palette bg-primary">
-                  <div class="palette-info">Primary <small>#348fe2</small></div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="palette bg-info">
-                  <div class="palette-info">Info <small>#49b6d6</small></div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="palette bg-success">
-                  <div class="palette-info">Success <small>#84b547</small></div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="palette bg-danger">
-                  <div class="palette-info">Danger <small>#ff5b57</small></div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="palette bg-warning">
-                  <div class="palette-info">Warning <small>#f59c1a</small></div>
-                </div>
-              </div>
-              <div class="col-3">
-                <div class="palette bg-inverted">
-                  <div class="palette-info">Inverted <small>#2d353c</small></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
           <h2 id="typography">Typography</h2>
           <h3>Headings</h3>
           <div class="example">
-            <h1>h1 Example Heading <small>subtitle</small></h1>
-            <h2>h2 Example Heading <small>subtitle</small></h2>
-            <h3>h3 Example Heading <small>subtitle</small></h3>
-            <h4>h4 Example Heading <small>subtitle</small></h4>
-            <h5>h5 Example Heading <small>subtitle</small></h5>
-            <h6>h6 Example Heading <small>subtitle</small></h6>
+            <h1>h1 Example Heading <small class="text-muted">subtitle</small></h1>
+            <h2>h2 Example Heading <small class="text-muted">subtitle</small></h2>
+            <h3>h3 Example Heading <small class="text-muted">subtitle</small></h3>
+            <h4>h4 Example Heading <small class="text-muted">subtitle</small></h4>
+            <h5>h5 Example Heading <small class="text-muted">subtitle</small></h5>
+            <h6>h6 Example Heading <small class="text-muted">subtitle</small></h6>
           </div>
           <pre class="prettyprint linenums">
 &lt;h1&gt;h1 Example Heading &lt;small&gt;subtitle&lt;/small&gt;&lt;/h1&gt;
@@ -988,6 +988,17 @@
                   <div class="box">box</div>
                 </div>
               </div>
+            </div>
+          </div>
+          <pre class="prettyprint linenums">
+&lt;div class="boxes"&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+  &lt;div class="box"&gt;box&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          <div class="example">
+            <div class="row">
               <div class="col-6">
                 <p>Basic boxes with transparent background</p>
                 <div class="boxes transparent">
@@ -1007,11 +1018,6 @@
             </div>
           </div>
           <pre class="prettyprint linenums">
-&lt;div class="boxes"&gt;
-  &lt;div class="box"&gt;box&lt;/div&gt;
-  &lt;div class="box"&gt;box&lt;/div&gt;
-  &lt;div class="box"&gt;box&lt;/div&gt;
-&lt;/div&gt;
 &lt;div class="boxes transparent"&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
   &lt;div class="box"&gt;box&lt;/div&gt;
@@ -1157,6 +1163,61 @@
         </section>
         <section>
           <h2 id="utilities">Utilities</h2>
+          <table class="table bordered rounded striped hover">
+            <thead>
+              <tr class="text-nowrap">
+                <th>Property</th>
+                <th>Class Prefix</th>
+                <th>Values</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><kbd>background-color</kbd></td>
+                <td><kbd>.bg-</kbd></td>
+                <td>
+                  <kbd>default</kbd>
+                  <kbd>primary</kbd>
+                  <kbd>info</kbd>
+                  <kbd>success</kbd>
+                  <kbd>danger</kbd>
+                  <kbd>warning</kbd>
+                  <kbd>inverted</kbd>
+                  <kbd>white</kbd>
+                  <kbd>transparent</kbd>
+                </td>
+              </tr>
+              <tr>
+                <td><kbd>border-color</kbd></td>
+                <td><kbd>.border-</kbd></td>
+                <td>
+                  <kbd>default</kbd>
+                  <kbd>primary</kbd>
+                  <kbd>info</kbd>
+                  <kbd>success</kbd>
+                  <kbd>danger</kbd>
+                  <kbd>warning</kbd>
+                  <kbd>inverted</kbd>
+                  <kbd>transparent</kbd>
+                </td>
+              </tr>
+              <tr>
+                <td><kbd>color</kbd></td>
+                <td><kbd>.text-</kbd></td>
+                <td>
+                  <kbd>default</kbd>
+                  <kbd>primary</kbd>
+                  <kbd>info</kbd>
+                  <kbd>success</kbd>
+                  <kbd>danger</kbd>
+                  <kbd>warning</kbd>
+                  <kbd>inverted</kbd>
+                  <kbd>white</kbd>
+                  <kbd>muted</kbd>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <p class="bg-red-lightest p-x-12 p-y-8 r-4">
             <span class="text-red-darker">Snack had already removed most css helper classes.
               Please Try
@@ -1171,13 +1232,13 @@
             <a href="#introduction">Introduction</a>
           </li>
           <li>
+            <a href="#colors">Colors</a>
+          </li>
+          <li>
             <a href="#grid">Grids</a>
           </li>
           <li>
             <a href="#media">Media</a>
-          </li>
-          <li>
-            <a href="#colors">Colors</a>
           </li>
           <li>
             <a href="#typography">Typography</a>
