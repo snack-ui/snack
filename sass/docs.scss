@@ -2,11 +2,6 @@
 // Documentation
 //
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   background-color: #fafafb;
 }
@@ -34,12 +29,6 @@ footer {
 
 .navbar-brand {
   font-size: 24px;
-
-  &:hover {
-    .logo-wrap {
-      box-shadow: 0 4px 18px 3px rgba(0, 0, 0, .1);
-    }
-  }
 }
 
 // logo
@@ -295,8 +284,7 @@ ol.linenums li {
   .pun,
   .opn,
   .clo {
-    color: #fff;
-    //pun
+    color: #fff; //pun
   }
 
   .fun {
@@ -305,27 +293,23 @@ ol.linenums li {
 
   .str,
   .atv {
-    color: #96b38a;
-    //atv
+    color: #96b38a; //atv
   }
 
   .kwd,
   .linenums .tag {
-    color: #a7925a;
-    //tag
+    color: #a7925a; //tag
   }
 
   .typ,
   .atn,
   .dec,
   .var {
-    color: #ddca7e;
-    //atn
+    color: #ddca7e; //atn
   }
 
   .pln {
-    color: #fff;
-    //pln
+    color: #fff; //pln
   }
 
   .prettyprint {
