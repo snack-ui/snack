@@ -27,5 +27,5 @@
 @include generate-colors(
   text,
   color,
-  map-merge($color-map, (white: $white, muted: $gray))
+  map-merge($color-map, (white: $white, muted: $gray-light))
 );
