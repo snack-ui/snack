@@ -14,9 +14,9 @@ $ npm install snack.css --save
 
 ## Overview
 
+- [Colors](https://snack-ui.github.io/snack/#colors)
 - [Grids](https://snack-ui.github.io/snack/#grid)
 - [Media](https://snack-ui.github.io/snack/#media)
-- [Colors](https://snack-ui.github.io/snack/#colors)
 - [Typography](https://snack-ui.github.io/snack/#typography)
 - [Buttons](https://snack-ui.github.io/snack/#buttons)
 - [Forms](https://snack-ui.github.io/snack/#forms)
