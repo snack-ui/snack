@@ -1,6 +1,6 @@
 
 /*!
- * snack.css - v2.5.0
+ * snack.css - v2.5.1
  * A minimal CSS framework for web.
  * https://snack-ui.github.io/snack/
  *
@@ -440,6 +440,7 @@ small, .small {
   display: inline-block;
   padding: .25rem .75rem;
   text-align: center;
+  text-decoration: none;
   vertical-align: middle;
   line-height: 1.5;
   font-size: 1rem;
@@ -447,6 +448,10 @@ small, .small {
   border-radius: 6px;
   cursor: pointer;
   outline: none;
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  text-decoration: none;
 }
 
 .btn.default {
@@ -460,6 +465,7 @@ small, .small {
 
 .btn.default:focus {
   background-color: #a7b6be;
+  box-shadow: 0 0 0 0.25rem rgba(182, 194, 201, 0.5);
 }
 
 .btn.default:active {
@@ -477,6 +483,7 @@ small, .small {
 
 .btn.primary:focus {
   background-color: #2083dd;
+  box-shadow: 0 0 0 0.25rem rgba(52, 143, 226, 0.5);
 }
 
 .btn.primary:active {
@@ -494,6 +501,7 @@ small, .small {
 
 .btn.info:focus {
   background-color: #34aed1;
+  box-shadow: 0 0 0 0.25rem rgba(73, 182, 214, 0.5);
 }
 
 .btn.info:active {
@@ -511,6 +519,7 @@ small, .small {
 
 .btn.success:focus {
   background-color: #77a340;
+  box-shadow: 0 0 0 0.25rem rgba(132, 181, 71, 0.5);
 }
 
 .btn.success:active {
@@ -528,6 +537,7 @@ small, .small {
 
 .btn.danger:focus {
   background-color: #ff423e;
+  box-shadow: 0 0 0 0.25rem rgba(255, 91, 87, 0.5);
 }
 
 .btn.danger:active {
@@ -545,6 +555,7 @@ small, .small {
 
 .btn.warning:focus {
   background-color: #eb900a;
+  box-shadow: 0 0 0 0.25rem rgba(245, 156, 26, 0.5);
 }
 
 .btn.warning:active {
@@ -562,6 +573,7 @@ small, .small {
 
 .btn.inverted:focus {
   background-color: #22282d;
+  box-shadow: 0 0 0 0.25rem rgba(45, 53, 60, 0.5);
 }
 
 .btn.inverted:active {
@@ -584,6 +596,7 @@ small, .small {
   color: #1c75c7;
   text-decoration: underline;
   background-color: transparent;
+  box-shadow: 0 0 0 0.25rem rgba(52, 143, 226, 0.5);
 }
 
 .btn.link:active {
