@@ -28,22 +28,22 @@ $color-map: (
   inverted: $color-inverted
 );
 
-// typography
+// Typography
 $line-height-base:         1.5 !default;
 $font-size-base:           1rem !default;
 $text-color:               $gray-dark !default;
 
-// grid
+// Grid
 $grid-columns:             12 !default;
 $grid-gutter:              1.5rem !default;
 
-// button
+// Button
 $btn-border-width:         2px !default;
 $btn-border-radius:        6px !default;
 $btn-font-size:            $font-size-base !default;
 $btn-line-height:          $line-height-base !default;
 
-// table
+// Table
 $table-border-color:       rgba(0, 0, 0, .12) !default;
 $table-head-bg-color:      rgba(100, 100, 150, .04) !default;
 $table-striped-bg-color:   rgba(100, 100, 150, .04) !default;
@@ -51,7 +51,7 @@ $table-hover-bg-color:     rgba(100, 100, 150, .04) !default;
 $table-border-radius:      6px !default;
 $table-border-width:       2px !default;
 
-// form
+// Form
 $input-bg-color:           $white !default;
 $input-border-color:       rgba(0, 0, 0, .12) !default;
 $input-border-color-focus: $color-primary !default;
@@ -62,7 +62,7 @@ $input-font-size:          $font-size-base !default;
 $input-line-height:        $line-height-base !default;
 $form-text-color:          $gray-light !default;
 
-// boxes
+// Boxes
 $box-bg-color:             $white !default;
 $box-border-color:         rgba(0, 0, 0, .12) !default;
 $box-border-inverted-color:rgba(0, 0, 0, .88) !default;

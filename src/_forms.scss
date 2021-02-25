@@ -45,8 +45,9 @@ label {
   color: $input-text-color;
 
   &:focus {
-    border-color: $input-border-color-focus;
     outline: 0;
+    border-color: $input-border-color-focus;
+    box-shadow: 0 0 0 .25rem rgba($color-primary, .25);
   }
 
   &[disabled] {
@@ -66,7 +67,7 @@ label {
   margin-bottom: 0;
 }
 
-// label + input
+// Label + Input
 .form-group {
   margin-bottom: 1rem;
 }
@@ -91,7 +92,6 @@ label {
   }
 }
 
-// checkbox & radio
 .checkbox,
 .radio {
   position: relative;
@@ -130,7 +130,6 @@ label {
   margin-left: -1.5rem;
 }
 
-// fieldset disabled
 fieldset[disabled] {
   .form-control,
   .checkbox label,

@@ -107,6 +107,7 @@ $box-footer-bg-color: #242424;
     &:focus {
       background-color: $input-bg-color-focus;
       border-color: $input-border-color-focus;
+      box-shadow: none;
     }
   }
 

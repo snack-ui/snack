@@ -19,11 +19,11 @@
 @include make-grid-columns();
 
 @media (min-width: 576px) {
-  // equal grid
+  // Equal grid
   @include make-grid-columns-equal();
-  // looping 12-grids default
+  // Looping 12-grids default
   @include loop-grid-columns(12);
-  // looping 10-grids
+  // Looping 10-grids
   @include loop-grid-columns(10);
 }
 
