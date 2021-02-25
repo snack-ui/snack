@@ -75,6 +75,7 @@
 .theme-dark .form-control:focus {
   background-color: #282828;
   border-color: #333333;
+  box-shadow: none;
 }
 
 .theme-dark .box {
