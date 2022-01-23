@@ -1,6 +1,5 @@
-// --------------------------------------------------
-// Reboot
-// --------------------------------------------------
+@use 'sass:color';
+@use 'variables' as *;
 
 *,
 *::before,
@@ -33,7 +32,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 pre {
@@ -46,8 +45,8 @@ pre {
 code {
   padding: .2rem .4rem;
   font-size: .875em;
-  color: darken($color-danger, 30%);
-  background-color: lighten($color-danger, 30%);
+  color: color.adjust($color-danger, $lightness: -30%);
+  background-color: color.adjust($color-danger, $lightness: 30%);
   border-radius: .2rem;
 }
 
@@ -76,35 +75,43 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+%h {
   font-weight: 500;
   line-height: 1.125;
 }
 
-h1 {
+h1,
+%h1 {
   font-size: 36px;
 }
 
-h2 {
+h2,
+%h2 {
   font-size: 30px;
 }
 
-h3 {
+h3,
+%h3 {
   font-size: 24px;
 }
 
-h4 {
+h4,
+%h4 {
   font-size: 20px;
 }
 
-h5 {
+h5,
+%h5 {
   font-size: 16px;
 }
 
-h6 {
+h6,
+%h6 {
   font-size: 14px;
 }
 
-small {
+small,
+%small {
   font-size: .875em;
 }

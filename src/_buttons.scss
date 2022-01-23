@@ -1,6 +1,5 @@
-// --------------------------------------------------
-// Buttons
-// --------------------------------------------------
+@use 'sass:color';
+@use 'variables' as *;
 
 .btn {
   display: inline-block;
@@ -27,16 +26,16 @@
       background-color: $color;
 
       &:hover {
-        background-color: darken($color, 5%);
+        background-color: color.adjust($color, $lightness: -5%);
       }
 
       &:focus {
-        background-color: darken($color, 5%);
+        background-color: color.adjust($color, $lightness: -5%);
         box-shadow: 0 0 0 .25rem rgba($color, .5);
       }
 
       &:active {
-        background-color: darken($color, 5%);
+        background-color: color.adjust($color, $lightness: -5%);
       }
     }
   }
@@ -47,20 +46,20 @@
     border-color: transparent;
 
     &:hover {
-      color: darken($color-primary, 10%);
+      color: color.adjust($color-primary, $lightness: -10%);
       text-decoration: underline;
       background-color: transparent;
     }
 
     &:focus {
-      color: darken($color-primary, 10%);
+      color: color.adjust($color-primary, $lightness: -10%);
       text-decoration: underline;
       background-color: transparent;
       box-shadow: 0 0 0 .25rem rgba($color-primary, .5);
     }
 
     &:active {
-      color: darken($color-primary, 10%);
+      color: color.adjust($color-primary, $lightness: -10%);
       text-decoration: underline;
       background-color: transparent;
     }

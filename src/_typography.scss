@@ -1,31 +1,29 @@
-// --------------------------------------------------
-// Typography
-// --------------------------------------------------
+@use 'reboot' as *;
 
 .small {
-  @extend small;
+  @extend %small ;
 }
 
 .h1 {
-  @extend h1;
+  @extend %h, %h1;
 }
 
 .h2 {
-  @extend h2;
+  @extend %h, %h2;
 }
 
 .h3 {
-  @extend h3;
+  @extend %h, %h3;
 }
 
 .h4 {
-  @extend h4;
+  @extend %h, %h4;
 }
 
 .h5 {
-  @extend h5;
+  @extend %h, %h5;
 }
 
 .h6 {
-  @extend h6;
+  @extend %h, %h6;
 }

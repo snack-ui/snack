@@ -1,6 +1,4 @@
-// --------------------------------------------------
-// Forms
-// --------------------------------------------------
+@use 'variables' as *;
 
 // select
 // textarea
@@ -19,7 +17,7 @@
 // input[type="tel"]
 // input[type="color"]
 
-input[type="file"] {
+input[type='file'] {
   display: block;
 }
 
@@ -78,7 +76,7 @@ label {
   flex-flow: row wrap;
   align-items: center;
 
-  input[type="file"],
+  input[type='file'],
   .form-group {
     display: flex;
     flex: 0 0 auto;
@@ -124,8 +122,8 @@ label {
   }
 }
 
-.checkbox input[type="checkbox"],
-.radio input[type="radio"] {
+.checkbox input[type='checkbox'],
+.radio input[type='radio'] {
   position: absolute;
   margin-top: .25rem;
   margin-left: -1.5rem;

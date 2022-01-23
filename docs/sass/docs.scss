@@ -1,6 +1,4 @@
-//
-// Documentation
-//
+@use 'sass:math';
 
 body {
   background-color: #fafafb;
@@ -56,8 +54,8 @@ $logo-line-height: 4px;
   left: 50%;
   width: $logo-line-width;
   height: $logo-line-height;
-  margin-top: $logo-line-height / -2;
-  margin-left: $logo-line-width / -2;
+  margin-top: math.div($logo-line-height, -2);
+  margin-left: math.div($logo-line-width, -2);
   background: $logo-color;
   transform: rotateZ(45deg);
 
@@ -67,8 +65,8 @@ $logo-line-height: 4px;
     display: block;
     position: absolute;
     top: -10px;
-    left: $logo-line-width /3;
-    width: $logo-line-width / 3;
+    left: math.div($logo-line-width, 3);
+    width: math.div($logo-line-width, 3);
     height: $logo-line-height;
     background: $logo-color;
   }
@@ -230,9 +228,7 @@ ol.linenums li {
   text-shadow: 0 1px 0 #fff;
 }
 
-//
 // Theme-dark
-//
 
 .theme-dark {
   header {
@@ -284,7 +280,7 @@ ol.linenums li {
   .pun,
   .opn,
   .clo {
-    color: #fff; //pun
+    color: #fff; // pun
   }
 
   .fun {
@@ -293,23 +289,23 @@ ol.linenums li {
 
   .str,
   .atv {
-    color: #96b38a; //atv
+    color: #96b38a; // atv
   }
 
   .kwd,
   .linenums .tag {
-    color: #a7925a; //tag
+    color: #a7925a; // tag
   }
 
   .typ,
   .atn,
   .dec,
   .var {
-    color: #ddca7e; //atn
+    color: #ddca7e; // atn
   }
 
   .pln {
-    color: #fff; //pln
+    color: #fff; // pln
   }
 
   .prettyprint {
