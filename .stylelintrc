@@ -1,6 +1,17 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
+  "ignoreFiles": [
+    "dist/**",
+    "docs/css/**"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss"
+  ],
   "rules": {
-    "number-leading-zero": "never"
+    "alpha-value-notation": null,
+    "color-function-notation": "legacy",
+    "no-descending-specificity": null,
+    "number-leading-zero": "never",
+    "string-quotes": "single"
   }
 }
