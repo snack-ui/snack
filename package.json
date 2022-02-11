@@ -5,7 +5,8 @@
   "main": "dist/snack.css",
   "files": [
     "dist",
-    "src"
+    "src",
+    "_index.scss"
   ],
   "license": "MIT",
   "author": "nzbin",
@@ -31,8 +32,8 @@
     "clean": "rimraf dist",
     "sass": "sass --style=expanded src/snack.scss dist/snack.css",
     "sass:min": "sass --style=compressed src/snack.scss dist/snack.min.css",
-    "sass-theme": "sass --style=expanded src/themes/snack-themes.scss dist/snack-themes.css",
-    "sass-theme:min": "sass --style=compressed src/themes/snack-themes.scss dist/snack-themes.min.css",
+    "sass-theme": "sass --style=expanded src/snack-themes.scss dist/snack-themes.css",
+    "sass-theme:min": "sass --style=compressed src/snack-themes.scss dist/snack-themes.min.css",
     "docs": "run-p sass:docs copy",
     "sass:docs": "sass --style=expanded docs/sass/docs.scss docs/css/docs.css",
     "copy": "cp dist/snack.css dist/snack-themes.css docs/css",
