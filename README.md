@@ -12,6 +12,14 @@ Snack is a minimal CSS framework for web. But the main purpose of this framework
 $ npm install snack.css --save
 ```
 
+## Usage
+
+```scss
+@use 'snack.css';
+```
+
+The @use-based Sass API is only available in the version 2.7.0 or above.
+
 ## Overview
 
 - [Colors](https://snack-ui.github.io/snack/#colors)
