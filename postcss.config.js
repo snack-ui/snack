@@ -1,7 +1,6 @@
 const pkg = require('./package.json');
 
-const banner = `
-/*!
+const banner = `/*!
  * ${pkg.name} - v${pkg.version}
  * ${pkg.description}
  * ${pkg.homepage}
