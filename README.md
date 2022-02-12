@@ -15,7 +15,7 @@ $ npm install snack.css --save
 ## Usage
 
 ```scss
-@use 'snack.css';
+@use 'snack.css/index';
 ```
 
 The @use-based Sass API is only available in the version 2.7.0 or above.
