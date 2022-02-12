@@ -1,34 +1,32 @@
 @use 'sass:color';
 
-// color
-$gray-darker: #262626;
-$gray-dark: #2d2d2d;
-$gray: #383838;
-$gray-light: #5c5c5c;
-$gray-lighter: #7f7f7f;
-$color-inverted: #fff;
-// typography
-$text-color: $gray-lighter;
-// table
-$table-border-color: $gray-dark;
-$table-head-bg-color: #242424;
-$table-striped-bg-color: #242424;
-$table-hover-bg-color: #242424;
-// form
-$input-bg-color: #353535;
-$input-bg-color-focus: color.adjust($input-bg-color, $lightness: -5%);
-$input-border-color: #404040;
-$input-border-color-focus: color.adjust($input-border-color, $lightness: -5%);
-$input-text-color: #fff;
-// boxes
-$box-bg-color: #1a1a1a;
-$box-border-color: rgba(255, 255, 255, 12%);
-$box-heading-bg-color: #242424;
-$box-footer-bg-color: #242424;
-
-// Theme-dark
-
 .theme-dark {
+  // color
+  $gray-darker: #262626;
+  $gray-dark: #2d2d2d;
+  $gray: #383838;
+  $gray-light: #5c5c5c;
+  $gray-lighter: #7f7f7f;
+  $color-inverted: #fff;
+  // typography
+  $text-color: $gray-lighter;
+  // table
+  $table-border-color: $gray-dark;
+  $table-head-bg-color: #242424;
+  $table-striped-bg-color: #242424;
+  $table-hover-bg-color: #242424;
+  // form
+  $input-bg-color: #353535;
+  $input-bg-color-focus: color.adjust($input-bg-color, $lightness: -5%);
+  $input-border-color: #404040;
+  $input-border-color-focus: color.adjust($input-border-color, $lightness: -5%);
+  $input-text-color: #fff;
+  // boxes
+  $box-bg-color: #1a1a1a;
+  $box-border-color: rgba(255, 255, 255, 12%);
+  $box-heading-bg-color: #242424;
+  $box-footer-bg-color: #242424;
+
   background-color: #212121;
   color: $text-color;
 
